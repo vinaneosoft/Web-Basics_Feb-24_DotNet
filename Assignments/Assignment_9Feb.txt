@@ -1,0 +1,6 @@
+Implement following extra tags. You must know use of these tags
+1. blockquote
+2. q
+3. time
+4. pre
+5. one more extra tag by searching
