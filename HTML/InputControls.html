@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <!--type : values (predefined values) text, submit
+    
+    id: must be always unqiue, name : can be duplicate-->
+    <section>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" name="customername" value="Komal">
+            <input id="lastName" type="text" placeholder="Last Name" name="customername" >
+
+            <input placeholder="first name" id="firstName1" name="customername" value="Komal" readonly>
+            <input id="lastName1" type="text" placeholder="Last Name" name="customername" value="sharma" disabled>
+            <label for="mobile">Mobile Number:</label>
+            <input id="mobile" type="number">
+            <label for="mobile2">Mobile Number:</label>
+            <input id="mobile2" type="text" minlength="10" maxlength="10" pattern="[0-9]*" required>
+            <!-- [ ] : set 0-9 : 0 to 9 , * 0 or more-->
+            <input type="submit" value="SEND INFO">
+            <input type="reset">
+        </form>
+    </section>
+</body>
+</html>
