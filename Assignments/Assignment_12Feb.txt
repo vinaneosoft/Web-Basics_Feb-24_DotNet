@@ -1,0 +1,1 @@
+Arrange 3 to 4 clickable images in row of table. Also Label all images using figcaption. but label must be below each image. When u click on Image, open any web page related to that image
