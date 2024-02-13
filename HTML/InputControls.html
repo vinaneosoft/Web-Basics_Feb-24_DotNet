@@ -37,24 +37,44 @@
             <label for="other">OTHER:</label><input type="radio" name="gender" id="other" value="Other">
             <label for="state">Select State:</label>
             <select id="state">
-                <option value="Kerala">KERALA</option>
+                <option value="K">KERALA</option>
                 <option value="Delhi">DELHI</option>
                 <option value="Maharashtra">MAHARASHTRA</option>
                 <option value="Karnataka">KARNATAKA</option>
             </select>
+            <label for="state2">Select State:</label>
+            <select id="state2">
+                <optgroup label="NORTH STATES">
+                    <option value="Delhi">DELHI</option>
+                    <option value="Jammukashmir">JAMMU and KASHMIR</option>
+                </optgroup>
+                <optgroup label="EAST STATES">
+                    <option value="Delhi">DELHI</option>
+                    <option value="Jammukashmir">JAMMU and KASHMIR</option>
+                </optgroup>
+            </select>
             <label for="comments">Put Extra Comments:</label>
             <textarea id="comments" cols="40" rows="10"></textarea>
-            <input type="submit" value="SEND INFO">
+           <!--  <input type="submit" value="SEND INFO"> -->
+           <input type="image" src="Images/submiticon.png" height="100" width="200">
             <input type="reset">
         </form>
     </section>
     <section>
         <!-- other than image type try all input types at ur side-->
         <form>
-            <input type="button">
+            <input type="button" value="SEND">
             <input type="color">
             <input type="date">
+            <input type="hidden" name="hiddenfield" value="3434">
+            <input type="tel" name="" id="">
+            <label for="">Please put link of ur project</label>
+            <input type="url">
         </form>
     </section>
+    <script>
+        let state=document.getElementById('state').value;
+        console.log(state);
+    </script>
 </body>
 </html>
