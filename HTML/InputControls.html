@@ -37,7 +37,7 @@
             <label for="other">OTHER:</label><input type="radio" name="gender" id="other" value="Other">
             <label for="state">Select State:</label>
             <select id="state">
-                <option value="K">KERALA</option>
+                <option value="Kerala">KERALA</option>
                 <option value="Delhi">DELHI</option>
                 <option value="Maharashtra">MAHARASHTRA</option>
                 <option value="Karnataka">KARNATAKA</option>
@@ -76,7 +76,10 @@
         </form>
     </section>
     <script>
-        let state=document.getElementById('state').value;
+        let selectNode=document.getElementById('state');
+        console.log(selectNode);
+        selectNode.selected=false;
+        let state=selectNode.value;
         console.log(state);
 
         // with submit click we will extract data in script function and
