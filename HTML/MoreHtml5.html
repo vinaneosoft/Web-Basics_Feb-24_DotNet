@@ -42,6 +42,12 @@ details of html-->
 
 <section>
     <h2>DATALIST EXAMPLE</h2>
+    <label for="rgbcolor3">TEST</label>
+    <select id="rgbcolor3" name="test">
+        <option value="red">RED</option>
+        <option value="green">GREEN</option>
+        <option value="blue">BLUE</option>
+    </select>
     <datalist id="rgbcolor">
         <option value="red">RED</option>
         <option value="green">GREEN</option>
@@ -54,6 +60,21 @@ details of html-->
     </datalist>
     <label for="option">Choose from List</label>
     <input list="rgbcolor1" id="option">
+</section>
+<section>
+    <h2>IFRAME EXAMPLE</h2>
+    <!-- border with shadow-->
+    <iframe id="frame1" title="frame1" height="300" width="400"
+    src="Documents/sample3.pdf"></iframe>
+    <iframe id="frame2" title="frame2" frameborder="0" src="ImageDemo.html"></iframe>
+    <iframe src="TEXTS/sachin.txt" title="frame3"></iframe>
+    <!-- try with any wikipedia page-->
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/qXcMNBQnQMM?si=7tr8dlX2NTv4BS7W" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
 </section>
 </body>
 </html>
