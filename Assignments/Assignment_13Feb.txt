@@ -1,0 +1,2 @@
+Implement embed tag and object tag 
+tell the similatiries and differences between iframe, embed and object tag
