@@ -55,8 +55,10 @@
             </select>
             <label for="comments">Put Extra Comments:</label>
             <textarea id="comments" cols="40" rows="10"></textarea>
-           <!--  <input type="submit" value="SEND INFO"> -->
-           <input type="image" src="Images/submiticon.png" height="100" width="200">
+            <label for="pass">Set Password:</label>
+            <input type="password" id="pass" name="pass">
+            <input type="submit" value="SEND INFO"> 
+            <input type="image" src="Images/submiticon.png" height="100" width="200">
             <input type="reset">
         </form>
     </section>
@@ -64,6 +66,7 @@
         <!-- other than image type try all input types at ur side-->
         <form>
             <input type="button" value="SEND">
+            <button type="button">SEND</button>
             <input type="color">
             <input type="date">
             <input type="hidden" name="hiddenfield" value="3434">
@@ -75,6 +78,9 @@
     <script>
         let state=document.getElementById('state').value;
         console.log(state);
+
+        // with submit click we will extract data in script function and
+        // Demo of sending req at backend (fake json-server logic for backend)
     </script>
 </body>
 </html>
