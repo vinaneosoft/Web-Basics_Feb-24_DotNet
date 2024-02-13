@@ -6,22 +6,35 @@
     <title>Inputs</title>
 </head>
 <body>
-    <!--type : values (predefined values) text, submit, reset, number
+    <!--type : values (predefined values) text, submit, reset, number, email, checkbox
     
     id: must be always unqiue, name : can be duplicate-->
+    <h2>Training Course Registration Form</h2>
     <section>
-        <form>
+        <form > <!--novalidate: browser script will be disabled validation script will not get executed-->
             <label for="firstName">First Name:</label>
-            <input id="firstName" name="customername" value="Komal">
-            <input id="lastName" type="text" placeholder="Last Name" name="customername" >
+            <input id="firstName" name="studentname" value="Komal" required>
+            <input id="lastName" type="text" placeholder="Last Name" name="studentname" >
 
-            <input placeholder="first name" id="firstName1" name="customername" value="Komal" readonly>
-            <input id="lastName1" type="text" placeholder="Last Name" name="customername" value="sharma" disabled>
+            <input placeholder="first name" id="firstName1" name="studentname" value="Komal" readonly>
+            <input id="lastName1" type="text" placeholder="Last Name" name="studentname" value="sharma" disabled>
             <label for="mobile">Mobile Number:</label>
             <input id="mobile" type="number">
             <label for="mobile2">Mobile Number:</label>
             <input id="mobile2" type="text" minlength="10" maxlength="10" pattern="[0-9]*" required>
-            <!-- [ ] : set 0-9 : 0 to 9 , * 0 or more-->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"  min="20" max="40" > <!-- <20 not allowed >40 not allowed-->
+            <!-- [ ] : set 0-9 : 0 to 9 , * 0 or more occurances-->
+            <label for="emailid">Email Id:</label>
+            <input type="email" id="emailid">
+            <label>Select Courses For training:</label>
+            <label for="softskills">Soft skills:</label><input type="checkbox" id="softskills" name="course1" value="Soft skills" checked>
+            <label for="webbasics">Web Basics:</label><input type="checkbox" id="webbasics" name="course1" value="Web Basics">
+            <label for="dotnet">Dot Net:</label><input type="checkbox" id="dotnet" name="course2" value="Dot Net">
+            <label>Select Gender:</label>
+            <label for="male">MALE:</label><input type="radio" name="gender" id="male" value="Male">
+            <label for="female">FEMALE:</label><input type="radio" name="gender" id="female" value="Female">
+            <label for="other">OTHER:</label><input type="radio" name="gender" id="other" value="Other">
             <input type="submit" value="SEND INFO">
             <input type="reset">
         </form>
