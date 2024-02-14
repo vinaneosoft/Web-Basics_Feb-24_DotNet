@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListDemo</title>
+    <!-- internal styling : style tag inside same document-->
+    <style>
+        /*select element and apply style*/
+        h2,b{
+            background-color: blueviolet;
+            color: yellow;
+            text-transform: lowercase;
+            font-style: italic;
+        }
+    </style>
 </head>
 <!-- inline style  : style attribute
 1. can not reuse css properties for other elements, instead we have repeat 
@@ -14,7 +24,8 @@ solution : internal/external-->
     <span style="background-color: darkorange; color: blue;">Hotel sai</span>
     <section>
         <div>
-            <h2>Breakfast Items</h2>
+            <h2 >Breakfast Items</h2>
+            <b>Breakfast Items</b>
             <ol>
                 <li>Idli</li>
                 <li>Dosa</li>
@@ -22,7 +33,8 @@ solution : internal/external-->
             </ol>
         </div>
         <div>
-            <h2>Breakfast Items</h2>
+            <h2 >Breakfast Items</h2>
+            <b>Breakfast Items</b>
             <ol type="A">
                 <li>Idli</li>
                 <li>Dosa</li>
