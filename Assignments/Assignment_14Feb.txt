@@ -1,0 +1,8 @@
+Implement any example of pseudo elememts like
+
+1. selecting 1st line from element (example from paragraph)
+2. selecting 1st letter from line of element (example 1st letter of para/heading)
+3. use of before pseudo element
+4. use of after pseudo element
+
+Note: use online tutorial only to learn about pseudo elements. Examples must be your own
