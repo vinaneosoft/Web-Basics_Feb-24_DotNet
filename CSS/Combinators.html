@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*select div of parent section
+         (space) : all direct and indirect div(childs) selected, 
+         > (operator) : only direct div(childs) selected*/
+         /*take any parent and any child*/
+        section div{
+            color: red;
+        }
+        section>div{
+            background-color: aqua;
+        }
+        footer>div{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            hi 1
+        </div>
+        <div>
+            hello 2
+        </div>
+        <div>
+            welcome 3
+        </div>
+        <article>
+            <div>
+                hello 4 (indirect child)
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div> bye 1</div>
+        <div> bye 2</div>
+        <nav>
+            <div>bye 3</div>
+        </nav>
+    </footer>
+</body>
+</html>
