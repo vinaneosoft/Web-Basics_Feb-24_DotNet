@@ -23,6 +23,10 @@
         #heading1{
             color: crimson;
         }
+        /*highest priority to inline style then to internal, then to external*/
+        #listSection{
+            /* border: 5px solid red; */
+        }
     </style>
 </head>
 <!-- inline style  : style attribute
@@ -30,6 +34,7 @@
 2. code complexity getting increased, readability decreased
 solution : internal/external-->
 <body> 
+    <!-- CSS inline styles should not be used, move styles to an external CSS file-->
     <h1 style="background-color: darkorange;color: aqua;">Hotel Sai</h1>
     <span style="background-color: darkorange; color: blue;">Hotel sai</span>
     <section>
@@ -204,7 +209,7 @@ solution : internal/external-->
             <i>India is my country</i>
         </p>
     </div>
-    <section>
+    <section  id="listSection">
         <dl>
             <dt>HTML</dt>
             <dd>HTML Is HyperText Markup Lang</dd>
