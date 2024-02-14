@@ -9,6 +9,7 @@
          (space) : all direct and indirect div(childs) selected, 
          > (operator) : only direct div(childs) selected*/
          /*take any parent and any child*/
+
         section div{
             color: red;
         }
@@ -18,14 +19,31 @@
         footer>div{
             text-transform: uppercase;
         }
+        /*adjacent p of h1
+        + , ~*/
+        /*it will search for immediate para,if present border applied*/
+        h1+p{
+            border: 2px solid green;
+        }
+         /*it will search for all adjacent para,if present text-decoration applied*/
+        h1~p{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <section>
         <div>
-            hi 1
+            <p>India</p>
+            <h1>INDIA</h1>
+          <!--   <h4>india</h4> -->
+           <p>Welcome to India</p>
+           <p>India is my country</p>
+           <aside>All Indian are my brothers and sisters</aside>
+           <p>Hello Indians</p>
         </div>
         <div>
+            <p>Hello Indians</p>
             hello 2
         </div>
         <div>
