@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListDemo</title>
-    <!-- internal styling : style tag inside same document-->
+    <link rel="stylesheet" href="Styles/mystyle.css">
+
+
+    <!-- internal styling : style tag inside same document
+    1. file size gets increased
+    2. properties can be reused only within same page
+    solution : external styling-->
+
     <style>
         /*select element and apply style*/
         h2,b{
@@ -12,6 +19,9 @@
             color: yellow;
             text-transform: lowercase;
             font-style: italic;
+        }
+        #heading1{
+            color: crimson;
         }
     </style>
 </head>
@@ -24,7 +34,7 @@ solution : internal/external-->
     <span style="background-color: darkorange; color: blue;">Hotel sai</span>
     <section>
         <div>
-            <h2 >Breakfast Items</h2>
+            <h2 id="heading1">Breakfast Items</h2>
             <b>Breakfast Items</b>
             <ol>
                 <li>Idli</li>
