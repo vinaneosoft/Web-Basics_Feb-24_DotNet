@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TableDemo</title>
     <link rel="stylesheet" href="Styles/mystyle.css">
+    <style>
+        /* background of 1st tr (child) in table(parent) : darkgreen
+        state of that element : pseudo classes*/
+       table tbody tr:first-child{
+        background-color: yellow;
+       }
+       table thead tr:first-child{
+        background-color: darkgreen;
+       }
+       table tbody tr:last-child{
+        background-color: darkgoldenrod;
+       }
+       /*try for last-child, nth-child(4)*/
+
+       /*table cell selection*/
+       table tbody tr:nth-child(2) td:nth-child(3){
+        background-color: red;
+       }
+       /*any 1st child of body element to select*/
+       body>:first-child{
+        color: blue;
+       }
+    </style>
 </head>
 <body>
+    <b>HIIIII</b>
+    <h1>EMPLOYEE</h1>
     <h2>Employee Details</h2>
     <table border="1" style="border-collapse: collapse;">
         <caption><b>Employee Details</b></caption>
         <thead>
+            <tr>
+                <th>ID</th><th>NAME</th><th>DEPT CODE</th><th>SALARY</th>
+            </tr>
             <tr>
                 <th>ID</th><th>NAME</th><th>DEPT CODE</th><th>SALARY</th>
             </tr>
