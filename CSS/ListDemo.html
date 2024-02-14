@@ -27,6 +27,17 @@
         #listSection{
             /* border: 5px solid red; */
         }
+        #britems{
+            border: 10px solid red;
+        }
+        /*selecting elements having --- attribute*/
+        ol[type]{
+            font-style: italic;
+        }
+        /*A/a : both alphabets, I/i : both roman numbers*/
+        ol[type='A']{
+            background-color: pink;
+        }
     </style>
 </head>
 <!-- inline style  : style attribute
@@ -41,7 +52,7 @@ solution : internal/external-->
         <div>
             <h2 id="heading1">Breakfast Items</h2>
             <b>Breakfast Items</b>
-            <ol>
+            <ol id="britems">
                 <li>Idli</li>
                 <li>Dosa</li>
                 <li>Uttappa</li>
@@ -51,6 +62,21 @@ solution : internal/external-->
             <h2 >Breakfast Items</h2>
             <b>Breakfast Items</b>
             <ol type="A">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+            <ol type="a">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+            <ol type="I">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+            <ol type="i">
                 <li>Idli</li>
                 <li>Dosa</li>
                 <li>Uttappa</li>
