@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListDemo</title>
+</head>
+<!-- inline style  : style attribute
+1. can not reuse css properties for other elements, instead we have repeat 
+2. code complexity getting increased, readability decreased
+solution : internal/external-->
+<body> 
+    <h1 style="background-color: darkorange;color: aqua;">Hotel Sai</h1>
+    <span style="background-color: darkorange; color: blue;">Hotel sai</span>
+    <section>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol>
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol type="A">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol  start="4">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol type="A" start="6">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol reversed>
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol start="2" reversed>
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol  type="a" reversed>
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <!-- type = 1, A,a,I,i-->
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol  type="a" start="3" reversed>
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol  type="a" start="26" reversed>
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol  type="I" >
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Breakfast Items</h2>
+            <ol  type="a" start="27">
+                <li>Idli</li>
+                <li>Dosa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+                <li>Uttappa</li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Main Course</h2>
+            <ul >
+                <li>Matar Paneer</li>
+                <li>Veg Kadhai</li>
+                <li>Veg Tawa Fry</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Main Course</h2>
+            <ul type="circle">
+                <li>Matar Paneer</li>
+                <li>Veg Kadhai</li>
+                <li>Veg Tawa Fry</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Main Course</h2>
+            <ul type="square">
+                <li>Matar Paneer</li>
+                <li>Veg Kadhai</li>
+                <li>Veg Tawa Fry</li>
+            </ul>
+        </div>
+    </section>
+    <div>
+        <h2>BACKEND TECHNOLOGIES</h2>
+        <section>
+            <ol>
+                <li><span>JAVA</span>
+                    <ul>
+                        <li>Core Java</li>
+                        <li>Adv Java</li>
+                        <li><span>Framwork</span>
+                            <ul>
+                                <li>Spring</li>
+                                <li>Hibernate</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>PYTHON</li>
+                <li>C#</li>
+            </ol>
+        </section>
+        <!-- below is wrong nesting. P tag must not have other block elements as childs-->
+        <p>
+            <ul>
+                <li></li>
+            </ul>
+        </p>
+        <p>
+            <b>India is my country
+        </p>
+        <p>
+            <i>India is my country</i>
+        </p>
+    </div>
+    <section>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML Is HyperText Markup Lang</dd>
+            <dt>CSS</dt>
+            <dd>CSS is Cascaded Style Sheets</dd>
+        </dl>
+    </section>
+
+</body>
+</html>

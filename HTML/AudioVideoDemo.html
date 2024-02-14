@@ -14,14 +14,21 @@
     <source src="Media/file_example_MP3_2MG.wav" />
     <source src="Mediaaaa/file_example_MP3_2MG.mp3" />
     <source src="Media/file_example_MP3_2MG.mp3" />
+    <span>browser does not support audio tag()</span>
 </audio>
 
 <hr>
 <video src="Media/neonarrow.mp4" controls autoplay loop   height="200" width="300"></video>
 <video controls autoplay loop   height="200" width="300">
-    <source src="Media/neonarrow.avg" />
-    <source src="Media/neonarrowwww.mp4" />
-    <source src="Media/neonarrow.mp4" />
+    <source src="Media/neonarrow.avg" type="video/avg" />
+    <source src="Media/neonarrowwww.mp4" type="video/mp4" />
+    <source src="Media/neonarrow.mp4" type="video/mp4" />
+    <span>browser does not support video tag ()</span>
 </video>
+
+<picture >
+    <source srcset="Images/flower3.jpg" >
+    <img src="Images/flower3.jpg" alt="dddd">
+</picture>
 </body>
 </html>
