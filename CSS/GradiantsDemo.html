@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .box{
+            border: 2px double rebeccapurple;
+            height: 200px;
+        }
+        #box1{
+            background-image: linear-gradient(red, green, blue, yellow, pink, purple);
+        }
+        #box2{
+            background: linear-gradient(-35deg,red, green, blue, yellow, pink, purple);
+            /*to bottom, to right, to left, to top, 45deg, 80deg*/
+        }
+        #box3{
+            background-image: radial-gradient(red, green, blue, yellow, pink, purple);
+        }
+        #box4{
+           
+            background-image: radial-gradient(circle, red, green, blue, yellow, pink, purple);
+            /*ellipse, circle*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">
+        INDIA IS MY COUNTRY
+    </div>
+    <div id="box2" class="box">
+        INDIA IS MY COUNTRY
+    </div>
+    <div id="box3" class="box">
+        INDIA IS MY COUNTRY
+    </div>
+    <div id="box4" class="box">
+        INDIA IS MY COUNTRY
+    </div>
+</body>
+</html>
