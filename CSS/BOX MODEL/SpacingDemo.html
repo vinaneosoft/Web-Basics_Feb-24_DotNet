@@ -14,10 +14,20 @@
         div{
             border: 5px dashed red
         }
-        #block1, div{
+        #block1,#block1 div{
             padding-left:10px ;/*padding comes inside selected element*/
             padding-top:20px
             /*apply and right and bottom*/
+        }
+        /*block level elements repositioned according to padding
+        inline elements may override to other elements due to padding*/
+        #block2{
+            padding: 20px;
+            padding:20px 10px;
+            padding: 20px 10px 15px 0px; /*top, right, bottom, left*/
+        }
+        b{
+            padding: 40px;
         }
     </style>
 </head>
@@ -37,7 +47,17 @@
     </section>
   
     <section class="block" id="block2">
-
+        <div>
+            INDIA IS MY COUNTRY. INDIA IS MY COUNTRY. INDIA IS MY COUNTRY. INDIA IS MY COUNTRY. INDIA IS MY COUNTRY. INDIA IS MY COUNTRY.
+            INDIA IS MY COUNTRY. INDIA IS MY COUNTRY.  INDIA IS MY COUNTRY. 
+            INDIA IS MY COUNTRY. 
+            INDIA IS MY COUNTRY. 
+            INDIA IS MY COUNTRY. 
+            INDIA IS MY COUNTRY. 
+            INDIA IS MY COUNTRY. 
+            INDIA IS MY COUNTRY. 
+        </div>
+       
     </section>
    
     <section class="block" id="block3">
