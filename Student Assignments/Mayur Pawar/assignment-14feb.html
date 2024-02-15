@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. selecting 1st line from element  */
+        p::first-line{
+            background-color: yellow;
+        }
+        /* 2. selecting 1st letter from line of element  */
+        p::first-letter{
+            color: rgb(241, 16, 16);
+            text-decoration: underline;
+
+        }
+        /* 3. use of before pseudo element */
+        h1::before{
+            content: url(./Images/before.jpg);
+        }
+        h3::before{
+            content: "Thank you for visit";
+            background-color: aquamarine;
+        }
+
+        /* 4. use of after pseudo element */
+
+        h1::after{
+           content: url(./Images/after.jpg); 
+        }
+        h3::after{
+            content: "Have a good day";
+            background-color: blueviolet;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Assignment 14 Feb </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aliquam. Soluta vitae minima nihil nesciunt doloremque eveniet nostrum.
+         Tenetur vitae quasi est eum voluptatum suscipit aliquam fuga voluptatibus aut doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+         Aliquid, autem! Possimus pariatur libero maxime illum repellat nostrum fuga minus animi iste aperiam. 
+         Facilis quasi iusto est rem officia, aspernatur odit.</p>
+    <h3>ASSIGNMENT END</h3>
+</body>
+</html>
