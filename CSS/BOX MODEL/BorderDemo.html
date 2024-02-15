@@ -8,7 +8,7 @@
         .block{
             height: 200px;
             width: 50%;
-            background: lightcoral;
+            background: lightseagreen;
         }
         #block1{
             border-left-style: dashed; /*double, dotted, dashed*/
@@ -19,10 +19,14 @@
             border-right: 4px solid yellow;
         }
         #block2{
-            border-style: double solid dotted groove; /*top, right, botton, left*/
+            border-style: double solid dotted groove ; /*top, right, botton, left*/
             border-width: 10px 5px; /* top==bottom, right==left*/
             /*implement for border-color*/
         }
+        #block3{
+            border: darkgreen 10px ridge;
+        }
+        /*borders can be applied to any element but it must have its own area (like from open tag to close tag)*/
     </style>
 </head>
 <body>
@@ -31,6 +35,10 @@
     </section>
     <hr>
     <section class="block" id="block2">
+
+    </section>
+    <hr>
+    <section class="block" id="block3">
 
     </section>
 </body>
