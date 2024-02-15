@@ -12,24 +12,36 @@
         .navbar ol li{
             background-color: aqua;
             border: 2px solid red;
-        }
-        #nav1 ol li {
             height: 50px;
             width: 10%;
+            padding: 10px;
+            margin: 20px;
+        }
+        #nav1 ol li{
             display: inline; /*block elements converted to inline*/
             /*must come in one-line : inline, must have height width : block 
             inline-block*/
         }
-        #nav2 ol li {
-            height: 50px;
-            width: 10%;
+        #nav2 ol li{
             display: inline-block; /*block elements converted to inline-block : h and w will work*/
             /*must come in one-line : inline, must have height width : block 
             inline-block*/
         }
+        h1,h2{
+            border: 4px solid pink;
+            display: inline;
+        }
+        #nav3,#nav4{
+            background: gray;
+            border: 4px solid red;
+            width: 30%;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
+    <h1>NEOSOFT</h1>
+    <h2>EMPLOYEE MANAGEMENT</h2>
     <nav class="navbar" id="nav1">
         <ol>
             <li><a href="#">HOME</a></li>
@@ -45,6 +57,23 @@
             <li><a href="#">HOME</a></li>
             <li><a href="#">HOME</a></li>
         </ol>
+    </nav>
+
+    <nav id="nav3">
+        <div>
+            HI
+        </div>
+        <div>
+            HELO
+        </div>
+    </nav>
+    <nav id="nav4">
+        <div>
+            HI
+        </div>
+        <div>
+            HELO
+        </div>
     </nav>
 </body>
 </html>
