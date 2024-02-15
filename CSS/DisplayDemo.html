@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY</title>
+    <style>
+        /*li is block level element*/
+        .navbar{
+            background: black;
+        }
+        .navbar ol li{
+            background-color: aqua;
+            border: 2px solid red;
+        }
+        #nav1 ol li {
+            height: 50px;
+            width: 10%;
+            display: inline; /*block elements converted to inline*/
+            /*must come in one-line : inline, must have height width : block 
+            inline-block*/
+        }
+        #nav2 ol li {
+            height: 50px;
+            width: 10%;
+            display: inline-block; /*block elements converted to inline-block : h and w will work*/
+            /*must come in one-line : inline, must have height width : block 
+            inline-block*/
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="nav1">
+        <ol>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+        </ol>
+    </nav>
+    <nav class="navbar" id="nav2">
+        <ol>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+        </ol>
+    </nav>
+</body>
+</html>
