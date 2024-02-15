@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg { 
+  border: 23px solid transparent;
+  padding: 15px;
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png) 15 round;
+}
+#img2{
+    border: 23px solid transparent;
+  padding: 15px;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FFC14D'/><stop offset='0.362' stop-color='%23FF4834'/><stop offset='1' stop-color='%233B0300'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+}
+
+#img3 { 
+  border: 23px solid transparent;
+  padding: 15px;
+  border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image Property</h1>
+
+
+<p id="borderimg">HELLO, Atharva here!</p>
+
+<p id="img2">HELLO, Atharva here!</p>
+
+<p id="img3">HELLO, Atharva here!</p>
+</body>
+</html>
+
