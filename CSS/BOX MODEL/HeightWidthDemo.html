@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: gray;
+        }
+        #b1{
+            background: yellow;
+            border: 2px solid;
+            height: 200px;
+            /*block level elements take 100% width of their parents bydefault*/
+            /*bydefault elements have height according contents inside it*/
+        }
+        #b2{
+            background: pink;
+            border: 2px double;
+            width: 50%; /*we can set own width in px, % , rem ,em*/
+            height: 50%; /*% for child will work only if parent has the height*/
+        }
+        span{
+            width: 1000px; /*will not work*/
+            background: red; /*inline elements do not have height and width*/
+        }
+    </style>
+</head>
+<body>
+    <div id="b1">
+        <span>INDIA</span>
+        <div id="b2">   
+            INDIA IS COUNTRY <br>
+            INDIA IS COUNTRY <br>
+            INDIA IS COUNTRY <br>
+            INDIA IS COUNTRY <br>
+            INDIA IS COUNTRY <br>
+        </div>
+       
+    </div>
+</body>
+</html>
