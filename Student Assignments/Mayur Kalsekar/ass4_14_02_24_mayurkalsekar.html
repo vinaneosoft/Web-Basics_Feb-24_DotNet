@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p::first-line{
+        color: aqua;
+    }
+    p::first-letter{
+        color: yellow;
+    }
+
+    span::before{
+        content: 'I am before this';
+    }
+
+    div::after{
+        content: 'I am after this';
+    }
+</style>
+<body>
+    <!-- THe way of selecting first line in an element is to ::firstline which is a pseduo-element -->
+    <!-- The way of selecting first character is by ::firstletter -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam dicta in impedit,
+        repudiandae ex vel temporibus totam fugiat! Magni esse libero non ipsa aliquid tempora 
+        quasi rerum ad beatae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ipsa commodi repellendus porro, tempore saepe necessitatibus. Sint eaque tempora, eveniet assumenda natus voluptate at minus nam tempore. Exercitationem, cum ipsam.
+    </p>
+    <!-- These are pseduo elements that are used to apply things before and after an element-->
+    <span><--Data</span>
+    <div>Data--></div>
+</body>
+</html>

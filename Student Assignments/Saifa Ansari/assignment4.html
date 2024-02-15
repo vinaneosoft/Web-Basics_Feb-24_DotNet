@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-line{
+            background-color:antiquewhite;
+        }
+        p::first-letter{
+            background-color: brown;
+        }
+         div::before{ /*::before pseudo-element can be used to insert some content before the content of an element.*/
+            content: url(images/thomas_edison.jpg);
+         }
+         div::after{  /*::after pseudo-element can be used to insert some content after the content of an element. */
+            content: 'Just because something doesn’t do what you planned it to do doesn’t mean its useless';
+            background-color: thistle;
+         }
+    </style>
+</head>
+<body>
+  <section>
+    <div>
+        <h2>Thomas Edison</h2>
+        <p>
+            Thomas Edison (1847 - 1931) was an American inventor and businessman who developed and made commercially available - many key inventions of modern life. His Edison Electric company was a pioneering company for delivering DC electricity directly into people's homes.He filed over 1,000 patents for a variety of different inventions. Crucially, he used mass-produced techniques to make his inventions available at low cost to households across America.His most important inventions include the electric light bulb, the phonograph, the motion picture camera, an electric car and the electric power station.<br>
+            <q>None of my inventions came by accident. I see a worthwhile need to be met and I make trial after trial until it comes. What it boils down to is one per cent inspiration and ninety-nine per cent perspiration.</q><br>Thomas Edison was born in Milan, Ohio on Feb 11, 1847, the youngest of seven siblings. His parents were middle class, though they were not wealthy. In particular, the family struggled when the railroad bypassed Milan, forcing the family to move to Port Huron, Michigan. He attended only three months of formal schooling - he irritated his teachers with his repeated questioning and inability to just follow instructions. He was largely disinterested at school and was mainly self-educated through reading. He took upon it himself to read every book on the library shelf. By the age of 12, he was reading Sir Isaac Newton's famous work - Principia Mathematica. However, Edison was not impressed by the complex maths of Newton and resolved to try and make science more understandable.
+
+            As a youngster, he tried various odd jobs to earn a living. This including selling candy, vegetables and newspapers. He had a talent for business, and he successfully printed the Grand Trunk Herald along with his other newspapers. This included selling photos of his hero, Abraham Lincoln. He was able to spend his extra income on a growing chemistry set.
+            
+            Unfortunately, from an early age, Edison developed a severe deafness, which ultimately left him almost 90% deaf. He would later refuse any medical treatment, saying it would be too difficult to retrain his thinking process. He seemed to take his deafness in his stride, and never saw it as a disability.Edison had a big break when he saved a young boy on the railway track from being struck by a runaway train. His grateful father, J.U. Mckenzie, had Edison trained as a telegraph operator and, aged 19, Edison moved to Louisville, Kentucky to work as a telegraph operator for Western Union.
+
+            From childhood, Edison loved to experiment, especially with chemicals. However, these experiments often got Edison into difficulties. A chemistry experiment once exploded on a train, and when working on a night shift at Western Union, his lead-acid battery leaked sulphuric acid through the floor onto his boss' desk. Edison was fired the next day.
+            </p>
+            
+    </div>
+
+    
+  </section>
+</body>
+</html>

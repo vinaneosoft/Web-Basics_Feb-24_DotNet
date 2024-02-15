@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelement</title>
+    <style>
+        p::first-line {
+          color: #ff0000;
+          font-variant: small-caps;
+        }
+        p::first-letter {
+        color: darkorange;
+        font-size: xx-large;
+        }
+        h1::before {
+        
+        content: url(images/cartoon2.jfif);
+        width: 100px;
+        
+        }
+        h1::after {
+        content: "***********";
+        }
+        #para2::first-line{
+            color: darkblue;
+        }
+        #para2::first-letter{
+            color: green;
+        }
+    </style>      
+</head>
+<body>
+    <h1>ROHIT SHARMA</h1>
+    <p>Rohit Sharma is the first player to score 5 T20I centuries.[4] He plays for Mumbai Indians in IP
+        L and for Mumbai in domestic cricket.
+        Sharma formerly captained Mumbai Indians and the team has won 5 titles in 2013, 2015, 2017, 2019
+        and 2020 under his leadership, making him the most successful captain in IPL history, sharing
+        this record with MS Dhoni (5 title wins in IPL).
+        </p>
+    
+    <p id="para2">With India, Sharma was a member of the team that won the 2007 T20 World Cup.<br> and the 2013 ICC 
+        Champions Trophy, where he played in the finals of both tournaments</p>
+    
+</body>
+</html>
