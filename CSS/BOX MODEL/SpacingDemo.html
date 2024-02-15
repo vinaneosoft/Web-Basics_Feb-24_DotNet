@@ -14,20 +14,25 @@
         div{
             border: 5px dashed red
         }
+        
         #block1,#block1 div{
-            padding-left:10px ;/*padding comes inside selected element*/
-            padding-top:20px
+            padding-left:50px ;/*padding comes inside selected element*/
+            padding-top:20px;
+            margin-left:50px;
             /*apply and right and bottom*/
         }
-        /*block level elements repositioned according to padding
+        /*block level elements gets repositioned according to padding
         inline elements may override to other elements due to padding*/
         #block2{
             padding: 20px;
             padding:20px 10px;
             padding: 20px 10px 15px 0px; /*top, right, bottom, left*/
+            margin:30px;
+            margin: 20px 12px;
         }
         b{
             padding: 40px;
+            margin:30px
         }
     </style>
 </head>

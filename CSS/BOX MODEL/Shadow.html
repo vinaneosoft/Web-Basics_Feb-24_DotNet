@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        h1{
+            border: 3px solid;
+            padding: 30px;
+            width: 70%;
+            background: peru;
+            margin-bottom: 60px;
+            margin-left:30px
+        }
+        body h1:first-child{
+            box-shadow: 30px 40px; /*right, bottom compulsory*/
+        }
+        body h1:nth-child(2){
+            box-shadow: 30px 40px 50px; /*right, bottom, spreading, color*/
+        }
+        body h1:nth-child(3){
+            box-shadow: 5px 5px 50px darkred; /*right, bottom, spreading, color*/
+        }
+        body h1:nth-child(4){
+            box-shadow: -30px -40px darkred; 
+            /*+right, +bottom*/
+            /*left top: - -*/
+            text-shadow: 10px 10px 10px purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO NEOSOFT</h1>
+   
+    <h1>WELCOME TO NEOSOFT</h1>
+
+    <h1>WELCOME TO NEOSOFT</h1>
+
+    <h1>WELCOME TO NEOSOFT</h1>
+</body>
+</html>
