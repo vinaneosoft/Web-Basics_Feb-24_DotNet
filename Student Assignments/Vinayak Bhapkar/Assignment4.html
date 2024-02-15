@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+    <style>
+        h1::first-letter {
+            color: red;
+        }
+
+        #p1::first-line {
+            background-color: skyblue;
+        }
+
+        #p2::before {
+            content: "Attention -";
+            color: gray;
+            background-color: chartreuse;
+        }
+
+        #p3::after {
+            content: " - Thank you";
+            background-color: blueviolet;
+            color: lightgreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hyper Text Markup Language </h1>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Distinctio nulla, molestiae quas vero optio est error?
+        Delectus, officia. Nobis tempora sunt, adipisci corrupti
+        ipsam nulla voluptates illo voluptatem fuga distinctio. 
+        Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Reiciendis suscipit quia quos eos labore voluptatum 
+        dignissimos sit laudantium ipsum doloribus voluptate,
+        quis similique cupiditate eveniet repudiandae dolores doloremque, 
+        corrupti porro!</p>
+    
+
+    <p id="p2">Let's start a new beginning</p>
+    <p id="p3">The purpose of our lives is to be happy."</p>
+
+
+    <!--What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+Syntax
+The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+}
+The ::first-line Pseudo-element
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+The following example formats the first line of the text in all <p> elements:
+
+Example 
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear-->
+
+
+</body>
+
+</html>
