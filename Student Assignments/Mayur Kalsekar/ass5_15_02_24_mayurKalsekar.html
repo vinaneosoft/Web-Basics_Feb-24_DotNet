@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        section div:first-child{
+            border: 2px solid green;
+            height: 400px;
+            /* width: 800px; */
+            background: repeating-linear-gradient(to right,blue,white,red 10%);
+        }
+        section div:nth-child(2){
+            border: 2px solid green;
+            height: 400px;
+            /* width: 850px; */
+            background: repeating-linear-gradient(to left,red,yellow,orange,green,blue,purple 100px);
+        }
+
+        #border-image{
+            border: 50px solid gray;
+            height: 400px;
+            width: 800px;
+            margin-top: 100px;
+            border-image: url('https://t3.ftcdn.net/jpg/00/49/52/14/360_F_49521479_abt1PXflWUOEDarOB1j9cxktkr0UYmxy.jpg') 110 round;
+        }
+        section div:last-child{
+            border: 2px solid green;
+            height: 400px;
+            /* width: 800px; */
+            background: repeating-linear-gradient(165deg,black,white,orange 100px);
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>    
+
+    <section>
+        <div id="border-image">
+            
+        </div>
+    </section>
+</body>
+</html>
