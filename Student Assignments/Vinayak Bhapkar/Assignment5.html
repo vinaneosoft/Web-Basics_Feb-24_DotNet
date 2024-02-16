@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body h1:first-child {
+            background-color: yellow;
+            border: solid 10px;
+            border-width: 20px;
+            border-image: url(./images/b1.jpg) 20 round;
+        }
+        body h1:nth-child(2){
+            background-color: yellow;
+            border: solid 10px;
+            border-width: 20px;
+            border-image: url(./images/tiranga.jpg) 20 round;
+        }
+
+        h2 {
+            background-color: yellow;
+            border: solid 10px;
+            border-width: 20px;
+            border-image: url(./images/b1.jpg) 50 repeat;
+        }
+
+        h3 {
+            background-color: yellow;
+            border: solid 10px;
+            border-width: 20px;
+            border-image: url(./images/tiranga.jpg) 50 space;
+        }
+
+        h4 {
+            background-color: yellow;
+            border: solid 10px;
+            border-width: 20px;
+            border-image: url(./images/b1.jpg) 50 stretch;
+        }
+
+        #g1 {
+            height: 200px;
+            background-image: repeating-linear-gradient( red, yellow 10%, green 20%);
+        }
+        #g2 {
+            height: 200px;
+            background-image: repeating-linear-gradient(190deg, pink, blue 7%, green 10%);
+            border-radius: 30%;
+        }
+        #g3 {
+            height: 200px;
+            background-image: repeating-linear-gradient(90deg, black, blue 7%, orange 10%);
+        }
+        #g4 {
+            height: 200px;
+            background-image: repeating-linear-gradient( 45deg, red 10%, yellow 10%, silver 20%);
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vinayak R. Bhapkar</h1>
+    <h1>Vinayak R. Bhapkar</h1>
+    <h2>Vinayak R. Bhapkar</h2>
+    <h3>Vinayak R. Bhapkar</h3>
+    <h4>Vinayak R. Bhapkar</h4>
+
+    <div id="g1">
+
+    </div>
+    <div id="g2">
+
+    </div>
+    <div id="g3">
+
+    </div>
+    <div id="g4">
+
+    </div>
+</body>
+
+</html>
