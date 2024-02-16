@@ -28,13 +28,17 @@
             width: 300px;
             background-color: pink; /*in css color considered numeric*/
             transition-duration: 5s; /*all numeric properties considered */
+            transition-timing-function: cubic-bezier(1, 0, 0, 1)
         }
+        
         #box3:hover{
-            height: 400px;
-            width: 300px;
-            background-color: pink; /*in css color considered numeric*/
-            transition-duration: 5s; /*all numeric properties considered */
+            height: 200px;
+            width: 350px;
+            background-color:chocolate; /*in css color considered numeric*/
+            transition-duration: 3s; /*all numeric properties considered */
             transition-property: height,background-color;
+            transition-delay: 5s;
+            transition-timing-function: linear; /*ease, ease-in, ease-out, ease-in-out*/
         }
         img{
             height: 100px;

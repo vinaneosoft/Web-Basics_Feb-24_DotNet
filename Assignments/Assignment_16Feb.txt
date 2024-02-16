@@ -3,3 +3,5 @@ Make it fixed at top
 
 2. Create another navbar
 Make it sticky to bottom
+
+3. Implement more examples on transition. Use other numeric properties except height, width, background color
