@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first {
+            height: 200px;
+            background-image: repeating-linear-gradient(to right, red 10%, black, blue 20%);
+
+        }
+
+        #second {
+            height: 200px;
+            background-image: repeating-linear-gradient(24deg, yellow, green 50%);
+        }
+
+        #third {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url('images/border-image.jpg');
+            border-image-slice: 40 ;
+            border-image-slice: 60;
+            border-image-width: 15px;
+            border-image-outset: 8px;
+            border-image-repeat:stretch;
+        }
+        #fourth{
+            border: 2px solid transparent;
+            padding: 20px;
+            border-image-source: url('images/border-image1.jpg');
+            border-image-slice: 50;
+            border-image-width: 10px;
+            border-image-outset: 5px;
+            border-image-repeat:round ;
+        }
+        #fifth{
+            border: 10px solid transparent;
+            padding: 25px;
+            border-image-source: repeating-linear-gradient(red 10%,blue 20%);
+            border-image-slice: 30;
+            border-image-width: 15px;
+            border-image-outset: 2px;
+            border-image-repeat:repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </section>
+    <hr>
+    <section id="second">
+        Lorem ipsum, dolor sit amet consectetur adipisicing.
+    </section>
+    <hr>
+    <section>
+        <h1>Border Image</h1>
+        <div id="third">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>Border Image</h1>
+        <div id="fourth">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>Border Image</h1>
+        <div id="fifth">
+            Border image with repeating linear gradient
+        </div>
+    </section>
+
+</body>
+
+</html>
