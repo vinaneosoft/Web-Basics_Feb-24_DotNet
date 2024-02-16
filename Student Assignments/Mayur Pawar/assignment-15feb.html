@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #box1 {
+        
+        background-image: repeating-linear-gradient(45deg,red 10%, blue 20%,green 30%) 
+    }
+    #box2 {
+        
+        background-image: repeating-linear-gradient(-45deg,red 10%, blue 20%,green 30%) 
+    }
+    #box3 {
+        
+        background-image: repeating-linear-gradient(to right,black, yellow 75%) 
+    }
+    #box4 {
+        
+        background-image: repeating-radial-gradient( rgb(95, 25, 224),skyblue, red,yellow);
+    }
+
+    .box{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: larger;
+            color: white;
+            border: 2px double plum;
+            height: 200px;
+            margin: 30px;
+    }
+    h1{
+            border: 10px solid;
+            padding: 10px;
+            width: 70%;
+            background: peru;
+            margin-bottom: 60px;
+            margin-left:30px
+          }
+    section h1:first-child{
+       
+            text-shadow:10px 10px 10px purple ;
+            border-image: url(../Images/chameli.jpg) 30 round;
+            
+    }
+    section h1:nth-child(2){
+        text-shadow:10px 10px 10px purple ;
+        border-image: url(../Images/chameli.jpg) 30 repeat;
+    }
+    section h1:nth-child(3){
+        text-shadow:10px 10px 10px purple ;
+        border-image: url(../Images/chameli.jpg) 30 space;
+    }
+    section h1:last-child{
+        text-shadow:10px 10px 10px purple ;
+        border-image: url(../Images/chameli.jpg) 30 stretch;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">
+        Mayur Pawar
+    </div>
+
+    <div class="box" id="box2">
+        Mayur Pawar
+    </div>
+
+    <div class="box" id="box3">
+        Mayur Pawar
+    </div>
+
+    <div class="box" id="box4">
+        Mayur Pawar
+    </div>
+
+    <h1>BORDER IMAGE</h1>
+
+    <section>
+        <h1>Neosoft</h1>
+        <h1>Neosoft</h1>
+        <h1>Neosoft</h1>
+        <h1>Neosoft</h1>
+    </section>
+    
+</body>
+</html>
