@@ -11,16 +11,44 @@
             background-color: aqua;
             border: 5px solid darkviolet;
         }
+        #box1{
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+        }
         #box1:hover{
             height: 300px;
             width: 250px;
             background-color: yellow; /*in css color considered numeric*/
-            transition-duration: 5s; /*all numeric properties applid on that element*/
+            border: 5px double red;
+            transition-duration: 5s; /*all numeric properties considered */
+        }
+        #box2:hover{
+            height: 400px;
+            width: 300px;
+            background-color: pink; /*in css color considered numeric*/
+            transition-duration: 5s; /*all numeric properties considered */
+        }
+        #box3:hover{
+            height: 400px;
+            width: 300px;
+            background-color: pink; /*in css color considered numeric*/
+            transition-duration: 5s; /*all numeric properties considered */
+            transition-property: height,background-color;
+        }
+        img{
+            height: 100px;
+            width: 200px;
+        }
+        img:hover{
+            height: 600px;
+            width: 700px;
+            transition-duration: 1s;
         }
     </style>
 </head>
 <body>
-    
+    <img src="../../HTML/Images/flower3.jpg" alt="flower">
     <div class="box" id="box1">
 
     </div>
