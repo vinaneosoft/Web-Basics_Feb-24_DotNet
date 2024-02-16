@@ -1,0 +1,118 @@
+  <!-- !Implement more examples on repeating-linear-gradient
+
+            !Implement examples on border-image -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linear{
+            display: block;
+            height: 200px;
+            border: 3px double red;
+        }
+        #grad1{
+        background-image: repeating-linear-gradient(red,black, yellow , green);
+      }
+      #grad2 {
+    height: 200px;
+    background-image: repeating-linear-gradient(-45deg,rgb(95, 23, 23),violet, 7%,rgb(51, 177, 51) 10%);
+    }
+
+    #grad3 {
+    height: 200px;
+    background-image: repeating-linear-gradient(190deg,red,blue 7%,green 10%);
+    }
+
+    #grad4 {
+    height: 200px;
+    background-image: repeating-linear-gradient(45deg, #3f87a6, #ebf8e1 20%, #f69d3c 15%);   
+     }
+    #grad5{
+        background-image:repeating-linear-gradient(120deg,violet,blue,#d3f512,rgb(235, 46, 21),green 1500px);
+    }
+    #bimg{
+            border:10px solid ;
+            border-image: url('https://img.freepik.com/free-vector/hand-drawn-diploma-border-frame_23-2151236023.jpg?size=626&ext=jpg&ga=GA1.1.1437326112.1708002360&semt=sph') 50 round ;
+            background-color: rgb(81, 246, 252);
+            padding: 20px;
+            font-size: 25px;
+        }
+        #bimg2{
+            border: 60px solid mediumvioletred;
+            height: 200px;
+            border-image: url(../images/border.png);
+            border-image-slice: 30;
+            /* border-image-width: 200; */
+            border-image-outset: 0;
+            border-image-repeat: repeat;
+        }
+        #bimg3{
+            border: 20px double pink;
+            height: 250px;
+            border-image: url(../images/border.png);
+            border-image-slice:25 ;
+        }
+        #bimg4{
+            border: 30px double;
+            height: 300px;
+        border-image-source: linear-gradient(pink,red,yellow 20%,violet,green );
+            border-image-slice: 10;
+        }
+        #bimg5{
+            border: 30px solid pink;
+            border-image: url(../images/border.png) 15  stretch;
+            padding: 30px;
+
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>repeating-linear-gradient()</h1>
+
+       <!-- background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px); -->
+    <p id="grad1" class="linear">Lorem </p>
+    <p id="grad2" class="linear">Lorem </p>
+    <p id="grad3" class="linear">Lorem </p>
+    <p id="grad4" class="linear">Lorem </p>
+    <p id="grad5" class="linear">Lorem </p>   
+    
+    <h2>image background </h2>
+    <hr>
+    <div id="bimg3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <pre>
+        --> border-image-outset
+        --> border-image-repeat
+        --> border-image-slice
+        --> border-image-source
+        -->border-image-width
+    </pre>
+    <div id="bimg">
+        <h2>Hello world !!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga. Non, laboriosam? Hic repudiandae iste temporibus tempora odit vero ipsam.</p>
+    </div>
+    <br><hr>
+    <div id="bimg2">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <br><hr>
+    <div id="bimg4">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <br><hr>
+    <div id="bimg5">
+        Lorem ipsum dolor sit amet.
+    </div>
+    
+
+</body>
+</html>
