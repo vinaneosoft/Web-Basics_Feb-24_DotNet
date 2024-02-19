@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Demo</title>
+    <style>
+        .roseinfo{
+            border: 6px red double;
+        }
+        .roseFlower{
+            border: 7px dashed green;
+            float: left;
+        }
+        .info2{
+           clear:both;
+           border: 1px solid;
+        }
+        #para1,#para2,#para3,#para4{
+            background-color: yellow;
+            border: 2px solid;
+        }
+        #para1{
+            position: absolute;
+            right: 40px;
+            bottom:50px;
+        }
+        #para2{
+            position: absolute;
+            right: 20px;
+        }
+        #para3{
+            position:fixed; /*relative to viewport*/
+            bottom: 0px;
+            right: 0px;
+        }
+        #para4{
+            position: sticky;
+            top: 0px;
+        }
+        #sticky{
+            background: blue;
+            position: sticky;
+            bottom: 0px;
+            
+        }
+        nav{
+            height: 50px;
+            background-color: rgb(88, 83, 85);
+            width: 100%;
+            position: sticky;
+            top: 0px;
+            
+
+           
+            
+        }
+         ol li{
+            display: inline-block;
+            
+            margin-top: 10px;
+            margin-left: 25px;
+            
+
+        }
+        nav ol a{
+            color: white;
+            text-decoration: none;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <article class="roseinfo">
+        <figure class="beach">
+          <img src="../Html/Image/beach1.jpg" alt="flower" height="300px" width="300px">
+          <figcaption>ROSE FLOWER</figcaption>
+        </figure>
+        <div class="info">
+            <p>
+            The rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+
+            There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+            </p><p>
+            
+            Rose thorns are actually prickles – outgrowths of the epidermis
+            Roses belong to the family of plants called Rosaceae. All roses were originally wild: they grew in North America, Europe, northwest Africa and many parts of Asia and Oceania. There are over 100 different species of roses. The wild rose species can be grown in gardens, but most garden roses are cultivars, which have been selected by people.[2]
+            </p>
+            <p>
+            Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.
+            The rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+
+            There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+            
+            </p>
+           
+        </div>
+        <br>
+        <div class="info2">
+            <p id="para1">
+                My name is khan
+               
+            </p>
+            <p id="para3">
+                My name is khan
+               
+            </p>
+            <p>
+                Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.
+                The rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+    
+                There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+                
+                </p>
+                Rose thorns are actually prickles – outgrowths of the epidermis
+                Roses belong to the family of plants called Rosaceae. All roses were originally wild: they grew in North America, Europe, northwest Africa and many parts of Asia and Oceania. There are over 100 different species of roses. The wild rose species can be grown in gardens, but most garden roses are cultivars, which have been selected by people.[2]
+                <p>
+                Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.
+                </p>
+        </div>
+    </article>
+    <section id="sticky">
+        <nav id="n1">
+            <ol>
+                <li><a href="https://www.google.co.in"> Google</a></li>
+                <li><a href="https://www.facebook.com/"> Faceook</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ol>
+        </nav>
+
+    </section>
+    <article class="roseinfo">
+        <figure class="beach">
+          <img src="../Html/Image/beach1.jpg" alt="flower" height="300px" width="300px">
+          <figcaption>ROSE FLOWER</figcaption>
+        </figure>
+        <div class="info">
+            <p>
+            The rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+
+            There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+            </p><p>
+            
+            My name is khan
+            Roses belong to the family of plants called Rosaceae. All roses were originally wild: they grew in North America, Europe, northwest Africa and many parts of Asia and Oceania. There are over 100 different species of roses. The wild rose species can be grown in gardens, but most garden roses are cultivars, which have been selected by people.[2]
+            </p>
+            <p>
+            Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.
+            The rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+
+            There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+            
+            </p>
+           
+        </div>
+        <br>
+        <div class="info2">
+            <p id="para2">
+                Rose thorns are actually prickles –<br> outgrowths of the epidermis
+           </p>
+            <p>
+                Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.
+                The rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+    
+                There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+                
+                </p >
+                M name is khan
+                Roses belong to the family of plants called Rosaceae. All roses were originally wild: they grew in North America, Europe, northwest Africa and many parts of Asia and Oceania. There are over 100 different species of roses. The wild rose species can be grown in gardens, but most garden roses are cultivars, which have been selected by people.[2]
+                <p id="para4">
+                Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium fugiat reiciendis at vitae similique eos. Eveniet aliquid ducimus consequuntur magnam nisi minus aut. Modi consequuntur minima delectus dolorem veritatis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolor nesciunt eum facere eos praesentium blanditiis provident natus, iste aut explicabo animi dolorum voluptate labore delectus itaque enim quis similique.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repellat nihil reiciendis nemo assumenda quibusdam incidunt illo optio aliquam tenetur ducimus aliquid, consectetur facere non eveniet! Pariatur suscipit molestiae quod?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nesciunt dolorem maxime reprehenderit beatae fuga, neque perspiciatis consequuntur ipsum ad debitis officiis corrupti aperiam accusantium maiores voluptates vel reiciendis iure.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis aut libero, et ex minima eaque, laborum ut aliquam consectetur similique ea voluptatibus dolorum totam voluptatum rem architecto tempore odit illo?</p>
+                <p></p>
+        </div>
+    </article>
+</body>
+</html>
