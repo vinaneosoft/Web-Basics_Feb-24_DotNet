@@ -15,25 +15,28 @@
         #article1{
             display: flex; /*all direct childs converted to inline-block, 
             childs getting streched according to parent hight*/
+            flex-direction: row; /*row : default*/
+            /*try using start/ flex-start in justify-content. test it with difft flex direction*/
+            justify-content: center; /*used to align flex-items horizontally*/
         }
     </style>
 </head>
 <body>
     <article class="indiaArticle" id="article1"> 
         <div>
-            India is my country
+            India is my country 1
         </div>
         <div>
-            India is my country
+            India is my country 2
         </div>
         <div>
-            India is my country
+            India is my country 3
         </div>
         <div>
-            India is my country
+            India is my country 4
         </div>
         <div>
-            India is my country
+            India is my country 5
         </div>
     
     </article>
