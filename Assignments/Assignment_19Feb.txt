@@ -1,0 +1,3 @@
+1. Implement 3 to 4 examples on cubic-bezier of css transition
+
+2. find out short hand property for transition

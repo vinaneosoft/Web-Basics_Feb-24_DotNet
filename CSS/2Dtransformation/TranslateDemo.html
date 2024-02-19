@@ -7,16 +7,26 @@
     <style>
         .block{
             border: 4px solid green;
-            width: 30%;
+           /*set height and width same as image*/
+            transition-duration: 5s;
+        }
+        img{
+            /*set small height and width*/
         }
         #block1:hover{
             transform: translateX(500px);
+        }
+        #block2:hover{
+            transform: translateY(400px);
         }
     </style>
 </head>
 <body>
     <!-- moving the element from 1 position to another position (x, y axis)-->
     <div class="block" id="block1">
+        <img src="../../HTML/Images/flower4.jpg" alt="flower">
+    </div>
+    <div class="block" id="block2">
         <img src="../../HTML/Images/flower4.jpg" alt="flower">
     </div>
 </body>
