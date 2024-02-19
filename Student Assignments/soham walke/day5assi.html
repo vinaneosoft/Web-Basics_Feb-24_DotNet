@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+                border:solid  2px;
+                height: 100px;
+          }
+         #box4{
+            background-image: repeating-linear-gradient(90deg,rgb(235, 157, 12),white,rgb(63, 226, 131) 10%);
+          }
+          #box5{
+            background-image: repeating-linear-gradient(to left, red, yellow 30%, green 20%);
+          }
+
+          #borderimg1 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url('https://img.freepik.com/free-vector/ethnic-style-lace-pattern-border-background-collection_1017-45390.jpg?size=626&ext=jpg&ga=GA1.1.1111559421.1708003964&semt=sph') 30 round;
+}
+#borderimg2 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image-source: url('https://img.freepik.com/free-vector/ethnic-style-lace-pattern-border-background-collection_1017-45390.jpg?size=626&ext=jpg&ga=GA1.1.1111559421.1708003964&semt=sph');
+  border-image-repeat: round;
+  border-image-slice: 30;
+  border-image-width: 20px;    
+}
+    </style>
+</head>
+<body>
+    <div id="box4" class="box">
+        HI INDIA
+    </div>
+    <div id="box5" class="box">
+        HI INDIA
+    </div>
+    <hr>
+
+    _<!--border image-->
+    <h1>The border-image Property</h1>
+    <p id="borderimg1">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+    <p id="borderimg2">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+
+</body>
+</html>

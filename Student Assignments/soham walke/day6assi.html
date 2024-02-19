@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+            border: 2px solid black;
+            width: 100px;
+            height: 150px;
+        }
+        #box1:hover{
+            width: 60px;
+            height: 60px;
+            transition-duration: 6s;
+            background-color: blueviolet;
+
+        }
+        #box2:hover{
+            width: 55px;
+            height: 40px;
+            background-color: aliceblue;
+            transition-duration: 8s;
+            transition-property: background-color;
+        }
+        #box3:hover{
+            width: 65;
+            height: 70;
+            background-color: crimson;
+            transition-duration: 10s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in-out ;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+</body>
+</html>
