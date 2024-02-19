@@ -5,3 +5,7 @@ Make it fixed at top
 Make it sticky to bottom
 
 3. Implement more examples on transition. Use other numeric properties except height, width, background color
+
+4. Implement 3 to 4 examples on cubic-bezier of css transition
+
+5. find out short hand property for transition
