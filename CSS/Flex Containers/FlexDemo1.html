@@ -31,7 +31,11 @@
             align-content: center;  /*center of flex-container*/
         }
         #article3{
+            width: 50%;
             align-items: center;
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap; */
+            flex-flow: wrap row-reverse; /*seq does not matter*/
         }
         #article3>div:first-child{
             /*order = 0 for every flex item*/
