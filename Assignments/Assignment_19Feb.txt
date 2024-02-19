@@ -4,3 +4,9 @@
 4. Implment matrix function in tranform
 5. Implement fontface rule to set any other font to html document
 6. Check short hand property for columns 
+7. Set Image to background using before pseudoelement logic and apply opacity
+
+
+Learn Extra Points (not as assignment):
+box sizing
+css grid system
