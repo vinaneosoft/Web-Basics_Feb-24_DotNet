@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units Demo</title>
+    <style>
+        /*whole document has defualt font size 16 px*/
+        html{
+            font-size: 19px;
+        }
+        b{
+            font-size: 20px;
+        } 
+        p{
+            font-size: 10px;
+        }
+        p i{
+            font-size: 3em; /* em : takes parent font size for calculation*/
+            /*3 * 10= 30px*/
+        }
+        p span{
+            font-size: 3rem; /*rem: takes root font size for calculation*/
+            /*3 * 19 =57px */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        India is my country
+        <i>INDIA</i>
+        <span>INDIA</span>
+    </p>
+    <b>INDIA</b>
+    
+    
+</body>
+</html>
