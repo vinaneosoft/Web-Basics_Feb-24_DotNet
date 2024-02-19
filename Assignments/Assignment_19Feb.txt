@@ -3,3 +3,4 @@
 3. Implement skew , skewX, skewY function in tranform. 
 4. Implment matrix function in tranform
 5. Implement fontface rule to set any other font to html document
+6. Check short hand property for columns 
