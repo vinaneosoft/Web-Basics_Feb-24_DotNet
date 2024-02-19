@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.s{
+    background-color: blueviolet;
+    border:2px solid brown;
+    height:250px;
+    width:350px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+#s1:hover{
+    font-size: 100px;
+    background-color: bisque;
+    width:600px;
+    transition:font-size ,border-radius , background-color;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    border-radius: 20px;
+    transition-duration:3s ;
+}
+#s2:hover{
+    font-size: 100px;
+    background-color: red;
+    width:600px;
+    transition:font-size ,border-radius , background-color;
+    transition-timing-function:linear;
+    border-radius:20px;
+    transition-duration:6s ;
+}
+
+#s3:hover{
+    font-size: 100px;
+    background-color:purple;
+    width:600px;
+    transition:font-size ,border-radius , background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration:5s ;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="s" id="s1">HELLO</section>
+    <section class="s" id="s2">HII</section>
+    <section class="s" id="s3">BYE</section>
+</body>
+</html>
