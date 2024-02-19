@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gradient{
+            border: 2px solid black;
+            height: 200px;
+            text-align: center;
+        }
+        #box1{
+                background-image: repeating-linear-gradient(gold,red,blue  10%);
+        }
+        #box2{
+                background-image: repeating-linear-gradient(to right,gold,red,blue  10%);
+        }
+        #box3{
+                background-image: repeating-linear-gradient(-45deg,gold,red,blue  10%);
+        }
+        .border{
+            
+            
+                     border: 10px solid transparent;
+                      margin-bottom: 20px;
+                      text-align: center;
+            
+            
+        }
+       
+        #box5{
+            
+            border-image: url('image/Dhoni.jpg') 30   stretch ;
+             
+        }
+        /* #box5{
+            border-image-source : url('image/Rohit_Cricket.jpg') url('image/Virat.jpg') url('image/Dhoni.jpg') ;
+        } */
+        #box6{
+            border-image: url('image/Submit.png') 50 repeat;
+        }
+        #box4{
+            border-image: url('image/Dhoni.jpg') 30  round;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="gradient" id="box1">
+        <h1>
+            Neosoft
+        </h1>
+    </div>
+    <div class="gradient" id="box2">
+        <h1>
+            Neosoft
+        </h1>
+    </div>
+    <div class="gradient" id="box3">
+        <h1>
+            Neosoft
+        </h1>
+    </div>
+    
+    <hr>
+    <section class="border" id="box4">
+        <h1>
+            Border Image
+        </h1>
+    </section>
+    <section class="border" id="box5">
+        <h1>
+            Border Image
+        </h1>
+    </section>
+    <section class="border" id="box6">
+        <h1>
+            Border Image
+        </h1>
+    </section>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            height: 1000px;
+        }
+        div{
+            height: 1500px; 
+            background-color: rgb(192, 248, 252);
+            margin-top: 50px;
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+          
+            background: lightblue;
+            color: black;
+        }
+        #nav1{
+            position: fixed;
+            top: 0px;
+        }
+        #nav1 ol li {
+            display: inline;            
+            margin: 5px;
+            
+        }
+        #nav1 ol li a{
+            text-decoration: none;           
+        }
+        a:link{
+            color: black;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: royalblue;
+        }
+        a:active{
+            color:brown;
+        }
+        
+        #nav2{
+            position: sticky;
+            bottom: 10px;
+        }
+        .image{
+            border: blue 2px solid;
+            height: 200px;
+            width: 300px;
+        }
+       #img1:hover{
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);   
+        border: 10px double orange;
+        transition-duration: 5s;
+       }
+       #img2:hover{
+        opacity: 10%;
+        transition-duration: 7s;
+       }
+       p{
+        font-style: italic;
+        
+       }
+       p:hover{
+        font-size: 20px;
+        transition-duration: 3s;
+       }
+    </style>
+</head>
+<body>
+    <nav id="nav1">
+        <ol>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://web.whatsapp.com/">WhatsApp</a></li>
+            <li><a href="https://www.amazon.com/">Amazon</a></li>
+        </ol>
+    </nav>
+    <div > 
+        <img src="../../HTML/Image/scroll_down.jpg" alt="scroll_down" class="image" id="img1">
+        <img src="../../HTML/Image/scroll_down1.jpg" alt="scroll_down" class="image" id="img2">
+        <p>Scroll Down!</p>
+    </div>
+     <nav id="nav2">Thank You..</nav>  
+</body>
+</html>
