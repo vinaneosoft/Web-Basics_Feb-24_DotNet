@@ -30,6 +30,32 @@
             align-items: center; /*center of each row*/
             align-content: center;  /*center of flex-container*/
         }
+        #article3{
+            align-items: center;
+        }
+        #article3>div:first-child{
+            /*order = 0 for every flex item*/
+            order: 3;
+        }
+        #article3>div:nth-child(2){
+            order: 6;
+        }
+        #article3>div:nth-child(3){
+            order: 1;
+        }
+        #article3>div:nth-child(4){
+            order: 7;
+        }
+        #article3>div:nth-child(5){
+            order: 4;
+            align-self: flex-start;
+        }
+        #article3>div:nth-child(6){
+            order: 2;
+        }
+        #article3>div:nth-child(7){
+            order: 5;
+        }
     </style>
 </head>
 <body>
@@ -53,6 +79,31 @@
     </article>
     <hr>
     <article class="indiaArticle" id="article2"> 
+        <div>
+            India is my country 1
+        </div>
+        <div>
+            India is my country 2
+        </div>
+        <div>
+            India is my country 3
+        </div>
+        <div>
+            India is my country 4
+        </div>
+        <div>
+            India is my country 5
+        </div>
+        <div>
+            India is my country 6
+        </div>
+        <div>
+            India is my country 7
+        </div>
+    
+    </article>
+    <hr>
+    <article class="indiaArticle" id="article3"> 
         <div>
             India is my country 1
         </div>
