@@ -1,3 +1,4 @@
 1. Implement 3 to 4 examples on cubic-bezier of css transition
-
 2. find out short hand property for transition
+3. Implement skew , skewX, skewY function in tranform. 
+4. Implment matrix function in tranform
