@@ -56,4 +56,13 @@ arrowfun1();
 /** if only single statment in body, then {} are optional */
 const arrowfun2=()=>console.log("hi");
 arrowfun2();
-/**  */
+
+/** if only single return statment in body,
+ * then remove return keyword and {} 
+ * body  automatically returns the result
+ */
+/** if arrow function have single argument then () optional */
+const arrowfun3=num=>num*num*num;
+
+let cube=arrowfun3(7);
+console.log(cube);
