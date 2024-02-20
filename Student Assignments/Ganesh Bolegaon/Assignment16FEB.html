@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .navbar{
+            background-color: grey;
+            border: 2px solid black;
+            margin: 0px 0px 200px 0px;
+            height: 50px;
+            background-image: linear-gradient(45deg , black 50%,silver);
+        }
+        #nav1{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+        }
+        #nav1 ol li{
+            font-size: 22px;
+        
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 10px;
+            text-shadow: 1px 1px 3px red; 
+        }
+        #elements a:nth-child(2){
+            margin-left: 800px;
+        }
+      
+        #content{
+            margin-top: 50px;
+        }
+        /* ------------------------------------------------------------------------------------------------------ */
+        div b{
+            background-color: thistle;
+            border: 2px dotted red;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            margin: 20px;
+            display: block;
+
+
+        }
+
+
+        #nav2{
+            position: sticky;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+        }
+        #nav2 ol li{
+            font-size: 22px;
+        
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 10px;
+            text-shadow: 1px 1px 3px red; 
+        }
+        #elements2 a:nth-child(2){
+            margin-left: 800px;
+        }
+
+        #msd{
+            border: 2px solid black;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- 1.Create a good Navbar
+Make it fixed at top
+
+2. Create another navbar
+Make it sticky to bottom
+
+3. Implement more examples on transition. Use other numeric properties except height, width, background color -->
+        <nav id="nav1" class="navbar">
+          
+            <ol id="elements">
+                <a href="#" ><li class="nav-elements">Logo</li></a>
+                <a href="#" ><li class="nav-elements">Home</li></a>
+                <a href="#" ><li class="nav-elements">Name</li></a>
+                <a href="#"><li class="nav-elements">About</li></a>
+                <a href="#"><li class="nav-elements">Contact</li></a>
+            </ol>
+          
+
+        </nav>
+        <div id="content">
+            <b id="msd">MSD</b><b id="virat">Virat</b><b id="rohit">Rohit</b><b id="kl">K L Rahul</b>
+        </div>
+
+        <nav id="nav2" class="navbar">
+          
+            <ol id="elements2">
+                <a href="#" ><li class="nav-elements">Logo</li></a>
+                <a href="#" ><li class="nav-elements">Home</li></a>
+                <a href="#" ><li class="nav-elements">Name</li></a>
+                <a href="#"><li class="nav-elements">About</li></a>
+                <a href="#"><li class="nav-elements">Contact</li></a>
+            </ol>
+          
+
+        </nav>
+</body>
+</html>
