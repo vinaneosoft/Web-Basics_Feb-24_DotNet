@@ -1,6 +1,6 @@
 // basic functions : named functions
 
-// arrow functions : compact declaration
+
 
 // non-parameter, parameter functions
 demo1();
@@ -33,19 +33,27 @@ demo2=function(){
     console.log("in another annonymous function.....");
 }
 demo2();
-demo2();
-demo2();
-
 refdemo();
 // if we do not want to change the references then declare const ref
-
 const demo3=function(){
 
 }
-
 const demo4=function(){
 
 }
-demo3=function(){
-    
+
+
+// arrow functions : compact declaration =>
+
+const arrowfun1=()=>{
+    console.log("hi");
+    console.log("Hello");
+    console.log("Welcome");
 }
+
+arrowfun1();
+
+/** if only single statment in body, then {} are optional */
+const arrowfun2=()=>console.log("hi");
+arrowfun2();
+/**  */
