@@ -37,18 +37,15 @@ function demo1(){
     }
     console.log("outside"+i);
 }
-
 demo1();
-
  /*let type variables have block scope where they are declared */
 function demo2(){
     //console.log("outside"+i); // error
     for(let i=1;i<=5;i++){
         console.log("inside: "+i);
     }
-    console.log("outside"+i); // error
+    //console.log("outside"+i); // error
 }
-
 console.log("DEMO2 called.......");
 demo2();
 
@@ -61,3 +58,6 @@ console.log(employeeId);
 let empName="Pooja";
 //let empName="Hari";
 
+const pie=3.142;
+ pie=3.14
+console.log(pie);
