@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptDemo1</title>
+    <!-- script tag in head is not recommended, put script tag as last child of body-->
+    <script>
+        document.write("hi this is plain text");
+        document.write("<b>Hi is this is bold text </b>") ;
+        document.write("<h1 style='color:red'>Hi is this is bold text </h1>") ; 
+        document.write("<h3>Hi is this is bold text <small> small text </small></h3>") ;
+        /*inserting tags via write method
+        is not recommended, use DOM createElement method for this*/
+    </script>
+</head>
+<body>
+    
+    <i id="ele">Hi this is italic text</i>
+    <!--script tag must be last child of body-->
+    <script>
+            console.log(document.getElementById("ele"));
+    </script>
+</body>
+</html>
