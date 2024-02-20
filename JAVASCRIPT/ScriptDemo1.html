@@ -16,10 +16,12 @@
 </head>
 <body>
     
-    <i id="ele">Hi this is italic text</i>
-    <!--script tag must be last child of body-->
+    <i id="ele" >Hi this is italic text</i>
+    <!--script tag must be last child of body 
+    internal script can not be reused for other web documents : external script-->
     <script>
             console.log(document.getElementById("ele"));
     </script>
+    <script src="Library/MyScript.js"></script>
 </body>
 </html>
