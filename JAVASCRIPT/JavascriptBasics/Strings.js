@@ -24,7 +24,7 @@ console.log(company1==company2);
 
 // object == object /**  no conversion takes place*/
 
-// String API
+
 
 console.log(22=='22'); // 22: number '22':string true
 console.log(22==='22'); // false
@@ -45,9 +45,47 @@ console.log(22=='23'); // false
  * then possible conversion of type is tried then comparsion of type done
  if in comparion
  both are objects then references are compared
- 
+
  === (strict type checking)
  if values, comparsion of type is done without conversion,
-
  if objects, references are checked
 */
+
+// String API
+let len=companyName.length;
+let ch=company3.charAt(0);
+let b1=companyName.startsWith("India");
+let b2=companyName.endsWith("soft");
+
+// Strings immutable : 
+
+let s1="Welcome to";
+let concatString=s1.concat(" Neosoft");
+console.log(s1); //1. Welcome to Neosoft 2. Welcome to 
+console.log(concatString);
+
+console.log(s1);
+console.log(s1.concat(" Mumbai"));
+console.log(s1);
+
+let quote="live and let live";
+console.log(quote.substring(0,5));
+console.log(quote.substring(2,7));
+console.log(quote.substring(5,0));
+console.log(quote.substring(1));
+console.log(quote.substring(9));
+console.log(quote.indexOf('l'));
+console.log(quote.lastIndexOf('l'));
+console.log(quote.substring(0,-5)); /* 0, 0*/
+console.log(quote.substring(2,-7)); /* 2, 0 => 0, 2 */
+console.log(quote.substring(-7)); /* 0 */
+console.log("--------------------");
+
+console.log(quote.slice(0,5));
+console.log(quote.slice(2,7));
+console.log(quote.slice(5,0));
+console.log(quote.slice(1));
+console.log(quote.slice(9));
+console.log(quote.slice(0,-5)); /* 0, counting from back */
+console.log(quote.slice(2,-7)); /* 2, counting from back */
+console.log(quote.slice(-7)); /* counting from back*/
