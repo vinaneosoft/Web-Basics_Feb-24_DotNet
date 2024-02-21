@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .common {
+            margin-left: 60px;
+            margin-top: 60px;
+            width: 200px;
+            height: 100px;
+            background-color: cornflowerblue;
+            border: 1px solid black;
+        }
+
+        #first:hover {
+            background-color:cadetblue;
+            transition-duration: 10s;
+            transform: skew(20deg,15deg);
+        }
+
+        #second:hover {
+            transition-duration: 10s;
+            transform: skewX(30deg);
+            background-color: cadetblue;
+        }
+
+        #third:hover {
+            background-color: cadetblue;
+            transition-duration: 10s;
+            transform: skewY(25deg);
+        }
+        #matrix_eg1:hover{
+            transform: matrix(1.5, 1, 0, 0.7, 50, 0); /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+            transition-duration: 10s;
+            background-color: cadetblue;
+        }
+        #matrix_eg2:hover{
+            transform: matrix(1.5,1,2,0,0,0.7); /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+            transition-duration: 10s;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="common" id="first">
+        skew
+    </div>
+    <hr>
+    <div id="second" class="common">
+        skewX
+    </div>
+    <hr>
+    <div id="third" class="common">
+        skewY</div> 
+        <hr><hr>
+
+        <div class="common" id="matrix_eg1">
+            matrix method
+        </div>
+    <hr>
+        <div class="common" id="matrix_eg2">
+            another matrix method
+        </div>
+</body>
+
+</html>
