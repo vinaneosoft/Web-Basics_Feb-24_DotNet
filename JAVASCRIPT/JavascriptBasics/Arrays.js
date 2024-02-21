@@ -84,3 +84,14 @@ let display=e=>console.log(e);
 employees.forEach(display);
 console.log("--------forEach function--------");
 employees.forEach(empName=>console.log(empName))
+console.log("--------------");
+employees.forEach((empName,index,arrayref)=>console.log(empName+" "+index+" "+arrayref))
+
+employees.forEach(
+    (empName,index,arrayref)=>{
+    arrayref[arrayref.length-1]="Puja";
+    console.log(empName+" "+index+" "+employees);
+    }
+)
+
+console.log("----- filter, map, reduce  function--------");

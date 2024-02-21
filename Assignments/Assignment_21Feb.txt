@@ -3,4 +3,4 @@ Implement following string API
 localeCompare (string literals, string objects ), slice, split, includes
 
 Implement following array API
-join, includes, reverse
+join, includes, reverse, sort, find
