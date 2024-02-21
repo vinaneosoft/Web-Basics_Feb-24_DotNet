@@ -89,3 +89,16 @@ console.log(quote.slice(9));
 console.log(quote.slice(0,-5)); /* 0, counting from back */
 console.log(quote.slice(2,-7)); /* 2, counting from back */
 console.log(quote.slice(-7)); /* counting from back*/
+
+let tag1="India is my country"
+let tag2="     India is my country"
+/* trimStart, trimEnd, trim , toUpperCase, toLowerCase, 
+localeCompare (string literals, string objects ), slice, split*/
+
+let tag3="India is my country"
+let tag4="INDIA is my country"
+
+if(tag3.toLowerCase()==tag4.toLowerCase()){
+    console.log(tag3);
+    console.log(tag4);
+}
