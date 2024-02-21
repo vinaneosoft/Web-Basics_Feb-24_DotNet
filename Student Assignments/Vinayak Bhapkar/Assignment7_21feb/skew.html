@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            height: 200px;
+            width: 200px;
+            transition-duration: 3s;
+            background-color: red;
+        }
+        #d1:hover{
+            transform: skew(30deg,90deg);
+        }
+        #d2{
+            height: 200px;
+            width: 200px;
+            transition-duration: 3s;
+            background-color: yellow;
+        }
+        #d2:hover{
+            transform: skewX(65deg);
+        }
+        #d3{
+            height: 200px;
+            width: 200px;
+            transition-duration: 3s;
+            background-color: black;
+        }
+        #d3:hover{
+            transform: skewY(45deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+</html>

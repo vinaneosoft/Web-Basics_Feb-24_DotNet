@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 2s;
+            transition-timing-function: cubic-bezier(1, 0.7, 1.0, 0.1) ;
+        }
+
+        #d1:hover {
+            width: 300px;
+        }
+        #d2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transition: width 2s;
+            transition-timing-function: cubic-bezier(1, 1, 0.1, 1) ;
+        }
+
+        #d2:hover {
+            width: 300px;
+        }
+        #d3{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: height 3s cubic-bezier(1,0.1,1,0.1);
+        }
+
+        #d3:hover {
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+
+    </div>
+    <div id="d2">
+
+    </div>
+    <div id="d3">
+
+    </div>
+</body>
+</html>
