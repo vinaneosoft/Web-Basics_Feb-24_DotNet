@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment7b</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 5px solid darkviolet;
+        }
+        #box1:hover{
+            background-color: blue;
+            width: 600px;
+            height: 600px;
+            transition-duration: 5s;
+            transition-property: height ;
+            transition-delay: 3s;
+            transition-timing-function: ease-in;
+        }
+        #box2:hover{
+            background-color: blue;
+            width: 600px;
+            height: 600px;
+            transition-property: height ;
+            /* property name | duration | easing function | delay */
+            transition: margin-right 5s ease-in-out 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">
+        <h1>HELLO</h1>
+
+    </div>
+    <div class="box" id="box2">
+        <h1>HELLO</h1>
+
+    </div>
+    
+</body>
+</html>
