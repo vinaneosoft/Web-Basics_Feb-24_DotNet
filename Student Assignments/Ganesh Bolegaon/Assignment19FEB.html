@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 19 FEB</title>
+    <style>
+
+        #main_div{
+            border: 5px solid red;
+        }
+        .block{
+            background-color: aqua;
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+        }
+        #b1:hover{
+            height: 500px;
+            width: 50%;
+            background-color: yellowgreen;
+            transition: cubic-bezier(0.5,2,0.5);
+            transition-duration: 5s;
+            transform: skew(20deg,20deg);
+
+            
+        }
+        #b2:hover{
+            height: 500px;
+            width: 50%;
+            background-color: darkred;
+            transition: cubic-bezier(0.75,1,0.75);
+            transition-duration: 5s;
+            transform: skewX(20deg);
+        }
+        #b3:hover{
+            height: 500px;
+            width: 50%;
+            background-color: darkred;
+            border: 3px solid white;
+            transition:cubic-bezier(0.23, 1, 0.320, 1);
+            transition-duration: 5s;
+            transform: skewY(20deg);
+        }
+        #b4:hover{
+            /* height: 500px;
+            width: 50%; */
+            background-color: darkred;
+            border: 3px solid white;
+            transition:cubic-bezier(0.19, 1, 0.22, 1);
+            transition-duration: 5s;
+            transform: matrix(1.2,10deg,10deg,1.2,80px 80px);
+            /* The values represent the following functions: matrix(scaleX(), skewY(), skewX(), scaleY(), 
+            translateX(), translateY()) */
+        }
+
+        body::before { 
+            content: ''; 
+            background: url('../html/images/msd7.jpg') ; 
+            background-attachment: fixed;
+            background-size: cover;
+            position: fixed; 
+            opacity: 0.3; 
+            top: 0px; 
+            left: 0px; 
+            width: 100vw; 
+            height: 100vh; 
+            z-index: -1; 
+        } 
+        #test
+        {
+            column-count: 3;
+            column-rule: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Implement 3 to 4 examples on cubic-bezier of css transition
+2. find out short hand property for transition    *
+3. Implement skew , skewX, skewY function in tranform.    * 
+4. Implment matrix function in tranform
+5. Implement fontface rule to set any other font to html document
+6. Check short hand property for columns 
+7. Set Image to background using before pseudoelement logic and apply opacity
+ -->
+
+<div id="main_div" class=".container">
+    
+ <div id="b1" class="block">
+
+ </div>
+ <div id="b2" class="block">
+
+ </div>
+ <div id="b3" class="block">
+
+ </div>
+ <div id="b4" class="block">
+
+ </div>
+
+ <section id="test">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga quasi ipsam, nostrum voluptatibus itaque quisquam dolorum quam iure, vero, quis nihil aut quibusdam excepturi assumenda neque quo repellendus? Minus.</label></p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem assumenda vero ducimus, aliquam ad nulla dicta cumque enim ratione facilis aperiam quisquam corporis, expedita ipsam deleniti mollitia magni iure.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga quasi ipsam, nostrum voluptatibus itaque quisquam dolorum quam iure, vero, quis nihil aut quibusdam excepturi assumenda neque quo repellendus? Minus.</label></p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem assumenda vero ducimus, aliquam ad nulla dicta cumque enim ratione facilis aperiam quisquam corporis, expedita ipsam deleniti mollitia magni iure.</p>
+
+</section>
+
+</div>
+
+</body>
+</html>
