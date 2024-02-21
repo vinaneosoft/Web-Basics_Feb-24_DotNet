@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text1 = "      Hello World!      ";
+        let text2 = text1.trim();
+        console.log(text2);
+
+        let text3 = "     Atharva     ";
+        let text4 = text3.trimStart();
+        console.log(text4);
+
+
+        let text5 = "     AtharvaG     ";
+        let text6 = text5.trimStart();
+        console.log(text5);
+
+        let text7 = "done";
+        let result = text7.toUpperCase();
+        console.log(result);
+
+        let text8 = "DoNe";
+        let result1 = text8.toLowerCase();
+        console.log(result1);
+
+        let text9 = "ab";
+        let text10 = "cd";
+        let result2 = text9.localeCompare(text10);
+        console.log(result2);
+
+
+        const str1 = 'apple';
+        const str2 = 'apple';
+        const result3 = str1.localeCompare(str2);
+        console.log(result3);
+
+
+        const strObj1 = new String('apple');
+        const strObj2 = new String('banana');
+        const result4 = strObj1.localeCompare(strObj2);
+        console.log(result4);
+
+
+        let abc = "Hello world!";
+        let res = abc.slice(0, 5);
+        console.log(res);
+
+
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        fruit.splice(2, 0, "Lemon", "Kiwi");
+        let inc=fruit.includes("pineapple");
+        console.log(inc);
+        console.log(fruit);
+
+
+        let tex = "How are you doing today?";
+        const myArray = tex.split("");
+        console.log(myArray);
+
+       
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
