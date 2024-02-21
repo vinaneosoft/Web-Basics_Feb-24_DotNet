@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background with Opacity</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 1000px;
+            
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("../../../HTML/day2/Butterfly.jpg"); 
+            background-size: cover;
+            opacity: 0.5; 
+        }
+
+        .content1 {
+            position: relative;
+            z-index: 1; 
+            color: rgb(26, 9, 9); 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content1">
+        <h1>Butterfly</h1>
+        <p>A butterfly is a (usually) day-flying insect of the order Lepidoptera. They are grouped together in the suborder Rhopalocera. Butterflies are closely related to moths, from which they evolved about 56 million years ago.[1] The earliest discovered fossil moth was 200 million years ago.[2]
+
+            The life of butterflies is closely connected to flowering plants. Their larvae (caterpillars) feed on plants, and their adults feed on flowers. They lay their eggs on the plants their caterpillars feed on. Butterflies have a long history of co-evolution with flowering plants. Many of the details of plant anatomy are related to their pollinators, and vice versa.[3] The other notable features of butterflies are their extraordinary range of colours and patterns, and their wings. These are discussed below.
+            
+            Angiosperms (flowering plants) evolved in the Lower Cretaceous, but did not become common until the Upper Cretaceous. Butterflies were the last major group of insects to appear on the planet.[1] They evolved from moths in the latest Cretaceous or the earliest Cainozoic. The earliest known butterfly fossils date to the mid Eocene epoch, between 40 and 50 million years ago.
+            A butterfly is a (usually) day-flying insect of the order Lepidoptera. They are grouped together in the suborder Rhopalocera. Butterflies are closely related to moths, from which they evolved about 56 million years ago.[1] The earliest discovered fossil moth was 200 million years ago.[2]
+
+             The life of butterflies is closely connected to flowering plants. Their larvae (caterpillars) feed on plants, and their adults feed on flowers. They lay their eggs on the plants their caterpillars feed on. Butterflies have a long history of co-evolution with flowering plants. Many of the details of plant anatomy are related to their pollinators, and vice versa.[3] The other notable features of butterflies are their extraordinary range of colours and patterns, and their wings. These are discussed below.
+   
+            Angiosperms (flowering plants) evolved in the Lower Cretaceous, but did not become common until the Upper Cretaceous. Butterflies were the last major group of insects to appear on the planet.[1] They evolved from moths in the latest Cretaceous or the earliest Cainozoic. The earliest known butterfly fossils date to the mid Eocene epoch, between 40 and 50 million years ago.
+
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
