@@ -13,18 +13,30 @@
 <body>
     <!-- Document Object Model : document ka object model  
     HTML document ====>  Object Model-->
-    <p id="p1">
+    <h2 class="india">INDIA</h2>
+    <p id="p1" class="india">
         <b>INDIA IS MY COUNTRY</b>
     </p>
     <p id="p2">
         <i>ALL INDIANS ARE MY BROTHERS AND SISTERS</i>
     </p>
-    <p id="p3">
+    <p id="p3" class="india">
         <i>I LOVE INDIA</i>
     </p>
+    
     <script>
         document.body.style.backgroundColor="lightcoral";
         document.body.style.border="4px double blue";
+
+        const nodes1=document.getElementsByTagName('p');
+        console.log(nodes1);
+
+        const nodes2=document.getElementsByClassName('india');
+        console.log(nodes2);
+        
+        const node=document.getElementById('p1');
+        console.log(node);
+
     </script>
 </body>
 </html>
