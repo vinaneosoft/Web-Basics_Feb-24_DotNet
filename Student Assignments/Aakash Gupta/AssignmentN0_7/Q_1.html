@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Q_1 </Q></title>
+    <style>
+        section{
+            display: flex;
+        }
+        .cube{
+            background: rgb(218, 139, 139);
+            border: 3px rgb(24, 24, 32) solid;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 5px;
+            transition-duration: 6s;
+        }
+        #box1:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(0, 0, 0, 1);
+            background-color: aqua;
+        }
+        #box2:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(1, 0, 0, 0);
+            background-color: aqua;
+        }
+        #box3:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(0, 1, 0, 1);
+        }
+        #box4:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(0, 1, 1, 0);
+            background-color: aqua;
+        }
+        #box5:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(1, 1, 1, 0);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cube" id="box1"> 1
+    
+        </div>
+        <div class="cube" id="box2">2
+    
+        </div>
+        <div class="cube" id="box3">3
+    
+        </div>
+        <div class="cube" id="box4">4
+    
+        </div>
+        <div class="cube" id="box5">5
+    
+        </div>
+    </section>
+   
+</body>
+</html>

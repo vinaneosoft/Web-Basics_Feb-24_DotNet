@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      section{
+        display: flex;
+      }
+      div {
+        width: 400px;
+        height: 100px;
+        /* background-color: rgba(27, 197, 21, 0.74); */
+        border: 5px double rgb(15, 14, 14);
+        margin: 40px;
+      }
+      #Divx:hover{
+        transition-duration: 8s;
+        transform:skewX(20deg);
+        /* background-image: url(../images/Line-Segment-4.png); */
+        background-color: rgb(224, 19, 19);
+      }
+      #DivY:hover{
+          background-color: rgb(30, 255, 0);
+        transition-duration: 8s;
+        transform:skewY(10deg);
+      }
+      #Div:hover{
+          background-color: rgb(48, 5, 238);
+        transition-duration: 8s;
+        transform:skewY(30deg);
+      }
+
+</style>
+</head>
+<body>
+  <section>
+          <h1>skew: </h1>
+      <div id="Div">
+          </div>
+          <br>
+      <h1>skewX: </h1>
+      <div id="Divx">
+      <!-- This div element is skewed 20 degrees along the X-axis. -->
+      </div><br>
+      <h1>skewY: </h1>
+      <div id="DivY"> </div>
+    </section>
+
+
+</body>
+</html>
+
+

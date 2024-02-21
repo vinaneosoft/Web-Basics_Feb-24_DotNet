@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background with Opacity</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 1000px;
+            
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("../../images/submitIcon.jpg"); 
+            background-size: cover;
+            opacity: 0.5; 
+        }
+
+        .content1 {
+            position: relative;
+            z-index: 1; 
+            color: rgb(26, 9, 9); 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content1">
+        <h1>Heading </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in soluta voluptatum cum illum a ducimus provident quisquam, ipsa aliquid architecto rem adipisci, nihil deleniti fugit ratione voluptatem eum, natus sint quasi porro sequi? Quidem possimus dicta qui asperiores dolore corporis, beatae odit, reiciendis dolor sapiente cumque consectetur. Incidunt, ipsum.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
