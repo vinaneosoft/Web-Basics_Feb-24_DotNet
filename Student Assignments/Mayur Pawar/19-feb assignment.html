@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 19 FEB</title>
+    <style>
+
+        #main_div{
+            border: 5px solid blueviolet;
+            border-radius: 10px;
+            display: flex;
+        }
+        .block{
+            margin-top: 150px;
+            background-color:brown;
+            border: 2px solid white;
+            border-radius: 7px;
+            height: 300px;
+            width: 300px;
+        }
+        #block1:hover{
+            height: 350px;
+            width: 50%;
+            background-color: yellow;
+            transition: cubic-bezier(2,0.5,1);
+            transition-duration: 4s;
+            transform: skew(13deg,13deg);
+
+            
+        }
+        #block2:hover{
+            height: 500px;
+            width: 50%;
+            background-color: darkred;
+            transition: cubic-bezier(1,0.5,0.25);
+            transition-duration: 5s;
+            transform: skewX(13deg);
+        }
+        #block3:hover{
+            height: 500px;
+            width: 50%;
+            background-color:aqua;
+            border: 3px solid white;
+            transition:cubic-bezier(0.10, 0.20, 0.320, 1);
+            transition-duration: 5s;
+            transform: skewY(13deg);
+        }
+        #block4:hover{
+           
+            background-color: goldenrod;
+            border: 3px solid white;
+            transition:cubic-bezier(0.19, 1, 0.22, 1);
+            transition-duration: 5s;
+            transform: matrix(1.2,10deg,10deg,1.2,80px 80px);
+           /* short hand property of matrix */
+        }
+
+        body::before { 
+            content: ''; 
+            background: url('./Images/hd\ dhoni\ image.webp') ; 
+            background-attachment: fixed;
+            background-size: cover;
+            position: fixed; 
+            opacity: 0.5; 
+            top: 0px; 
+            left: 0px; 
+            width: 100vw; 
+            height: 100vh; 
+            z-index: -1; 
+        } 
+        #block5:hover{
+            transition: 0.5 4s ease-in-out 1s;
+        }
+        #section{
+            columns: 200px 4;
+        }
+    </style>
+</head>
+<body>
+  
+<!-- <h1>1. Implement 3 to 4 examples on cubic-bezier of css transition
+   2. find out short hand property for transition    *
+3. Implement skew , skewX, skewY function in tranform.    * 
+4. Implment matrix function in tranform
+5. Implement fontface rule to set any other font to html document
+6. Check short hand property for columns 
+7. Set Image to background using before pseudoelement logic and apply opacity
+</h1> -->
+
+<div id="main_div" class=".container">
+    
+ <div id="block1" class="block">
+
+ </div>
+ <div id="block2" class="block">
+
+ </div>
+ <div id="block3" class="block">
+
+ </div>
+ <div id="block4" class="block">
+
+ </div>
+ <div id="block5" class="block"></div>
+
+</div>
+
+<section id="section">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos suscipit, atque libero blanditiis incidunt laudantium necessitatibus aspernatur laborum vel, aut odio assumenda, tempore sunt eum accusantium enim cum? Corporis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos suscipit, atque libero blanditiis incidunt laudantium necessitatibus aspernatur laborum vel, aut odio assumenda, tempore sunt eum accusantium enim cum? Corporis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos suscipit, atque libero blanditiis incidunt laudantium necessitatibus aspernatur laborum vel, aut odio assumenda, tempore sunt eum accusantium enim cum? Corporis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos suscipit, atque libero blanditiis incidunt laudantium necessitatibus aspernatur laborum vel, aut odio assumenda, tempore sunt eum accusantium enim cum? Corporis.</p>
+
+</section>
+
+</body>
+</html>
