@@ -23,19 +23,16 @@ students.forEach(student=>console.log(student.studName));
 students.filter(student=>student.studClass.toUpperCase()=='SR KG')
         .forEach(student=>console.log(student))
 
-
 class Student{
     studId;
     studName;
     studClass
-    constructor(id=0,name="NOT MENTIONED",sclass="PLAY GROUP"){
-        this.studId=id;
+    constructor(studId=0,name="NOT MENTIONED",sclass="PLAY GROUP"){
+        this.studId=studId; 
         this.studName=name;
         this.studClass=sclass
     }
- 
 }
-
 let student4=new Student(7890,"Pritam",'JR KG') // constructor called automatically
 
 let student5=new Student(8888,"Gita",'NURSARY')
