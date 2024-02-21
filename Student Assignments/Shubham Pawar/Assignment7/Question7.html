@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background with Opacity</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 900px;
+            font-size: 25px;
+            font-weight: 600;
+            
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("https://img.freepik.com/free-photo/high-angle-shot-bandra-worli-sealink-mumbai-enveloped-with-fog_181624-6592.jpg?size=626&ext=jpg&ga=GA1.1.1848954120.1707742660&semt=sph"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5; 
+        }
+
+        .content1 {
+            position: relative;
+            z-index: 1; 
+            color: rgb(26, 9, 9); 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content1">
+        <h1>Mumbai</h1>
+        <p>Mumbai, one of the major cosmopolitan cities in India, is a popular tourist attraction. It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels. Nevertheless, you will be spoilt for choice while deciding the places to visit or the activities to enjoy on your trip to Mumbai. This is why it is better to stay aware of the places or things what Mumbai is famous for before you embark on your journey.
+
+
+            List of Famous Places in Mumbai
+            Here are some places which make Mumbai highly popular:
+            <p>1. Gateway of India
+            gateway of india mumbai
+            source: planetofhotels
+            The Gateway of India, the historical arch-monument, is what Mumbai is famous for primarily. It is a large basalt-made monument, which served as a ceremonial place during the British rule to welcome King George V in India in 1911. However, it is the same place from where the last troop of Britain left India in 1948.  Apart from that, the architecture has a height of 26 metres and is located in the Apollo Bunder area, overlooking the mesmerising Arabian Sea.</p>
+            
+            <p>2. Marine Drive
+            marine drive mumbai
+            source: tripsavvy
+            Marine Drive also comes among the top attractions in Mumbai for the picturesque seaside beauty it offers. It is a C-shaped, 6-lane highway beside the coast of the Arabian Sea. The bridge is also called the 'Queen's Necklace' due to its C-like shape. It is a matter of immense delight whether you walk or drive through Marine Drive preferably, during sunset.</p>
+            
+            <p>3. Bandra-Worli Sea Link
+            bandra worli sea link
+            source: mageba-group
+            It is a 5.6-kilometre-long bridge with eight lanes, connecting the West suburb of Mumbai at Bandra to South Mumbai at Worli. This sea link decreases the overall time of commuting from Bandra to Worli by almost 10 to 20 minutes. Further, if you want a panoramic view of the Bandra-WorliSea Link, you can go to the Portuguese watchtower located at Bandra Fort.</p>
+
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
