@@ -11,10 +11,34 @@
 
     <button onmouseover="showAlert()">SHOW ALERT</button>
 
-    <script>
+    <button onclick="alert('INLINE')">INLINE</button>
+   
+    <button onclick="confirmFun()">SUBMIT EXAM</button>
+
+    <button onclick="prompBox()">ADD</button> 
+   
+   <script>
         function showAlert(){
             window.alert("HELLO......");
         }
+
+   let confirmFun=function(){
+       const b= window.confirm("DO YOU REALLY WANT TO SUBMIT THE EXAM????");
+        if(b) /*b==true*/
+            alert("CONFIRMED....SUBMITTED SUCCUSSFULLY");
+
+    }
+
+    let prompBox=()=>{
+        const v1=window.prompt("Enter number to add");
+        console.log(v1);
+        console.log(typeof v1);
+        const v2=window.prompt("Enter number to add");
+        
+        console.log(v1+v2); // '12'+'13'
+        console.log( parseFloat(v1)+parseFloat(v2));  
+    
+    }
         /*alert, confirm, prompt*/
     </script>
 </body>
