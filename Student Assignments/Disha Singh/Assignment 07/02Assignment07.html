@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> skew , skewX, skewY function in tranform</title>
+  <style>
+    .skew {
+      width: 200px;
+      height: 200px;
+      border: 6px ridge purple;
+      background-color: #699ec2;
+      
+      display: inline-block;
+      transition: transform 0.5s ease;
+    }
+   
+    .skewX:hover {
+      transform: skewX(30deg);
+    }
+
+    .skewY:hover {
+      transform: skewY(30deg);
+    }
+
+    .skewXY:hover {
+      transform: skew(30deg, 30deg);
+    }
+
+    .matrix-transform {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+     
+      display: inline-block;
+      transition: transform 0.5s ease;
+    }
+
+    .matrix-transform:hover {
+      transform: matrix(0.8, -0.2, 0.2, 0.8, 0, 0); 
+    }
+
+    img{
+        width: 20%;
+    }
+    img:hover {
+  
+  transform: matrix(1, 0, 0, 1, 0, 250); 
+  width: 20%;
+}
+   
+  </style>
+</head>
+<body>
+  <h1> skew , skewX, skewY function in tranform</h1>
+   <div class="skew skewX">SkewX</div>
+  <div class="skew skewY">SkewY</div>
+  <div class="skew skewXY">SkewXY</div>
+  <h1>matrix function in tranform</h1>
+  <div class="matrix-transform">Matrix Transform</div>
+  <img
+  src="../../images/Morphoamathonte.jpeg"
+  alt=""
+/>
+</body>
+</html>

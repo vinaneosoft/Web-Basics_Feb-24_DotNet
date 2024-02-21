@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 06</title>
+    <style>
+         .box{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(155, 104, 153);
+            border: 5px ridge rgb(58, 54, 134);
+            text-align: center;
+            transition-duration: 3s;
+        }
+        #box1:hover{
+            height: 300px;
+            width: 250px;
+            background-color: aqua;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+        }
+        #box2:hover{
+            height: 300px;
+            width: 250px;
+            background-color: aqua;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            
+        }
+        #box3:hover{
+            height: 300px;
+            width: 250px;
+            background-color: aqua;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            
+        }
+        #box4:hover{
+            height: 300px;
+            width: 250px;
+            background-color: aqua;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+            
+        }
+        
+        #box5:hover{
+            height: 300px;
+            width: 250px;
+            transition: opacity 0.5s linear 0.2s;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>cubic-bezier  transition</h1>
+    <div class="box" id="box1">
+        <span><b>HELLO</b></span>
+    </div>
+    <div class="box" id="box2">
+        <span><b>HIIIIII</b></span>
+    </div>
+    <div class="box" id="box3">
+        <span><b>DEAR</b></span>
+    </div>
+    <div class="box" id="box4">
+        <span><b>BYEEE</b></span>
+    </div>
+    <h1>short hand property for transition</h1>
+    <div class="box" id="box5">
+        <span><b>TRANSITION</b></span>
+    </div>
+    
+</body>
+</html>
