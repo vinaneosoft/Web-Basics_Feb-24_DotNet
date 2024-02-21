@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitiion</title>
+    <style>
+        .transition{
+            background: rgb(78, 2, 2);
+            border: 3px rgb(199, 10, 199) solid;
+            height: 150px;
+            width: 150px;
+            margin-bottom: 10px;
+            transition-duration: 5s;
+        }
+        #b1:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(0, 0, 0, 1);
+            /* slow before one second */
+        }
+        #b2:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(1, 0, 0, 0);
+            /* slow start one second */
+        }
+        #b3:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(0, 1, 0, 1);
+            /* start, slow,start,slow */
+        }
+        #b4:hover{
+            height: 200px;
+            width: 200px;
+            transition-timing-function: cubic-bezier(0, 1, 1, 0);
+            /* start and slow for two second and then finished */
+        }
+    </style>
+</head>
+<body>
+    <div class="transition" id="b1"></div>
+    <div class="transition" id="b2"></div>
+    <div class="transition" id="b3"></div>
+    <div class="transition" id="b4"></div>
+
+</body>
+</html>
