@@ -115,14 +115,8 @@ console.log(filteredEmps);
 
 let mappedEmps=employees.map(empName=>"NEO-"+empName.trim());
 console.log(mappedEmps);
-/** declare salary array
- * 1. Iterate array using forEach
- * 2. filter salaries <10000 using filter
- * 3. increment every salary by 5000 using map
- */
 
 let nums=[4,3,2,1,7];
-
 let sum=nums.reduce((prev,current )=>prev+current)
 console.log(sum);
 /** initial values of

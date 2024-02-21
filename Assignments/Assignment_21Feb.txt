@@ -4,3 +4,10 @@ localeCompare (string literals, string objects ), slice, split, includes
 
 Implement following array API
 join, includes, reverse, sort, find
+
+/** declare salary array
+ * 1. Iterate array using forEach
+ * 2. filter salaries <10000 using filter
+ * 3. increment every salary by 5000 using map
+ * 4. display sum of salariesz
+ */
