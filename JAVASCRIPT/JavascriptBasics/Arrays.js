@@ -67,7 +67,7 @@ let ar7=new Array(2, "mumbai","solapur",'pune');
 let ar8=new Array("india is my country");
 
 
-let employees= ["harish", "hari","poonam", "kumar","pritam","pooja"];
+let employees= ["harish", "hari  ","  poonam   ", "  kumar","pritam","Pooja"];
 for(let i=0;i<=employees.length-1;i++){
     console.log(employees[i]);
 }
@@ -82,16 +82,63 @@ console.log("--------forEach function--------");
 
 let display=e=>console.log(e);
 employees.forEach(display);
+
 console.log("--------forEach function--------");
 employees.forEach(empName=>console.log(empName))
+
 console.log("--------------");
 employees.forEach((empName,index,arrayref)=>console.log(empName+" "+index+" "+arrayref))
-
+console.log("--------------");
+let flag=false;
 employees.forEach(
-    (empName,index,arrayref)=>{
-    arrayref[arrayref.length-1]="Puja";
-    console.log(empName+" "+index+" "+employees);
+    (empName,index,emps)=>{
+    emps[1]="Puja"; // changes being done in array
+    if(flag==false){
+        emps.push("Pallavi");
+        emps.push("Soham");
+        emps.push("Gargi");
+        flag=true;
+    }
+    console.log(employees.length);
+    console.log(empName+" "+index+" "+emps); 
     }
 )
-
+//forEach : u can do any changes in array : replacing the elements
+/*but if we are adding extra elements then, 
+array gets changed but iteration will stop to orignal length */
 console.log("----- filter, map, reduce  function--------");
+// filter : search values from array : returns new array having filtered values
+console.log(employees);
+// search employees starting with P/p
+let filteredEmps=employees.filter(empName=>empName.trim().toLowerCase().startsWith('p'))
+console.log(filteredEmps);
+
+let mappedEmps=employees.map(empName=>"NEO-"+empName.trim());
+console.log(mappedEmps);
+/** declare salary array
+ * 1. Iterate array using forEach
+ * 2. filter salaries <10000 using filter
+ * 3. increment every salary by 5000 using map
+ */
+
+let nums=[4,3,2,1,7];
+
+let sum=nums.reduce((prev,current )=>prev+current)
+console.log(sum);
+/** initial values of
+ * prev = 0 index ele = 4
+ * current = 1 index ele = 3 prev=7, 
+ * current = 2 prev = 9
+ * current= 1 prev=10
+ * current 7 prev=17
+ */
+let sum2=nums.reduce((prev,current )=>prev+current, 23);
+console.log(sum2);
+/** initial values of
+ * prev = passed value= 23 
+ * current = 0 index ele = 4 prev=27, 
+ * current = 3 prev = 30
+ * current= 2 prev=32
+ * current 1 prev=33
+ * current = 7 prev =40
+ */
