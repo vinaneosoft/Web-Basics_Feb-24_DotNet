@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment7part7</title>
+    <style>
+        .div{
+            position: relative;
+            width:100%;
+            height: 1000px;
+        }
+        .div::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          
+            background-image: url(images/flower2.jfif);
+            background-size: cover;
+            opacity: 0.2;
+        }
+        .div1{
+            position: relative;
+            z-index: 1;
+            color: black;
+            padding: 20px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div1">
+            <h1>flower</h1>
+            <p>
+                Most flowering plants depend on animals, such as bees, moths, and butterflies, to transfer their pollen 
+                between different flowers, and have evolved to attract these pollinators by various strategies, including 
+                brightly colored, conspicuous petals, attractive scents, and the production of nectar, a food source for
+                pollinators.[1] In this way, many flowering plants have co-evolved with pollinators to be mutually dependent
+                on services they provide to one another—in the plant's case, a means of reproduction; in the pollinator's 
+                case, a source of food
+            </p>
+        </div>
+    </div>
+  
+    
+</body>
+</html>
