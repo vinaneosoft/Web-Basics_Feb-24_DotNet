@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>More Cubic Bezier Transition Examples</title>
+<style>
+
+    body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+  .test1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), 0.5s ease-in-out, opacity 0.5s linear;
+  }
+
+  .test1:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    opacity: 0.8;
+  }
+
+  .test2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    transition: transform 1s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.5s ease;
+  }
+
+  .test2:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .test3 {
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(to right, red, yellow);
+    transition: 1s cubic-bezier(0.42, 0, 0.58, 1), width 0.5s ease-in-out;
+  }
+
+  .test3:hover {
+    background: linear-gradient(to right, blue, green);
+    width: 250px;
+  }
+
+ 
+   .skew {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: skew(30deg);
+  }
+
+  .skew-x {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-duration: 3s;
+  
+  }
+
+  .skew-x:hover
+  {
+    transform: skewX(60deg);
+    
+  }
+
+  .skew-y {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  transition-duration: 3s;
+  }
+
+  .skew-y:hover
+  {
+    transform: skewY(110deg);
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: matrix(0.2,0.72,0.34,0.45,1,0); 
+       margin-bottom: 20px;
+  }
+
+  #test
+  {
+    column-count: 3;
+    column-rule: 2px solid green;
+  }
+
+  .content::before {
+    content: url('../CSS/images/rose\ 3.jpg');
+    position: absolute;
+    background-size: cover;
+    opacity: 0.5; /* Set opacity value */
+  }
+</style>
+</head>
+<body>
+
+
+    <h1>Cubic Beizer Examples</h1>
+<div class="test1"></div>
+<div class="test2"></div>
+<div class="test3"></div>
+
+<hr>
+<h1>Skew Examples</h1>
+<div class="skew"></div>
+<div class="skew-x"></div>
+<div class="skew-y"></div>
+
+<hr>
+<h1>Matrix Example</h1>
+<div class="box"></div>
+
+<hr>
+<h1>Shorthand property for column count</h1>
+<section id="test">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga quasi ipsam, nostrum voluptatibus itaque quisquam dolorum quam iure, vero, quis nihil aut quibusdam excepturi assumenda neque quo repellendus? Minus.</label></p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem assumenda vero ducimus, aliquam ad nulla dicta cumque enim ratione facilis aperiam quisquam corporis, expedita ipsam deleniti mollitia magni iure.</p>
+</section>
+
+<hr>
+<h1>Before Pseudoelemnet</h1>
+
+<div class="content">
+    <h2>This is a Heading</h2>
+    <p>This is a paragraph with some content.</p>
+  </div>
+
+</body>
+</html>
