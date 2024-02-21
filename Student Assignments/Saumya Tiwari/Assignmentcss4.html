@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Transition with cubic-bezier</title>
+<style>
+    body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    #VK::before{
+        content: url(/Image/Doraemon.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: -1;
+        /* If you will not use z-index you will not able to hover or access the other content */
+
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+        transition: transform 1s cubic-bezier(0.5, 0, 0.1, 1);
+    }
+
+    .circle:hover {
+        transform: translateX(200px);
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: width 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .box:hover {
+        background-color: aqua;
+        width: 300px;
+    }
+    .Pox {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(4, 67, 56);
+        transition: width 2s cubic-bezier(1, 0.25, 0.1, 0);
+        /* Transition Short hand Property is used inside the Cubic Briezer transition */
+    }
+
+    .Pox:hover {
+        background-color: rgb(6, 125, 82);
+        width: 300px;
+    }
+    .skew{
+            height: 200px;
+            width: 200px;
+            transition-duration: 3s;
+            background-color: red;
+        }
+        .skew:hover{
+            transform: skew(30deg,90deg);}
+          
+            .skewY{
+            height: 200px;
+            width: 200px;
+            transition-duration: 3s;
+            background-color: rgb(217, 130, 68);
+        }
+        .skewY:hover{
+            transform: skew(90deg);}
+            
+            .skewX{
+            height: 200px;
+            width: 200px;
+            transition-duration: 3s;
+            background-color: rgb(10, 211, 178);
+        }
+        .skewX:hover{
+            transform: skew(30deg);}
+       .matrix{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(152, 228, 0);
+            transition-duration: 3s;
+            
+        }
+        .matrix:hover{
+            transform: matrix(1, 0.5, 0.5, 1, 100, 100);
+        }
+   
+</style>
+</head>
+<body>
+    <div>
+        <h2 id="VK">Virat Kohli</h2>
+        <p>Kohli!!! Kohli!!! Kohli!!! Kohli!!! Kohli!!! Kohli!!! Kohli!!! </p>
+    </div>
+<div class="box"></div><br>
+<div class="circle"></div><br>
+<div class="Pox"></div><br>
+<div class="skew"></div><br>
+<div class="skewX"></div><br>
+<div class="skewY"></div><br>
+<div class="matrix"></div>
+</body>
+</html>
