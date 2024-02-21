@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Transformations</title>
+    <style>
+        .skew-box {
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            margin: 20px;
+             
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .skew-box:hover {
+            transform: skew(60deg);
+        }
+
+        .skewX-box {
+            width: 150px;
+            height: 150px;
+            background-color: #5ebf87;
+            margin: 20px;
+            display: inline-block;
+            transition: transform  5s ease-in-out;
+        }
+
+        .skewX-box:hover {
+            transform: skewX(30deg);
+        }
+
+        .skewY-box {
+            width: 150px;
+            height: 150px;
+            background-color: #56472f;
+            margin: 20px;
+            display: inline-block;
+            transition: transform 3s ease-in-out;
+        }
+
+        .skewY-box:hover {
+            transform: skewY(40deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="skew-box"></div>
+    <div class="skewX-box"></div>
+    <div class="skewY-box"></div>
+
+</body>
+</html>
