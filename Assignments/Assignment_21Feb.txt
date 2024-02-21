@@ -1,3 +1,6 @@
 Implement following string API
  trimStart, trimEnd, trim , toUpperCase, toLowerCase, 
-localeCompare (string literals, string objects ), slice, split
+localeCompare (string literals, string objects ), slice, split, includes
+
+Implement following array API
+join, includes, reverse
