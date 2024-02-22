@@ -25,11 +25,13 @@
 
     <script>
         let imgNode=document.getElementById("flower2");
+        imgNode.style.cssText="border:2px solid red; height:200px; width:200px";
         imgNode.style.transitionDuration="4s";
         imgNode.addEventListener('mouseover', ()=>applyStyle());
         function applyStyle(){
             imgNode.style.transform="scale(2)";
         }
+       
     </script>
 </body>
 </html>
