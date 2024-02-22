@@ -44,3 +44,7 @@ let student9=new Student(5656)
 console.log(student9);
 let student10=new Student();
 console.log(student10);
+
+const stud=new Student(456,"xyz","ppp");
+//stud=new Student(111,"fff","gggg"); /* const reference can not be assigned to other objects */
+stud.studName="Pravin" /** value of object can be changed */
