@@ -15,28 +15,42 @@
     HTML document ====>  Object Model-->
     <h2 class="india">INDIA</h2>
     <p id="p1" class="india">
-        <b>INDIA IS MY COUNTRY</b>
+    <b>INDIA IS MY COUNTRY</b>
+    <small>INDIA</small>
     </p>
     <p id="p2">
         <i>ALL INDIANS ARE MY BROTHERS AND SISTERS</i>
+        <small>INDIA</small>
     </p>
     <p id="p3" class="india">
         <i>I LOVE INDIA</i>
     </p>
-    
+    <button onclick="paste()">PASTE</button>
+    <p id="p4">
+    </p>
+    <p id="p5">
+    </p>
+    <p id="p6">
+    </p>
     <script>
         document.body.style.backgroundColor="lightcoral";
         document.body.style.border="4px double blue";
-
         const nodes1=document.getElementsByTagName('p');
         console.log(nodes1);
-
         const nodes2=document.getElementsByClassName('india');
         console.log(nodes2);
-        
-        const node=document.getElementById('p1');
-        console.log(node);
 
+        const pnode1=document.getElementById('p1');
+        const pnode2=document.getElementById('p2');
+        const pnode4=document.getElementById('p4');
+        const pnode5=document.getElementById('p5');
+        const pnode6=document.getElementById('p6');
+
+        function paste(){
+            pnode4.innerHTML=pnode1.innerHTML;
+            pnode5.innerText=pnode2.innerText;
+            pnode6.innerHTML="<b>"+pnode2.innerText+"</b>"
+        }
     </script>
 </body>
 </html>
