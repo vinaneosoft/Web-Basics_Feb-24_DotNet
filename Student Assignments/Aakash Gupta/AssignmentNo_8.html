@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssignmentNo_8</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+        let text1 = "     Aakash Gupta    ";
+        let text2 = text1.trim();
+        console.log(text2);
+
+        let text3 = "     HEllO,WORLDE    ";
+        let text4 = text3.trimStart();
+        console.log(text4);
+
+
+        let text5 = "    NeoSoft     ";
+        let text6 = text5.trimStart();
+        console.log(text5);
+
+        let text7 = "uppercase";
+        let result = text7.toUpperCase();
+        console.log(result);
+
+        let text8 = "LOWERcase";
+        let result1 = text8.toLowerCase();
+        console.log(result1);
+
+        let text9 = "a";
+        let text10 = "b";
+        let result2 = text9.localeCompare(text10);
+        console.log(result2);
+        // / if ref i.e 1stStringPosition > 2ndStringPosition :----> -1 /
+        // / if ref i.e 1stStringPosition < 2ndStringPosition :---->  1 / 
+        // / if ref i.e 1stStringPosition = 2ndStringPosition :----> 0 /
+
+
+        const str1 = 'apple';
+        const str2 = 'apple';
+        const result3 = str1.localeCompare(str2);
+        console.log(result3);
+
+
+        const strObj1 = new String('zen');
+        const strObj2 = new String('man');
+        const result4 = strObj1.localeCompare(strObj2);
+        console.log(result4);
+
+
+        console.log("----------------slice fun-----------------");
+
+        let abc = "Hello world!";
+        let res = abc.slice(0, 5);
+        console.log(res);
+
+        const friends = ["Aakash", "Aman", "Taj", "Hamza","Saood","Sahil"];
+        friends.splice(2, 0, "Swara", "Siddiesh");
+       console.log(friends);
+
+        console.log("----------------inculdes fun-----------------");
+
+        let check=friends.includes("Aakash");
+        console.log(check);
+        let find = friends.includes("Aniket")
+        console.log(find);
+
+        console.log(friends);
+
+        console.log("----------------split fun-----------------");
+
+        let paragraph = "How are you doing today?";
+        const NewArray = paragraph.split(" ");
+        console.log(NewArray);
+
+
+        console.log("---------------Q-2--------------");
+
+
+        
+        let text = friends.join("_");
+        console.log(text);
+
+        let result11 = friends.includes("xyz");
+        console.log(result11);
+
+        // console.log(text);
+        console.log(friends);
+        console.log("reverse :");
+        let rev = friends.reverse();
+        console.log(rev);
+
+        let num = [5,7,8,9,2,4,0,1]
+        let sor = num.sort();
+        console.log(sor);
+
+        console.log("------------find( fun)---- ");
+
+        console.log();
+        const age = [2, 5, 8, 12, 15,28];
+        const findres = age.find(checkAge);
+        function checkAge(ageNum) {
+            return ageNum >= 18 ;
+        }
+        console.log(findres); 
+
+ console.log("  -------------Q.3-----------");
+
+
+         // Declare an array of salaries
+ let salarie = [8000, 12000, 9500, 11000, 7500,10000,15000];
+
+// 1. Iterate array using forEach
+console.log("Salaries:");
+salarie.forEach(salary =>console.log(salary));
+
+// console.log("2. Filter salaries < 10000 using filter");
+// const filteredSalaries = salarie.filter(salary => salary < 10000);
+
+// console.log("\nFiltered Salaries (< 10000):");
+// filteredSalaries.forEach(filteredSalary =>console.log(filteredSalary));
+function findSal() {
+    // salarie.forEach(salary =>console.log(salary));
+    return console.log(salarie.filter(salary => salary < 10000));
+}
+findSal();
+// 3. Increment every salary by 5000 using map
+const incSalaries = salarie.map(salary => salary + 5000);
+
+console.log("\nIncremented Salaries (by 5000):");
+incSalaries.forEach(incSalary =>console.log(incSalary));
+
+// 4. Display sum of salaries
+const sumSal = salarie.reduce((sum, salary) => sum + salary);
+
+console.log("\nSum of Salaries:", sumSal);
+
+
+       
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
