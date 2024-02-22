@@ -31,18 +31,27 @@
         setTimeout(()=>divNode1.style.background="red", 4000);
 
         let i=0;
+        let intervalCounter=0;
         let interval=setInterval(()=>{
             divNode2.style.background=colors[i];
             i++;
-            if(i==colors.length)
-              i=0
-              //clearInterval(interval);
-            console.log(i);
-        }, 1000);
+            if(i==colors.length){
+              i=0;
+              intervalCounter++;
+             // clearInterval(interval);
+            }
+            if (intervalCounter==3)
+                clearInterval(interval);
+            console.log(intervalCounter);
+           
+        }, 2000);
 
         for(let j=0;j<colors.length;j++){
             divNode3.style.background=colors[j];
         }
+
+       
+        document.body.style.background="yellow";
     </script>
 </body>
 </html>

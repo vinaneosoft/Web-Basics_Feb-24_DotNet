@@ -1,0 +1,19 @@
+Implement Basic Image Slide show using setInterval, Image name in figcaption also must be changed
+
+
+class FlowerImage{
+   imageSrc;
+   imageName,
+   imageAlt;
+  // implement contructor
+}
+
+let image1=new FlowerImage ('put path of image', 'put name of image','put alternate display msg for image')
+create 5 image objects like this
+put all in one array
+
+when u start interval
+image src value must be taken from imageSrc
+image alt value must be taken from imageName
+figcaption textContent  must  be set from imageName
+

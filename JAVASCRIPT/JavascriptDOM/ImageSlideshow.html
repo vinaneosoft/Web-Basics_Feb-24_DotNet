@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flower1{
+            transition-duration: 4s;
+        }
+        #flower1:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img id="flower1" src="../../HTML/Images/flower3.jpg" alt="flower1">
+        <figcaption>ROSE FLOWER</figcaption>
+    </figure>
+    <figure>
+        <img id="flower2" src="../../HTML/Images/flower3.jpg" alt="flower2" >
+        <figcaption>ROSE FLOWER</figcaption>
+    </figure>
+
+    <script>
+        let imgNode=document.getElementById("flower2");
+        imgNode.style.transitionDuration="4s";
+        imgNode.addEventListener('mouseover', ()=>applyStyle());
+        function applyStyle(){
+            imgNode.style.transform="scale(2)";
+        }
+    </script>
+</body>
+</html>
