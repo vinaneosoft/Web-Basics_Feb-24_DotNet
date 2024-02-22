@@ -39,18 +39,26 @@
         console.log(nodes1);
         const nodes2=document.getElementsByClassName('india');
         console.log(nodes2);
-
         const pnode1=document.getElementById('p1');
         const pnode2=document.getElementById('p2');
         const pnode4=document.getElementById('p4');
         const pnode5=document.getElementById('p5');
         const pnode6=document.getElementById('p6');
-
+        const insideText1=pnode1.innerText; // nonstandard
+        console.log(insideText1);
+        const insideText2=pnode1.textContent; // standard
+        console.log(insideText2);
         function paste(){
             pnode4.innerHTML=pnode1.innerHTML;
             pnode5.innerText=pnode2.innerText;
             pnode6.innerHTML="<b>"+pnode2.innerText+"</b>"
         }
+
+        console.log(document.body.children);
+
+
+
+
     </script>
 </body>
 </html>
