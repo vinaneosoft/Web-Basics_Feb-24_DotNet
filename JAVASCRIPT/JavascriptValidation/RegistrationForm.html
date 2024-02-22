@@ -14,6 +14,10 @@
         tr td:nth-child(2){
             width: 60%;
         }
+        .error{
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -26,30 +30,56 @@
                 <td><input type="text" name="myname" id="name"></td>
             </tr>
             <tr>
+                <td class="error" id="error1"></td>
+            </tr>
+            <tr>
                 <td><label for="age">AGE</label></td>
                 <td><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <td  class="error" id="error2"></td>
             </tr>
             <tr>
                 <td><label for="mobile">MOBILE NUMBER</label></td>
                 <td><input type="text" name="mobile" id="mobile"></td>
             </tr>
             <tr>
+                <td class="error" id="error3"></td>
+            </tr>
+            <tr>
                 <td><label for="emailid">EMAIL ID</label></td>
                 <td><input type="email" name="emailid" id="emailid"></td>
+            </tr>
+            <tr>
+                <td class="error" id="error4"></td>
             </tr>
             <tr>
                 <td><label for="pass">SET PASSWORD</label></td>
                 <td><input type="password" name="pass" id="pass"></td>
             </tr>
             <tr>
+                <td class="error" id="error5"></td>
+            </tr>
+            <tr>
                 <td><label for="cpass">CONFIRM PASSWORD</label></td>
                 <td><input type="password" name="cpass" id="cpass"></td>
+            </tr>
+            <tr>
+                <td class="error" id="error6"></td>
             </tr>
             <tr>
                 <td><input type="submit" value="REGISTER"></td>
                 <td> <input type="reset"></td>
             </tr>
         </table>
+    </form>
+    <form action="">
+        <label for=""></label>
+        <input type="text"><br>
+        <span class="error" id="error1"></span><br>
+        <label for=""></label>
+        <input type="text"><br>
+        <span class="error" id="error2"></span><br>
     </form>
   </div>
 </body>
