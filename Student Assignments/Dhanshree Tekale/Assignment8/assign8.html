@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>UPPERCASE</b>
+    <button onclick="myFunction()">Uppercase</button>
+    <p id="demo">Hello World!</p>
+    <br>
+    <b>LOWERCASE</b>
+    <button onclick="myFunction1()">Lowercase</button>
+    <p id="demo1">Hello World!</p>
+    <br>
+    <b>TRIM</b>
+    <button onclick="myFunction2()">TRIM</button>
+    <p id="demo2">         ....Hello World!....       </p>
+    <br>
+    <button onclick="myFunction3()">StartTRIM</button>
+    <p id="demo3">         ....Hello World!....       </p>
+    <br>
+
+
+    <script src="assign8.js">
+        function myFunction() {
+          let text = document.getElementById("demo").innerHTML;
+          document.getElementById("demo").innerHTML =
+          text.toUpperCase();
+        }
+
+        function myFunction1() {
+        let text = document.getElementById("demo1").innerHTML;
+        document.getElementById("demo1").innerHTML =
+        text.toLowerCase();
+        }
+
+        function myFunction2() {
+        let text = document.getElementById("demo2").innerHTML.trim();
+        document.getElementById("demo2").innerHTML = text.toUpperCase();
+        }
+      
+        
+      </script>
+        
+
+
+
+</body>
+</html>
