@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Declare an array of salaries
+        const sal = [74000, 22000, 45000, 31000, 45000];
+
+        // 1. Iterate array using forEach
+        console.log("Original Salaries:");
+        sal.forEach(salary => {
+            console.log(salary);
+        });
+
+        // 2. Filter salaries < 45000 using filter
+        const filteredSalaries = sal.filter(salary => salary < 45000);
+
+        console.log("\nFiltered Salaries (< 45000):");
+        filteredSalaries.forEach(filteredSalary => {
+            console.log(filteredSalary);
+        });
+
+        // 3. Increment every salary by 5000 using map
+        const incrementedSalaries = sal.map(salary => salary + 5000);
+
+        console.log(incrementedSalaries);
+        incrementedSalaries.forEach(incrementedSalary => {
+            console.log(incrementedSalary);
+        });
+
+        // 4. Display sum of salaries
+        const sumOfSalaries = sal.reduce((sum, salary) => sum + salary, 0);
+
+        console.log("\nSum of Salaries:", sumOfSalaries);
+
+    </script>
+</body>
+
+</html>
