@@ -15,17 +15,33 @@
     <progress></progress>
      
     <label for="fuelIndicator">CAR FULE</label>
-    <meter id="fuelIndicator" min="0"  value="10" max="100"></meter>
+    <meter id="fuelIndicator" min="0" low="20"  value="0" high="80" max="100"></meter>
     <button onclick="fillFuel()">FILL</button>
+    <button onclick="stopFuel()">STOP</button>
+    <button onclick="emptyFuel()">EMPTY</button>
 
     <script>
+         let interval1;let interval2;
         const meterNode=document.getElementById("fuelIndicator");
         let fillFuel=()=>{
-           let interval=setInterval(()=>{
+            clearInterval(interval2);
+            interval1=setInterval(()=>{
             meterNode.value++;
             if(meterNode.value==meterNode.max)
                 clearInterval(interval);
            }, 100)
+        }
+        let emptyFuel=()=>{
+            clearInterval(interval1)
+            interval2=setInterval(()=>{
+            meterNode.value--;
+            if(meterNode.value==meterNode.min)
+                clearInterval(interval);
+           }, 100)
+        }
+        let stopFuel=()=>{
+            clearInterval(interval1)
+            clearInterval(interval2);
         }
     </script>
 </body>
