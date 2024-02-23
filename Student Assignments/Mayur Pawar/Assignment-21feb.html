@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Implement following string API
+ trimStart, trimEnd, trim , toUpperCase, toLowerCase, 
+localeCompare (string literals, string objects ), slice, split, includes
+
+Implement following array API
+join, includes, reverse, sort, find
+
+/** declare salary array
+ * 1. Iterate array using forEach
+ * 2. filter salaries <10000 using filter
+ * 3. increment every salary by 5000 using map
+ * 4. display sum of salariesz
+ */ -->
+
+
+
+
+    <script> 
+        let str1="  Hello,Now 1 Month Completed In,NeoSoft  ";
+        console.log("length of str1 is:");
+        console.log(str1.length);
+
+        console.log("trimStart() is used to remove space from starting");
+        let str2=  str1.trimStart();
+        console.log(str2.length);
+
+        console.log("trimEnd() is used to remove space from end");
+        let str3=str1.trimEnd();
+        console.log(str3.length);
+
+        console.log("trim() is used to remove space from start and end");
+        let str4=str1.trim();
+        console.log(str4.length);
+
+        console.log("toUpperCase() is used to convert all letters in Capital");
+        let str5=str4.toUpperCase();
+        console.log(str5);
+
+        console.log("toLowerCase() is used to convert all letters in Lower Case");
+        console.log(str5.toLowerCase());
+
+        console.log("split() is used to split string using key which pass in double quotes");
+        let strArray=str5.split(",");
+        console.log(strArray);
+        
+        console.log("slice() is used to consider only indexes which is within parameters");
+        console.log(strArray.slice(0,2)); 
+
+        console.log("includes() is used to remove space from start and end");
+        console.log(str5.includes('N'));
+
+
+        console.log("reverse() is used to reverse array");
+        let arr=[20,500,30,100,56,76,89];
+        console.log(arr.reverse());
+
+        console.log("sort() is used to sort array");
+        let arr1=[1,7,5,3,9,4];
+        console.log(arr1.sort());
+
+        console.log("includes() is used to check and give boolean value");
+        console.log(arr1.includes(7));
+
+        console.log("find() used to find an element");
+        console.log(arr1.find((num)=>num%2==0));
+
+        console.log("join() is used to convert Array to String");
+        console.log(arr.join())
+
+        console.log("forEach() is used to etarate array values");
+        let salArray=[20000,10000,50000,35000,25000,10000];
+        salArray.forEach(sal=>console.log(sal));
+
+        console.log("filter() is used to find element which we want");
+        salArray.filter(sal=>sal<=10000).forEach(sal=>console.log(sal));
+
+        console.log("map() is used to modify each value of array");
+        salArray.map(sal=>sal+5000).forEach(sal=>console.log(sal));
+        
+        console.log("reduce() is used to sum all array elements");
+        let sum=0;
+        console.log(salArray.reduce((sum,sal)=>sum+=sal));
+
+
+        console.log("Example of local compare");
+
+        let result = "cat".localeCompare("ant");
+        console.log(result); 
+        
+        
+        let a="Mayur";
+        let b="Pawar"
+        console.log(a.localeCompare(b));
+
+        let obj=new String("Sultan");
+        let obj1=new String("Dangal");
+
+        console.log(obj1.localeCompare(a));
+        let s1='75';
+        let s2='74';
+        console.log(obj.localeCompare(obj1));
+        console.log(s1.localeCompare(s2));
+        console.log(obj1.localeCompare(obj1));
+
+        console.log('----------------------');
+    </script>
+</body>
+</html>
