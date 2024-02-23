@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String API Implementation</title>
+    <style>
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        
+    </style> 
+</head>
+<body>
+    <h1>String API Implementation</h1>
+
+    <label for="inputString">Input String:</label>
+    <textarea id="inputString" placeholder="Enter a string..."></textarea>
+
+    <button onclick="trimStart()">Trim Start</button>
+    <button onclick="trimEnd()">Trim End</button>
+    <button onclick="trim()">Trim</button>
+    <button onclick="toUpperCase()">To Uppercase</button>
+    <button onclick="toLowerCase()">To Lowercase</button>
+    <button onclick="toslice()">Slice</button>
+    <button onclick="tosplit()">Split</button>
+    <button onclick="toincludes()">includes</button>
+    
+    <h1>Array API</h1>
+
+    <h2>Result:</h2>
+    <textarea id="outputString" readonly></textarea>
+
+    <script>
+        function trimStart() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.trimStart();
+        }
+
+        function trimEnd() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.trimEnd();
+        }
+
+        function trim() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.trim();
+        }
+
+        function toUpperCase() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.toUpperCase();
+        }
+
+        function toLowerCase() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.toLowerCase();
+        }
+
+        function toslice() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.slice(3);
+        }
+
+        function tosplit() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.split(" ");
+        }
+
+        function toincludes() {
+            document.getElementById('outputString').value = document.getElementById('inputString').value.includes("Apple");
+        }
+
+        
+        
+    </script>
+</body>
+</html> 
+
+
+
