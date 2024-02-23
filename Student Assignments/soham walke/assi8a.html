@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text1 = "      Good morning!      ";
+        let text2 = text1.trim();  //trim from boh side
+        console.log(text2);
+
+        let text3 = "     hi     ";
+        let text4 = text3.trimStart();
+        console.log(text4);
+
+
+        let text5 = "     soham     ";
+        let text6 = text5.trimEnd();
+        console.log(text5);
+
+        let text7 = "hello";
+        let result = text7.toUpperCase();
+        console.log(result);
+
+        let text8 = "HellO";
+        let result1 = text8.toLowerCase();
+        console.log(result1);
+
+        let text9 = "ab";
+        let text10 = "cd";
+        let result2 = text9.localeCompare(text10);//ans get -1 bcouse a come first ascii compare
+        console.log(result2);
+
+
+        const str1 = 'viv';
+        const str2 = 'viv';
+        const result3 = str1.localeCompare(str2);
+        console.log(result3);
+
+
+        const strObj1 = new String('soham');
+        const strObj2 = new String('atharv'); //S>a so one 1
+        const result4 = strObj1.localeCompare(strObj2);
+        console.log(result4);
+
+
+        let abc = "Good morning!";
+        let res = abc.slice(0, 5);
+        console.log(res);
+
+
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        fruit.splice(2, 0, "Lemon", "Kiwi"); //2is index 0 means no del l k means add
+        let inc=fruit.includes("grapes");//check in array if pre true or false
+        console.log(inc);
+        console.log(fruit);
+
+
+        let tex = "How : are you doing today?";
+        const myArray = tex.split(" : "); //check the pattern
+        console.log(myArray);
+
+       
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
