@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------------trim()------------");
+    let ts= "    Be Still"; 
+    let ts1 = ts.trimStart();
+    console.log(ts1.length);   //8
+    ts = "Be Still         ";
+    let ts2 = ts.trimEnd(); 
+    console.log(ts2.length);   //8
+
+    ts = "       Be Still          ";
+    let ts3= ts.trim();
+    console.log(ts3.length);  //8
+
+    console.log("------------case-------------");
+    ts="Be stILL";
+    console.log(ts.toLowerCase());  //be still
+    console.log(ts.toUpperCase()); // BE STILL
+
+    console.log("---------localcompare------------");
+    console.log("2".localeCompare("5"));  //-1
+    console.log("45".localeCompare("23")); //1
+    console.log("a".localeCompare("A"));  //-1
+    console.log("a".localeCompare("A",undefined,{sensitivity:'base'})); //0
+
+    console.log("fe".localeCompare("yz"));  //-1
+    console.log("a".localeCompare("a")); //0
+
+    console.log(("a".localeCompare("z")));  //-1
+    console.log("ä".localeCompare("z", "de")); //-1, in German, ä sorts before z
+
+    console.log("ä".localeCompare("z", "sv")) //1, in Swedish, ä sorts after z
+
+    console.log("2".localeCompare("10")); //1
+
+    console.log("2".localeCompare("10",undefined,{numeric:true})); //-1
+    
+    let lc1 = new String("45");
+    let lc2 = new String("23");
+    let lc3 = new String("Hello");
+    let lc4 = new String("HELLO");
+    console.log(lc1.localeCompare(lc2)); //1
+    console.log(lc2.localeCompare(lc1)); //-1
+    console.log(lc3.localeCompare(lc4)); //-1
+    console.log(lc3.localeCompare(lc4,undefined,{sensitivity:'base'})); //0
+
+    console.log("----------slice--------------");
+    let s = [56,67,90,12]
+    let ns= s.slice(1,3); //array.slice(start,end)
+    let ns1 = s.slice(-4,-2) //start from the end of the array
+    let ns3 = s.slice(2);
+    let ns4 = s.slice(-3);
+    console.log(ns);
+    console.log(ns1);
+    console.log(ns3);
+    console.log(ns4);
+
+    console.log("-------------split----------");
+
+    let text  = "Keep it simple";
+    let result = text.split(" ");
+    console.log(result);
+    console.log(result[2]);
+    let text1 = "Hello";
+    let result1 = text1.split("");
+    console.log(result1);
+    let text2 = "Life is short enjoy the little things";
+    let result2 = text2.split("",3) //strin.split(separator,limit)
+    console.log(result2); //items after the limit are excluded
+    let result3 = text2.split(" ",3)
+    console.log(result3);
+
+    console.log("-----------------includes------------");
+
+    console.log(text2.includes("is")); //true
+    console.log(text2.includes("si"));//false
+    console.log(text1.includes(7)); //false
+
+    console.log("----------join---------");
+
+    const flower = ['hibiscus','hyacinth','orchid','lavender','hawaiian'];
+    console.log(flower.join()); //return array as a string, the default is ,(comma)
+    console.log(flower.join(" "));
+    console.log(flower.join(" rose "));
+    console.log(flower);//does not change the original array
+
+    console.log("--------reverse--------------");
+    console.log(s.reverse()); //reverses theorder of the element 
+    console.log(s); //overwrites the original array
+    console.log(flower.reverse());
+
+    console.log("--------sort-------------");
+        console.log(s.sort()); //sort the element of the array
+        console.log(flower.sort());
+        console.log(s); //overwrites the original array
+        console.log(flower);
+        let n1 = ["23","100","45","34"]; //for number it can produce incorrect result
+        console.log(n1.sort());
+
+        console.log("---------find------------");
+        console.log(n1.find(n1=>n1<45)); //23 , returns the value of the first element that matches the test
+        console.log(n1.find(n1=>n1>100)); //undefined, if no element is found
+        console.log(n1); //does not change the original array
+
+        console.log("------iterating the array -------");
+
+        const salary = [34000,10000,50000,24000,6000,5000];
+        salary.forEach(s => {
+            console.log(s);
+        });
+        console.log("------filter the salary---------");
+        let filter_salary = salary.filter(fs=>fs<10000);
+        // filter_salary.forEach(s1=>{console.log(s1);})
+        console.log(filter_salary);
+
+    console.log("------------increment the salary by 5000--------");
+    let map_salary = salary.map(mp=>mp+5000);
+    // map_salary.forEach(s2=>{console.log(s2)});
+    console.log(map_salary);
+
+    console.log("---------sum of the salary-----");
+    let sum_salary = salary.reduce((i,j)=>i+j);
+    console.log(sum_salary);
+    
+    
+    </script>
+</body>
+</html>
