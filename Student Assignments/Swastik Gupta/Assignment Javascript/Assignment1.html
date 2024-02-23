@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text1 = "    Good Morning   ";
+        let text2 = text1.trim();
+        console.log(text2);
+        //remove spaces on both sides
+
+        let text3 = "   Swastik    ";
+        let text4 = text3.trimStart();
+        console.log(text4);
+        // values removes white spaces from beginning of string
+
+        let text5 = "   Swastik Gupta    ";
+        let text6 = text5.trimStart();
+        console.log(text5);
+        
+
+        let text7 = "Swastik";
+        let result = text7.toUpperCase();
+        console.log(result);
+        //convert string in uppercase
+
+        let text8 = "DoNe";
+        let result1 = text8.toLowerCase();
+        console.log(result1);
+        //convert string in lowercase
+
+        let text9 = "swastik";
+        let text10 = "gupta";
+        let result2 = text9.localeCompare(text10);
+        console.log(result2);
+        //compare two string and return -1,1,0(b4,after,equal)
+
+
+        const str1 = 'swastik';
+        const str2 = 'swastik';
+        const result3 = str1.localeCompare(str2);
+        console.log(result3);
+
+
+        const strObj1 = new String('apple');
+        const strObj2 = new String('orange');
+        const result4 = strObj1.localeCompare(strObj2);
+        console.log(result4);
+
+
+        let abc = "Hello world!";
+        let res = abc.slice(0, 5);
+        console.log(res);
+        //return the select element
+
+
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        fruit.splice(2, 0, "Lemon", "Kiwi");
+        let inc=fruit.includes("pineapple");
+        console.log(inc);
+        console.log(fruit);
+        //splice add in the array
+
+
+        let tex = "How are you doing today?";
+        const myArray = tex.split("");
+        console.log(myArray);
+        //it split the strings
+
+       
+        
+
+
+    </script>
+</body>
+
+</html>

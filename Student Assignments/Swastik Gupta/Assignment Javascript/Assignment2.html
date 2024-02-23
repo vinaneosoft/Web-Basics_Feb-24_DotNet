@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+
+<body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let text = fruits.join();
+        //join return array as string
+
+        console.log(typeof text);
+        let res = fruits.includes("chiku");
+        console.log(res);//return false couse it is not present in array
+        
+        console.log(text);
+        
+        let rev = fruits.reverse();
+        console.log(rev);
+        // reversing th order of array
+        let sor = fruits.sort();
+        console.log(sor);
+        // Ascending order of alphabets
+        const numbers = [5, 1, 5, 3, 19, 20];
+        const result = numbers.find(number => number > 10);
+        console.log(result); 
+        //search the element by condition and it return only one value
+
+
+    </script>
+</body>
+
+</html>
