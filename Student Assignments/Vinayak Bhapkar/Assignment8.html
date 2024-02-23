@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Trim Start Examples");
+        let string1="          Hello world"
+        let string2=string1.trimStart();
+        console.log("Original string length:"+string1.length);
+        console.log("Trimmed string length:"+string2.length);
+        console.log("Original string:"+string1);
+        console.log("Trimmed string:"+string2);
+
+        ////////////////////////////////////////////////////////////
+        console.log("------------------------------");
+        console.log("Trim End Examples");
+        let string3="Good Morning          ";
+        let string4=string3.trimEnd();
+        console.log("Original string length:"+string3.length);
+        console.log("Trimmed string length:"+string4.length);
+        console.log("Original string:"+string3);
+        console.log("Trimmed string:"+string4);
+
+        console.log("---------------------------------");
+        console.log("Trim Example");
+        let string5=" Namaste  India  !!!!  ";
+        let string6=string5.trim();
+        console.log("Original string length:"+string5.length);
+        console.log("Trimmed string length:"+string6.length);
+        console.log("Original string:"+string5);
+        console.log("Trimmed string:"+string6);
+
+        console.log("---------------------------------");
+        console.log("toUppercase Example");
+        let string7="vinayak";
+        let string8=string7.toUpperCase();
+        console.log("Original string:"+string7);
+        console.log("Updated string:"+string8);
+
+        console.log("---------------------------------");
+        console.log("toUppercase Example");
+        let string9="VINAYAK";
+        let string10=string9.toLowerCase();
+        console.log("Original string:"+string9);
+        console.log("Updated string:"+string10);
+
+        console.log("---------------------------------");
+        console.log("Local Compare Example");
+        let string11="vinayak";
+        let string12=new String("Saumya");
+        let string13=new String("vinayak");
+        console.log(string11.localeCompare(string12));
+        console.log(string12.localeCompare(string13));
+        console.log(string11.localeCompare(string13));
+
+
+        console.log("---------------------------------");
+        console.log("Slice Example");
+        let string14="Good Morning , Everyone";
+        let string15=string14.slice(5);
+        console.log(string15);
+        console.log(string14.slice(2,10));
+        console.log(string14.slice(-3));
+        console.log(string14.slice(-9,-6));
+
+        console.log("---------------------------------");
+        console.log("Split Example");
+        let string16="India is a democratic country";
+        console.log(string16.split(" "));
+        let string17="Red,orange,blue,yellow,white";
+        console.log(string17.split(","));
+        let string18="Myself Vinayak R Bhapkar";
+        console.log(string18.split(" ",2));
+        console.log(string18.split("a",2));
+
+        console.log("---------------------------------");
+        console.log("Includes Example");
+        let string19="My dream company is Delloite";
+        console.log(string19.includes("dream"));
+        console.log(string19.includes("hii"));
+        console.log(string19.includes("dream",4));
+        console.log(string19.includes("dream",3));
+
+        console.log("---------------------------------");
+        console.log("Array join Example");
+        let array1=["orange","red","yellow","white"];
+        console.log(array1.join(" & "));
+        console.log(array1.join(" , "));
+        console.log(array1.join(" - "));
+        console.log(array1.join(" :color "));
+
+        console.log("---------------------------------");
+        console.log("Array include Example");
+        console.log(array1.includes("red"));
+        console.log(array1.includes("Magenta"));
+        console.log(array1.includes("red",1));
+
+        console.log("---------------------------------");
+        console.log("Array reverse Example");
+        let array2=array1.reverse();
+        console.log(array2);
+
+        console.log("---------------------------------");
+        console.log("Array sort Example");
+        let array3=[4,5,1,9,4];
+        let array4=["orange","peer","apple","banana"];
+        let array5=array4.sort()
+        console.log(array3.sort());
+        console.log(array5);
+
+        console.log("---------------------------------");
+        console.log("Array find Example");
+        console.log(array3.find(element => element==1));
+        console.log(array3.find(element => element>4));
+        console.log(array3.find(element => element>1 && element%2==0));
+
+        console.log("---------------------------------");
+        console.log("Array Salary Example");
+
+        console.log("1)Iterate array using forEach");
+        let salary=[1000,200,300,10000,20000,30000,40000,50000];
+        salary.forEach(element => {
+            console.log(element);
+        });
+
+        console.log("2)filter salaries <10000 using filter");
+        let filterSal=salary.filter(element=> element<10000);
+        console.log(filterSal);
+
+        console.log("3)increment every salary by 5000 using map");
+        let addSal=salary.map(element=>element+5000);
+        console.log(addSal);
+
+        console.log("4) display sum of salariesz");
+        let add=0;
+        for(let i=0;i<salary.length;i++){
+            add=add+salary[i];
+        }
+        console.log(add);
+    </script>
+</body>
+</html>

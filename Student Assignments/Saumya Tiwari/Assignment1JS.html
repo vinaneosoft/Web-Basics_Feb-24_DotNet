@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Trim Start Examples");
+        let string1="        Virat,Kohli         "
+        console.log(string1.trimStart());
+        
+        ////////////////////////////////////////////////////////////
+        console.log("//////////////////////////////////////");
+        console.log("Trim End Examples");
+        console.log(string1.trimEnd());
+        
+        console.log("/////////////////////////////////////");
+        console.log("Trim Example");
+        console.log(string1.trim());
+
+
+        console.log("/////////////////////////////////////");
+        console.log("toUppercase Example");
+        console.log(string1.toUpperCase());
+
+        
+
+        console.log("/////////////////////////////////////");
+        console.log("toUppercase Example");
+        console.log(string1.toUpperCase());
+        console.log(string1.toLowerCase());
+
+
+        console.log("/////////////////////////////////////");
+        console.log("Local Compare Example");
+        let string11="A";
+        let string12=new String("C");
+        let string13=new String("B");
+        console.log(string11.localeCompare(string12));
+        console.log(string12.localeCompare(string13));
+        console.log(string11.localeCompare(string13));
+
+
+        console.log("///////////////////////////////////////");
+        console.log("sLICE EXAMPLE");
+        let String2="abcdefghijklmnopqrstuvwxyz";
+        console.log(String2.slice(3,8));
+        console.log(String2.slice(-5,13));
+        console.log(String2.slice(1,-5));
+
+        console.log("///////////////////////////////////////");
+        console.log("Split EXAMPLE");
+        console.log(string1.split(","));
+
+        console.log("///////////////////////////////////////");
+        console.log("Include EXAMPLE");
+        console.log(string1.includes("virat"));
+        console.log(string1.includes("Virat"));
+
+        // Array API
+        console.log("///////////////////////////////////////");
+        console.log("Join EXAMPLE");
+        const string3=[1,4,3,2,5];
+        console.log("JOINS");
+        console.log(string3.join("-"));
+
+        console.log("///////////////////////////////////////");
+        console.log("Includes EXAMPLE");
+        console.log(string3.includes(6));
+        console.log(string3.includes(4));
+
+        console.log("///////////////////////////////////////");
+        console.log("reverse EXAMPLE");
+        console.log(string3.reverse());
+        console.log(string3);
+
+        console.log("///////////////////////////////////////");
+        console.log("Find EXAMPLE");
+        console.log(string3.find(Element=>Element>3));
+        // returns first element of an array that satisfy a provided testing fn
+        console.log(string3);
+
+        console.log("///////////////////////////////////////");
+        console.log("sort EXAMPLE");
+        console.log(string3.sort());
+        console.log(string3);
+
+        console.log("///////////////////////////////////////");
+        console.log("Find EXAMPLE");
+        console.log(string3.find(Element=>Element>3));
+        // returns first element of an array that satisfy a provided testing fn
+        console.log(string3);
+
+        console.log("1)Iterate array using forEach");
+        let salary=[1000,200,300,10000,20000,30000,40000,50000];
+        salary.forEach(element => {
+            console.log(element);
+        });
+
+        console.log("2)filter salaries <10000 using filter");
+        let filterSal=salary.filter(element=> element<10000);
+        console.log(filterSal);
+
+        console.log("3)increment every salary by 5000 using map");
+        let addSal=salary.map(element=>element+5000);
+        console.log(addSal);
+
+        console.log("4) display sum of salariesz");
+        let add=0;
+        for(let i=0;i<salary.length;i++){
+            add=add+salary[i];
+        }
+        console.log(add);
+
+    </script>
+</body>
+</html>
