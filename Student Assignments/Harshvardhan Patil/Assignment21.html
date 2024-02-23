@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Implement following string API
+ trimStart, trimEnd, trim , toUpperCase, toLowerCase, 
+localeCompare (string literals, string objects ), slice, split, includes
+     -->
+    <script>
+         const Namestring="  Harshvardhan Patil";
+        console.log(Namestring.length);
+        
+             //trimstart
+        let name1=Namestring.trimStart();
+        console.log( name1.length);
+
+        //trimsend
+        let str1="Harshvardhan Patil  "
+        console.log(  str1.length);
+        let str2= str1.trimEnd();
+        console.log(  str2.length);
+
+        //trim
+        let str3="Harshvardhan  Patil    "
+        let str4= str3.trim();
+            console.log(str3.length) 
+            
+            //toLowerCase
+            str4=str3.toLowerCase();
+            console.log(str4);
+            //toUpperCase
+            str4=str3.toUpperCase();
+            console.log(str4);
+/////////////////////////////////////////////////////
+ 
+
+            ///////////////////////////
+            //slice
+
+            let str="Harshvardhan p patil aaaa bbbbb aaaaa sddd ";
+            let str5=str.slice(3);
+            console.log(str5);
+
+             str5=str.slice(3,5);
+            console.log(str5);
+
+            ////////////////
+            //split
+            let array1=str.split(" ");
+            console.log(array1);
+
+            ////////////////includes
+
+            console.log(array1.includes("patil",2));
+                   console.log("we also give index to find over string in includes")
+
+            //////
+
+
+
+            //Implement following array API
+              //join, includes, reverse, sort, find
+             //
+             //join
+
+
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             console.log( fruits.length);
+            const text = fruits.join();
+            console.log(text);
+            const text1 = fruits.join(" and ");
+            console.log(text1);
+
+            ////////
+
+            console.log('Reverse array Example');
+             const fruits2 = ["bbbbb", "ddddd", "aaaa", "cccc"];
+             console.log('Original Array :' + fruits2);
+             console.log('Reverse Array :' + fruits2.reverse());
+            console.log('----------------------');
+
+        console.log('Sorting array Example');
+        const fruits3 = ["bbbbb", "ddddd", "aaaa", "cccc"];
+         
+        console.log(fruits3);
+        console.log('After Sorting :');
+        console.log(fruits3.sort());
+        console.log('----------------------');  
+        //////////////////////////////////
+        ///find array
+        console.log('Find array Example');
+        const find1 = [237, 565, 366, 74, 242, 4, , 8, 9, 66];
+        console.log(find1.find( index=> index == 9));
+        console.log(find1.find(index=> index  == 505));
+
+        /////////////////////////
+        console.log('Locale Comapare');
+
+             let result = "abz".localeCompare("ant");
+              console.log(result); 
+             let result1 = "ant".localeCompare("cat");
+             console.log(result1); 
+            let result2 = "cat".localeCompare("cat");
+             console.log(result2); 
+             console.log('----------------------');
+
+            
+////////////////////////////////////////////////////////////////////////
+let salaries = [80222, 123400, 9500, 110030, 7500];
+        console.log('Iterate arrayusing for each');
+        salaries.forEach(salary=>{console.log(salary)
+        });
+        
+
+        console.log('----------------------');
+
+        console.log('Filter Salaries less than 10000');
+        let filter1 = salaries.filter(salary => salary < 10000);
+        console.log('Salaries Less Than :' + filter1);
+        console.log('----------------------');
+
+        console.log('Increment in salaries');
+        let increment = salaries.map(salary => salary + 5000);
+        console.log("Increased Salaries :"+increment);
+        console.log('----------------------');
+
+        console.log('Sum of salaries');
+        let sum=0;
+        for(let i=0;i<salaries.length;i++)
+        {
+             sum = sum+salaries[i];
+            
+        }
+        console.log('Sum of Salaries is :'+sum);
+
+        console.log('----------------------');
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
