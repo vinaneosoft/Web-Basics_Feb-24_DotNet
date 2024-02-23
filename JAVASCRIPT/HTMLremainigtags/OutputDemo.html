@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="enter your name" onblur="convertFun()">
+    <p id="result"></p>
+
+    <form action="">
+    <input type="text" id="colName" placeholder="enter college name" onkeyup="result.value=colName.value.toUpperCase()">
+      <p>
+        <output id="result"></output>
+     </p>
+    </form>
+   
+    <script>
+        let pNode=document.getElementById("result");
+        let convertFun=function(){
+            let name=document.getElementById('name').value;
+            pNode.innerText=name.toUpperCase();
+        }
+    </script>
+</body>
+</html>
