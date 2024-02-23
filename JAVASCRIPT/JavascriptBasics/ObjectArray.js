@@ -48,3 +48,13 @@ console.log(student10);
 const stud=new Student(456,"xyz","ppp");
 //stud=new Student(111,"fff","gggg"); /* const reference can not be assigned to other objects */
 stud.studName="Pravin" /** value of object can be changed */
+
+console.log(student1.studId);
+console.log(student1.studName);
+console.log(student1.studClass);
+
+// iterating keys of object
+for(let key in student4){
+    console.log(key);
+    console.log(student4[key]);
+}

@@ -116,7 +116,12 @@ function validate6(){
         return true;
     }
 }
-
 function validateAll(){
-    return (validate1() && validate2() && validate3() && validate4() && validate5() && validate6())
+    const r1=validate1();
+    const r2=validate2();
+    const r3=validate3();
+    const r4=validate4();
+    const r5=validate5();
+    const r6=validate6();
+    return (r1&&r2&&r3&&r4&&r5&&r6);
 }

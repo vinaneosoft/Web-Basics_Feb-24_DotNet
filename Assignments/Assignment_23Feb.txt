@@ -1,0 +1,3 @@
+Implement class having private instance variables
+
+use get and set properties to access those variables outside of class
