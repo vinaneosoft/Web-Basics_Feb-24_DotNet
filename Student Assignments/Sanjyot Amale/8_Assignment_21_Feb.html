@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        console.log('Trim Start Example');
+        const string1 = '   HTML';
+        console.log(string1);
+        console.log(string1.length);
+        console.log(string1.trimStart());
+        console.log(string1.trimStart().length);
+        console.log('----------------------');
+
+
+        console.log('Trim End Example');
+        const string2 = 'NeoSoft     ';
+        console.log(string2);
+        console.log(string2.length);
+        console.log(string2.trimEnd());
+        console.log(string2.trimEnd().length);
+        console.log('----------------------');
+
+        console.log('Trim  Example');
+        const string3 = ' HTML CSS ';
+        console.log(string3);
+        console.log(string3.length);
+        console.log(string3.trim());
+        console.log(string3.trim().length);
+        console.log('----------------------');
+
+
+        console.log('toUppercase Eample');
+        const upper = 'Hyper Text Markup Language';
+        console.log(upper.toUpperCase());
+        console.log('----------------------');
+
+        console.log('toLowerCase Eample');
+        const lower = 'HYPER TEXT MARKUP LANGUAGE';
+        console.log(lower.toLowerCase());
+        console.log('----------------------');
+
+        console.log('Slice Eample');
+        const str = 'The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera.';
+        console.log(str.slice(31));
+        console.log(str.slice(4, 19));
+        console.log(str.slice(-4));
+        console.log(str.slice(-9, -5));
+        console.log('----------------------');
+
+        console.log('Split Example Eample');
+        let text = "How are you doing today?";
+        const array = text.split(" ");
+        console.log(array);
+
+        let text1 = "what are you doing today?";
+        const array1 = text1.split("a", 3);
+        console.log(array1);
+        console.log('----------------------');
+
+
+        console.log('Includes Example');
+        const include2 = "Hello world, welcome to the universe.";
+        console.log(include2.includes("world"));
+        console.log(include2.includes("worldwar"));
+        console.log('----------------------');
+
+
+        console.log('Join Example');
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.join(" "));
+        console.log(fruits.join(" and "));
+        console.log('----------------------');
+
+        console.log('includes array Example');
+        const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits1.includes('Banana'));
+        console.log(fruits1.includes("ap"));
+        console.log('----------------------');
+
+
+        console.log('Reverse array Example');
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        console.log('Original Array :' + fruits2);
+        console.log('Reverse Array :' + fruits2.reverse());
+        console.log('----------------------');
+
+        console.log('Sorting array Example');
+        const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits3);
+        console.log('After Sorting :');
+        console.log(fruits3.sort());
+        console.log('----------------------');
+
+        console.log('Find array Example');
+        const find1 = [23, 565, 66, 4, 22, 4, , 8, 9, 66];
+        console.log(find1.find(element => element == 9));
+        console.log(find1.find(element => element > 50));
+
+        console.log('----------------------');
+
+        console.log('Locale Comapare');
+
+        let result = "cat".localeCompare("ant");
+         console.log(result); 
+         let result1 = "ant".localeCompare("cat");
+         console.log(result1); 
+         let result2 = "cat".localeCompare("cat");
+         console.log(result2); 
+         console.log('----------------------');
+
+
+        console.log('Extra Example');
+
+        let salaries = [8000, 12000, 9500, 11000, 7500];
+        console.log('Iterate arrayusing for each');
+        salaries.forEach(salary => {
+            console.log(salary);
+        });
+        console.log('----------------------');
+
+        console.log('Filter Salaries less than 10000');
+        let filter1 = salaries.filter(salary => salary < 10000);
+        console.log('Salaries Less Than :' + filter1);
+        console.log('----------------------');
+
+        console.log('Increment in salaries');
+        let increment = salaries.map(salary => salary + 5000);
+        console.log("Increased Salaries :"+increment);
+        console.log('----------------------');
+
+        console.log('Sum of salaries');
+        let sum=0;
+        for(let i=0;i<salaries.length;i++)
+        {
+             sum = sum+salaries[i];
+            
+        }
+        console.log('Sum of Salaries is :'+sum);
+
+        console.log('----------------------');
+
+
+    </script>
+</body>
+
+</html>
