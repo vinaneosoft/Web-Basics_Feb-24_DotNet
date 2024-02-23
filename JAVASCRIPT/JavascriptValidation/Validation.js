@@ -15,6 +15,21 @@ const errorNode6=document.getElementById("error6")
 const mobilePattern=new RegExp("^[0-9]{10}$");
 
 const passwordPattern= new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,12}$");
+
+const oList=document.createElement("ol");
+const errors=['small letter', 'capital letter','digit','special symbol'];
+for(let error of errors){
+    const liNode=document.createElement('li');
+    liNode.textContent=error;
+    oList.append(liNode);
+}
+const spanNode1=document.createElement('span');
+spanNode1.textContent="Password must contain atleast";
+const spanNode2=document.createElement('span');
+spanNode2.textContent="Password must be 6 to 12 characters long";
+
+
+
 function validate1(){
   errorNode1.textContent="";
   if(nameNode.value=="")
@@ -51,7 +66,7 @@ function validate5(){
     if(passNode.value=="")
         errorNode5.textContent="Password is required";
     else if(passwordPattern.test(passNode.value)==false)
-        errorNode5.textContent="Password must contain.......";
+        errorNode5.append(spanNode1,oList,spanNode2);
 }
 function validate6(){
     errorNode6.textContent="";
