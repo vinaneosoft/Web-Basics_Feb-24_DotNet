@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text1 = "      Hello!      ";
+        let text2 = text1.trim();
+        console.log(text2);
+
+        let text3 = "          disha";
+        let text4 = text3.trimStart();
+        console.log(text4);
+
+
+        let text5 = "Disha    ";
+        let text6 = text5.trimEnd();
+        console.log(text5);
+
+        let text7 = "done";
+        let result = text7.toUpperCase();
+        console.log(result);
+
+        let text8 = "WON";
+        let result1 = text8.toLowerCase();
+        console.log(result1);
+
+        let text9 = "ab";
+        let text10 = "cd";
+        let result2 = text9.localeCompare(text10);
+        console.log(result2);
+
+
+        const str1 = 'Ball';
+        const str2 = 'Apple';
+        const result3 = str1.localeCompare(str2);
+        console.log(result3);
+
+
+        const strObj1 = new String('banana');
+        const strObj2 = new String('banana');
+        const result4 = strObj1.localeCompare(strObj2);
+        console.log(result4);
+
+
+        let abc = "Hello world!";//it will return characters from index 0 till till index 4 and will neglect char's from index 5
+        let res = abc.slice(0, 5);
+        console.log(res);
+
+
+        const animal = ["COW", "DOG", "WOLF", "CAT"];
+        animal.splice(2, 0, "sparrow", "parrot");//2:at index 2 0:it will not remove any elements and 
+        //add 2 elemnts this method overwrites the array 
+        let inc=animal.includes("tiger");
+        console.log(inc);//checks whether tiger is present or notin the array
+        console.log(animal);
+
+
+        let tex = "How are you doing today?";
+        const myArray = tex.split("");
+        console.log(myArray);
+
+       
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
