@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Trim Start Implementation -->    
+    <h1 id="trim-start">      Trim start</h1>
+    <hr>
+    <h1 id="trim-end">Trim End        </h1>
+    <hr>
+    <h1 id="trim">      Trim     </h1>
+    <hr>
+    <h1 id="uppercase">uppercase</h1>
+    <hr>
+    <h1 id="lowercase">LOWERCASE</h1>
+    <hr>
+    <h1 id="LocaleCompare1">ab</h1>
+    <h1 id="LocaleCompare2">cd</h1>
+
+    <script>
+        // Trim Start Implementation
+        const trim1 = document.getElementById('trim-start')
+        const para = document.createElement('h1')
+        para.innerHTML= trim1.innerText.trimStart()
+        trim1.after(para)
+        console.log(trim1.innerHTML.length);
+        console.log(para.innerHTML.length);
+
+        // Trim End Implementation
+        const trim2 = document.getElementById('trim-end')
+        const para2 = document.createElement('h1')
+        para2.innerHTML = trim2.innerText.trimEnd()
+        trim2.after(para2)
+        console.log(trim2.innerHTML.length);
+        console.log(para2.innerHTML.length);
+
+        // Trim Implementation
+        const trim3 = document.getElementById('trim')
+        const para3 = document.createElement('h1')
+        para3.innerHTML = trim3.innerText.trim()
+        trim3.after(para3)
+        console.log(trim3.innerHTML.length);
+        console.log(para3.innerHTML.length);
+
+        // toUpperCase Implementation
+        const upper = document.getElementById('uppercase')
+        const newUpper = document.createElement('p')
+        newUpper.innerHTML = upper.innerHTML.toUpperCase()
+        upper.after(newUpper)
+
+        // toLowerCase Implementation
+        const lower = document.getElementById('lowercase')
+        const newLower = document.createElement('p')
+        newLower.innerHTML = lower.innerHTML.toLowerCase()
+        lower.after(newLower)
+
+        // localeCompare Implementation (String Literal)
+        const lc1 = document.getElementById('LocaleCompare1')
+        const lc2 = document.getElementById('LocaleCompare2')        
+
+        console.log(lc1.innerText.localeCompare(lc2.innerText)); // ans is -1
+        
+        //localeCompare Implementation (String Object)
+
+
+        // slice implementation
+        const cars = ['BMW','Porshe','Baleno','Kia']
+        console.log(cars.slice(1,3)); 
+
+        // split implementation
+        const trash = 'My name is Ninga Hattori'
+        const trash_seperate = trash.split(" ")
+        console.log(trash_seperate);
+
+        // includes implementation
+        const essay = 'My mom and dad are the best'
+        console.log(essay.includes('and'));
+
+        // join implementation
+        const joinme = ['imhalf','imotherhalf']
+        console.log(joinme.join());
+
+        //find implementation
+        const colors = ['red','blue','green']
+        console.log(colors.find(color=>{
+            if (color =='red'){
+                return true
+            }
+        })); 
+
+        //salary iteration
+
+        const salary = [45000,3000,12000,69000,51900]
+
+        // for each
+
+        salary.forEach(indsal => {
+            
+        });
+
+        // filter 
+
+        const filtered_salaries = salary.filter(ind_sal=>{
+            if(ind_sal>10000){return ind_sal}
+        })
+        console.log(filtered_salaries);
+
+
+        const bonus = salary.map(ind_sal=>{
+            return ind_sal+5000
+        })
+        console.log(bonus);
+
+        // reduce
+
+        console.log(salary.reduce((accumulator,current)=>{return accumulator+current})); 
+    </script>
+</body>
+</html>
