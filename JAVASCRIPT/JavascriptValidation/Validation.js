@@ -16,64 +16,107 @@ const mobilePattern=new RegExp("^[0-9]{10}$");
 
 const passwordPattern= new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,12}$");
 
-const oList=document.createElement("ol");
+const uList=document.createElement("ul");
 const errors=['small letter', 'capital letter','digit','special symbol'];
 for(let error of errors){
     const liNode=document.createElement('li');
     liNode.textContent=error;
-    oList.append(liNode);
+    uList.append(liNode);
 }
 const spanNode1=document.createElement('span');
-spanNode1.textContent="Password must contain atleast";
+spanNode1.textContent="Password must contain atleast one";
 const spanNode2=document.createElement('span');
 spanNode2.textContent="Password must be 6 to 12 characters long";
 
-
+//"password must contain atleast one small letter, capital letter..............."
 
 function validate1(){
   errorNode1.textContent="";
-  if(nameNode.value=="")
+  if(nameNode.value==""){
     errorNode1.textContent="Name is required";
-  else if(nameNode.value.length<2)
+    return false;
+    }
+  else if(nameNode.value.length<2){
     errorNode1.textContent="Please enter full name";
+    return false;
+  }
+  else{
+        return true;
+    }
 }
 
 function validate2(){
   errorNode2.textContent="";
-  if(ageNode.value=="")
+  if(ageNode.value==""){
     errorNode2.textContent="Age is required";
-  else if(ageNode.value<18 || ageNode.value>60)
+    return false;
+  }
+  else if(ageNode.value<18 || ageNode.value>60){
    errorNode2.textContent="only 18 to 60 age candidates allowed";
-    // put require validation
+   return false;
+  }
+  else{
+    return true;
+    }
 }
 function validate3(){
     errorNode3.textContent="";
-    if(mobileNode.value=="")
+    if(mobileNode.value==""){
         errorNode3.textContent="Mobile number is required";
+        return false;
+    }
     else if(mobilePattern.test(mobileNode.value)==false){
         errorNode3.textContent="Please enter valid mobile number";
+        return false;
     }
+    else{
+        return true;
+        }
 }
 function validate4(){
     errorNode4.textContent="";
-    if(emailNode.value=="")
+    if(emailNode.value==""){
         errorNode4.textContent="Email id is required";
+        return false;
+    }
     else if(!emailNode.value.includes("@")|| emailNode.value.includes(" ") || emailNode.value.endsWith('@') || emailNode.value.startsWith('@'))
+       {
         errorNode4.textContent="Please enter valid email id";
+        return false;
+       }
+    else{
+        return true;
+        }
 }
 function validate5(){
     errorNode5.textContent="";
-    if(passNode.value=="")
+    if(passNode.value==""){
         errorNode5.textContent="Password is required";
-    else if(passwordPattern.test(passNode.value)==false)
-        errorNode5.append(spanNode1,oList,spanNode2);
+        return false;
+    }
+    else if(passwordPattern.test(passNode.value)==false){
+        errorNode5.append(spanNode1,uList,spanNode2); // access div and append
+        return false;
+    }
+    else{
+        return true;
+        }
 }
 function validate6(){
     errorNode6.textContent="";
-    if(confirmpassNode.value=="")
-    errorNode6.textContent="Confirm password is required";
+    if(confirmpassNode.value==""){
+     errorNode6.textContent="Confirm password is required";
+     return false;
+    }
+    else if(confirmpassNode.value!=passNode.value){
+     errorNode6.textContent="Passwords must match";
+     return false;
+    }
+    else{
+        return true;
+    }
 }
 
 function validateAll(){
-    
+    return (validate1() && validate2() && validate3() && validate4() && validate5() && validate6())
 }
