@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(){
+                let sname="Vinay";
+                let sid=10;
+
+                this.getSname=function(){
+                    return sname;
+                }
+                this.getSid=function(){
+                    return sid;
+                }
+
+                this.setSname=function(value){
+                    sname=value;
+                }
+                this.setId=function(value){
+                    sid=value;
+                }
+            }
+            
+        }
+        let student_info=new Student();
+        console.log(student_info.sname);  //without using get & set method if we try to access private variable outside the class then we will get undefined
+        console.log(student_info.sid);
+        console.log(student_info.getSname());
+        console.log(student_info.getSid());
+
+        student_info.setSname("Vinayak");
+        student_info.setId(101);
+        console.log(student_info.getSname());
+        console.log(student_info.getSid());
+    </script>
+</body>
+</html>
