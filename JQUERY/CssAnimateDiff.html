@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DEMO</title>
+    <style>
+        #flower1{
+            height: 100px;
+            width: 100px;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <img src="../HTML/Images/flower4.jpg" alt="flower" id="flower1">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#flower1').mouseover(()=>applyStyle());
+
+        function applyStyle(){
+           
+            let styleObject={
+                height:"400px",  // numeric
+                width:'500px'
+            }
+            let styleObject2={
+              transform : "scale(2)" // non-numeric
+            }
+           // $("#flower1").css(styleObject); 
+           $("#flower1").animate(styleObject, 1000,()=> $("#flower1").css("border","5px solid green")); 
+        }
+    </script>
+</body>
+</html>
