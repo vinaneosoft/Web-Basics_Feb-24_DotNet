@@ -5,57 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #flower1{
-            transition-duration: 4s;
-        }
         #flower3{
-            transition-duration: 1s;
-        }
-        #flower1:hover{
-            transform: scale(2);
-        }
-        #flower3:hover{
-        box-shadow:0px 0px 20px;
-        transform: scale(1.2);
-       }
-        #flower{
             width: 100%;
             height: 200px;
         }
     </style>
 </head>
 <body>
-    <figure>
-        <img id="flower" src="../../HTML/Images/flower3.jpg" alt="flower1">
-    </figure>
-    <figure>
-        <img id="flower1" src="../../HTML/Images/flower3.jpg" alt="flower1">
-        <figcaption>ROSE FLOWER</figcaption>
-    </figure>
-    <figure>
-        <img id="flower2" src="../../HTML/Images/flower3.jpg" alt="flower2" >
-        <figcaption>ROSE FLOWER</figcaption>
-    </figure>
+ 
     <figure id="figure3">
         <img id="flower3" src="../../HTML/Images/flower3.jpg" alt="flower3">
         <figcaption>ROSE FLOWER</figcaption>
     </figure>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        let imgNode=document.getElementById("flower2");
-        imgNode.style.cssText="border:2px solid red; height:200px; width:200px; transition-duration:4s";
-       // imgNode.style.transitionDuration="4s";
-        imgNode.addEventListener('mouseover', ()=>applyStyle());
-        function applyStyle(){
-            imgNode.style.transform="scale(2)";
-        }  
-        const imgNode2=document.getElementById("flower3");
        
         let imageArray=['../../HTML/Images/flower2.jpg','../../HTML/Images/flower3.jpg','../../HTML/Images/flower4.jpg']
         let i=0;
-        let slideshowNode=document.getElementById('flower');
+        let slideshowNode=$('#flower3');
         setInterval(()=>{
-            slideshowNode.src=imageArray[i];
+            slideshowNode.attr("src",imageArray[i]);
             i++;
             if(i==imageArray.length)
                 i=0;
