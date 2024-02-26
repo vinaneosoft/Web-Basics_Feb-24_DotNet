@@ -7,25 +7,26 @@
 </head>
 <body>
     <label>Select Interested Courses:</label><br>
-    <label for="java">JAVA:</label> <input type="checkbox" name="course" id="java" value="JAVA" onchange="changeEvent()"><br>
-    <label for="c#">C#:</label> <input type="checkbox" name="course" id="c#" value="C#"  onchange="changeEvent()"><br>
-    <label for="py">PYTHON:</label> <input type="checkbox" name="course" id="py" value="PYTHON"  onchange="changeEvent()"><br>
-    <label for="node">NODE:</label> <input type="checkbox" name="course" id="node" value="NODE"  onchange="changeEvent()"><br>
-    <script>
+    <label for="java">JAVA:</label> <input type="checkbox" name="course" id="java" value="JAVA"><br>
+    <label for="c#">C#:</label> <input type="checkbox" name="course" id="c#" value="C#"><br>
+    <label for="py">PYTHON:</label> <input type="checkbox" name="course" id="py" value="PYTHON"><br>
+    <label for="node">NODE:</label> <input type="checkbox" name="course" id="node" value="NODE"><br>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script>
         let coursesSelected=[];
-        const checkNodes=document.getElementsByName("course");
+        const checkNodes=$("[name='course']");
         console.log(checkNodes);
-        changeEvent();
+        checkNodes.change(()=>changeEvent()); // change event function
         function changeEvent() {
             coursesSelected=[];
-            for(let checkbox of checkNodes){
-            console.log(checkbox.checked);
-            if(checkbox.checked){
-                coursesSelected.push(checkbox.value);
-            }
+           let checkedNodes=$("[name='course']:checked");
+           // console.log(checkedNodes.length);
+           // console.log(checkedNodes);
+            checkedNodes.each(function(){
+                coursesSelected.push($(this).val());
+            });
+            console.log(coursesSelected);
         }
-        console.log(coursesSelected);
-    }
     </script>
 </body>
 </html> 
