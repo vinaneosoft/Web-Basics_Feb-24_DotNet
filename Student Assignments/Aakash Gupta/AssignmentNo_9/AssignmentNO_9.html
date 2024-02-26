@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            transition-duration: 4s;
+        }
+        #div1:hover{
+            transform: scale(1);
+        }
+        #div{
+           
+           
+        }
+        figure{
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height:100vh;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img id="div" src="../HTML/images/107617782.webp" alt="div1">
+        <figcaption></figcaption>
+    </figure>
+    
+    <script>
+        let imgNode=document.getElementById("div");
+        imgNode.style.cssText="border:2px solid red; height:200px; width:200px; transition-duration:4s";
+        
+        imgNode.addEventListener('mouseover', ()=>applyStyle());
+        function applyStyle(){
+        }  
+       
+        let imageArray=["../HTML/images/107617782.webp",'../HTML/images/17dhoni-csk.jpg','../HTML/images/dhoni-rohit-fit_d.webp','../HTML/images/dhoni.jpg']
+        let captionArray=
+        let i=0;
+        let slideshowNode=document.getElementById('div');
+        setInterval(()=>{
+            slideshowNode.src=imageArray[i];
+            i++;
+            if(i==imageArray.length)
+                i=0;
+        }, 2000)
+    </script>
+</body>
+</html>
