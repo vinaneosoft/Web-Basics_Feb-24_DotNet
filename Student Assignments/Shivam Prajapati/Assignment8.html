@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 = "      Namaste!      ";
+        let str2 = str1.trim();
+        console.log(str2);
+
+        let str3 = "     London    ";
+        let str4 = str3.trimStart();
+        console.log(str4);
+
+
+        let str5 = "     England     ";
+        let str6 = str5.trimStart();
+        console.log(str5);
+
+        let str7 = "welcome";
+        let result = str7.toUpperCase();
+        console.log(result);
+
+        let str8 = "haPPy";
+        let result1 = str8.toLowerCase();
+        console.log(result1);
+
+        let str9 = "C";
+        let str10 = "c";
+        let result2 = str9.localeCompare(str10);
+        console.log(result2);
+
+
+        const str11 = 'Goa';
+        const str12 = 'Goa';
+        const res3 = str11.localeCompare(str12);
+        console.log(res3);
+
+
+        const com1 = new String('Neosoft');
+        const com2 = new String('Wipro');
+        const res4 = com1.localeCompare(com2);
+        console.log(res4);
+
+
+        let greet = "Hello Pumpkin";
+        let res = greet.slice(0, 5);
+        console.log(res);
+
+
+        const vegetable = ["Tomato", "Chilly", "Pumpkin", "Carrot"];
+        vegetable.splice(2, 0, "Radish", "Beetroot");
+        let veg=vegetable.includes("Potato");
+        console.log(veg);
+        console.log(vegetable);
+
+
+        let sent = "Let's do some cooking!";
+        const arr1 = sent.split(" ");
+        console.log(arr1);
+
+       
+        //Question 2
+        const vehicles = ["Jeep", "Motorcar", "Train", "aeroplane"];
+        const vehicles2="Bike ";
+        let v1 = vehicles.join(vehicles2);
+        let ans = vehicles.includes("Metro");
+        console.log(ans);
+        console.log(v1);
+        let arrRev = vehicles.reverse();
+        console.log(arrRev);
+        let arrSort = vehicles.sort();
+        console.log(arrSort);
+        // find
+        const numbers = [3, 6, 8, 12, 13];
+        const searchNum = numbers.find(number => number > 10);
+        console.log(searchNum);
+
+        //Question 3
+
+        const salaries = [9000, 13000, 8500, 10000, 5500]; //Declare
+
+        
+        console.log("Original Salaries:"); //Iterate  using forEach
+        salaries.forEach(salary => {
+            console.log(salary);
+        });
+
+        
+        const filteredSalaries = salaries.filter(salary => salary < 10000); //salaries < 10000 using filter
+
+        console.log("\nFiltered Salaries (less than 10000):");
+        filteredSalaries.forEach(filteredSalary => {
+            console.log(filteredSalary);
+        });
+
+       
+        const incrementedSalaries = salaries.map(salary => salary + 5000);  //Increment every salary by 5000 using map
+
+        console.log("\nIncremented Salaries (by 5000):");
+        incrementedSalaries.forEach(incrementedSalary => {
+            console.log(incrementedSalary);
+        });
+
+        
+        const sumOfSalaries = salaries.reduce((sum, salary) => sum + salary, 0);  //  Display sum of salaries
+
+        console.log("\nSum of Salaries:", sumOfSalaries);
+
+
+
+    </script>
+</body>
+</html>
