@@ -1,0 +1,9 @@
+save ur home page as index.html
+upload ur project folder as github repository
+1. open github account
+2. create new repository (name as ur project name)
+3. upload all files (index.html, ....) and folders(images, css, js) of ur project in created repository (drag and drop)
+4. commit changes
+5. Go in Project : settings--> pages --> select branch as main --> save the changes
+6. Refresh the page, hosted link will get generated.
+7. Paste hosted link in Attendance sheet
