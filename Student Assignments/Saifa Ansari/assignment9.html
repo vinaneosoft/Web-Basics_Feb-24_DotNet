@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image SlideShow</title>
+    <style>
+        img{
+            width: 250px;
+            height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <figure>
+            <img src="" alt="" id="images">
+            <figcaption id="caption"></figcaption>
+        </figure>
+    </div>
+
+    <script>
+        class flowerImages{
+            constructor(images_src,images_alt,images_name){
+            this.images_src = images_src;
+            this.images_alt=images_alt;
+            this.images_name=images_name
+        }
+    }
+    let images1 = new flowerImages("images/hawaiian.jpg",'error in loading the images hawaiian','Hawaiian');
+    let images2 = new flowerImages('images/hyacinth.jpg','error in loading the images hyacinth','Hyacinth');
+    let images3 = new flowerImages('images/lavender.jpg','error in loading the images lavender','Lavender');
+    let images4 = new flowerImages('images/orchid.jpg','error in loading the images orchid','Orchid');
+
+    let images = [images1,images2,images3,images4];
+    let i=0;
+    const img = document.getElementById('images');
+    const caption = document.getElementById('caption');
+
+    setInterval(()=>{
+        img.src = images[i].images_src;
+        img.alt = images[i].images_alt;
+        caption.textContent =images[i].images_name
+        i++;
+        if(i==images.length)
+            i=0;
+    },2000)
+    </script>
+</body>
+</html>
