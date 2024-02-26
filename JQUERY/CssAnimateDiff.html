@@ -22,13 +22,17 @@
            
             let styleObject={
                 height:"400px",  // numeric
-                width:'500px'
+                width:'500px',
+                opacity:0.5
             }
             let styleObject2={
               transform : "scale(2)" // non-numeric
             }
            // $("#flower1").css(styleObject); 
            $("#flower1").animate(styleObject, 1000,()=> $("#flower1").css("border","5px solid green")); 
+           // chaining
+          $('#flower1').animate(styleObject,1000).css("border","5px solid green"); // css is not effect function so
+          // chaining is not applicable on css function. 
         }
     </script>
 </body>

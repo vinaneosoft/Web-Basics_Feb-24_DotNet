@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAINING</title>
+    <style>
+        .flower{
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower1" class="flower">
+    <img src="../HTML/Images/flower2.jpg" alt="flower" id="flower2"  class="flower">
+    <img src="../HTML/Images/flower1.jpg" alt="flower" id="flower3"  class="flower">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        // after 1 operation gets completed, another should start on same selector
+        // hide, show, fadeout, fadein, slide up, slide down
+        // if we have same selector to apply multiple effects the we can do chaining...
+     $('.flower').mouseover(()=>chaining());   
+
+     function callback(){
+        $('.flower').hide(1000, function(){
+            $(this).show(2000, function(){
+                    $(this).fadeOut(500,function(){
+                        $(this).fadeIn(600);
+                    })
+            })
+        })
+     }
+     function chaining(){
+        $('.flower').hide(1000).show(500).fadeOut(1000).fadeIn(400).slideUp(1000).slideDown(700);
+     }
+    </script>
+</body>
+</html>
