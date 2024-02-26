@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Show Password Demo</title>
 </head>
 <body>
-    <!-- 
-        create password field to take password as user input
-        create checkbox with label show password
-        if user checks the checkbox, password must be visible
-        if user unchecks the checkbox passowrd must be invisible (converted to original state)
-  
-        You can access nodes using id
-
-    -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<br>
+<input type="checkbox" id="showPassword">
+<label for="showPassword">Show Password</label>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $("#showPassword").change(()=>check());  
+    console.log($("#password").attr('type'));
+    function check() {
+        console.log($("#showPassword").prop('checked'));
+        console.log($("#showPassword").is(':checked'));
+       
+        if ($("#showPassword").prop('checked')) 
+            $("#password").attr('type','text');  // attr function
+        else
+            $("#password").attr('type','password');     
+    }
+</script>
 </body>
 </html>
