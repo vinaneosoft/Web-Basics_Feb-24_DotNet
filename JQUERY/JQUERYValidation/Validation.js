@@ -18,6 +18,7 @@ emailNode.blur(()=>validate4());
 passNode.blur(()=>validate5());
 confirmpassNode.blur(()=>validate6());
 
+$("#registerForm").submit(()=>validateAll());
 
 
 const mobilePattern=new RegExp("^[0-9]{10}$");
