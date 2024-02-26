@@ -1,0 +1,72 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <img id="image" src="" alt="" style="height: 300px; width: 300px;">
+        <figcaption id="caption"></figcaption>
+        <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+class AnimalImage {
+    constructor(imageSrc, imageName, imageAlt) {
+        this.imageSrc = imageSrc;
+        this.imageName = imageName;
+        this.imageAlt = imageAlt;
+    }
+}
+
+let images = [
+    new AnimalImage('../images/Morphoamathonte.jpeg', 'WHITEFLOWER', 'Flower Image'),
+    new AnimalImage('../images/stock-photo-world-wide-web-icon-8742.jpg', 'PINKFLOWER', 'Flower Image'),
+    new AnimalImage('../images/Morphoamathonte.jpeg', 'YELLOWFLOWER', 'Flower Image'),
+    new AnimalImage('../images/stock-photo-world-wide-web-icon-8742.jpg', 'ORANGEFLOWER', 'Flower Image'),
+    
+];
+
+let index = 0;
+
+
+function changeImage() {
+    const imageElement = document.getElementById('image');
+    const captionElement = document.getElementById('caption');
+
+    imageElement.src = images[index].imageSrc;
+    imageElement.alt = images[index].imageAlt;
+    captionElement.textContent = images[index].imageName;
+
+    index++;
+    if (index >= images.length) {
+        index = 0; 
+    }
+}
+
+changeImage();
+
+setInterval(changeImage, 3000);
+</script>
+</body>
+</html>
