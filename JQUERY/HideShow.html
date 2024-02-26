@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDE SHOW</title>
+    <style>
+        #flower{
+            height: 300px;
+            width: 400px;
+        }
+        #hideshow{
+            padding: 10px;
+            background: green;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <button type="button" id="hideshow">HIDE</button><!-- innerText / text(), innerHTML / html()-->
+  <br> <!--  <input type="button" id="hideshow2" value="HIDE"> --> <!-- value / val()-->
+    <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+       
+        $('#hideshow').click(()=>{
+            if($('#hideshow').text()=="HIDE")
+                hideImage();
+            else
+                showImage();
+        });
+        function hideImage(){
+            $("#flower").hide(1000, ()=> $('#hideshow').text("SHOW")); // effect function
+           
+        }
+        function showImage(){
+            $("#flower").show(2000, ()=> $('#hideshow').text("HIDE")); // effect function
+        }
+    </script>
+</body>
+</html>
