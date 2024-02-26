@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 22 FEB</title>
+</head>
+<body>
+
+        <img id="image" src="" alt="">
+        <figcaption id="caption"></figcaption>
+        <script>
+                                   
+                                   
+                                   
+                                   class SocialImage {
+                    constructor(imageSrc, imageName, imageAlt) {
+                        this.imageSrc = imageSrc;
+                        this.imageName = imageName;
+                        this.imageAlt = imageAlt;
+                    }
+                }
+
+                let images = [
+                    new SocialImage('../html/images/insta.jpg', 'Instagram', 'Insta'),
+                    new SocialImage('../html/images/snapchat.jpg', 'Snapchat', 'snap'),
+                    new SocialImage('../html/images/twitter.jpg', 'Twitter', 'X'),
+                    new SocialImage('../html/images/whatsApp.jpg', 'Whatsapp', 'whatsApp'),
+                    new SocialImage('../html/images/twitter.jpg', 'Twitter', 'X'),
+                    new SocialImage('../html/images/snapchat.jpg', 'Snapchat', 'snap')
+                ];
+
+                let index = 0;
+
+
+                function changeImage() {
+                    const imageElement = document.getElementById('image');
+                    const captionElement = document.getElementById('caption');
+
+                    imageElement.src = images[index].imageSrc;
+                    imageElement.alt = images[index].imageAlt;
+                    captionElement.textContent = images[index].imageName;
+
+                    index++;
+                    if (index >= images.length) {
+                        index = 0; 
+                    }
+                }
+
+                changeImage();
+
+                setInterval(changeImage, 3000);
+
+        </script>
+</body>
+</html>

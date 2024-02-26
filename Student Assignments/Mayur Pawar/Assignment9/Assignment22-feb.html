@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img{
+        height: 400px;
+        width: 500px;
+        margin: 25px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Assignment 9-SLIDE SHOW</h1>
+    <img id="image" src="" alt="" >
+    <figcaption id="caption"></figcaption>
+    <script>
+        class PizzaImage {
+    constructor(imageSrc, imageName, imageAlt) {
+        this.imageSrc = imageSrc;
+        this.imageName = imageName;
+        this.imageAlt = imageAlt;
+    }
+}
+
+let images = [
+    new PizzaImage('images/BBQChikenpizza.jpg', 'Chiken Pizza', 'Pizza Image'),
+    new PizzaImage('images/ChikenTikkaPizza.jpg', 'VEG PIZZA', 'Pizza Image'),
+    new PizzaImage('images/GamberiPizza.jpg', 'Classic TIKKA PIZZA', 'Pizza Image'),
+    new PizzaImage('images/BBQChikenpizza.jpg', 'CHEESE PIZZA', 'Pizza Image'),
+    new PizzaImage('images/ChikenTikkaPizza.jpg', 'FLAVOURED PIZZA', 'Pizza Image'),
+    new PizzaImage('images/GamberiPizza.jpg', 'NEW PIZZA', 'Pizza Image')
+];
+
+let index = 0;
+
+
+function SlideShow() {
+    const Element = document.getElementById('image');
+    const captionElement = document.getElementById('caption');
+
+    Element.src = images[index].imageSrc;
+    Element.alt = images[index].imageAlt;
+    captionElement.textContent = images[index].imageName;
+
+    index++;
+    if (index >= images.length) {
+        index = 0; 
+    }
+}
+
+SlideShow();
+
+setInterval(SlideShow, 1500);
+
+    </script>
+</body>
+</html>

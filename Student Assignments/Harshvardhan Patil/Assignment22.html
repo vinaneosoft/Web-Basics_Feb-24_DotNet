@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="image" src="" alt="" style="height: 300px; width: 300px;">
+    <figcaption id="caption"></figcaption>
+
+    <script>
+        class AnimalImage {
+        constructor(imageSrc, imageName, imageAlt) {
+        this.imageSrc = imageSrc;
+        this.imageName = imageName;
+        this.imageAlt = imageAlt;
+    }
+}
+
+let images = [
+    new AnimalImage('Library/Dom/image/alien.jpg', 'alien', 'alien'),
+    new AnimalImage('Library/Dom/image/aron man.jpg', 'Iron Man', 'Iron Man'),
+    new AnimalImage('Library/Dom/image/Avatarimg1.jpg', 'Avatar', 'Avatar'),
+    new AnimalImage('Library/Dom/image/IMG_1383.JPG', 'IMG_1383', 'IMG_1383'),
+    
+    
+];
+
+let index = 0;
+
+
+function changeImage() {
+    const imageElement = document.getElementById('image');
+    const captionElement = document.getElementById('caption');
+
+    imageElement.src = images[index].imageSrc;
+    imageElement.alt = images[index].imageAlt;
+    captionElement.textContent = images[index].imageName;
+
+    index++;
+    if (index >= images.length) {
+        index = 0; 
+    }
+}
+
+changeImage();
+
+setInterval(changeImage, 3000);
+
+    </script>
+</body>
+</html>
