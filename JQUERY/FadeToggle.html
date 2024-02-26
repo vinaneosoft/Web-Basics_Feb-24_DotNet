@@ -23,19 +23,21 @@
     <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower1" class="flower">
     <img src="../HTML/Images/flower2.jpg" alt="flower" id="flower2"  class="flower">
     <img src="../HTML/Images/flower1.jpg" alt="flower" id="flower3"  class="flower">
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
     <script>
         $('#effectbutton').dblclick(()=>{
            fadeToggleImage();
         });
         $('#effectbutton2').dblclick(()=>{
-           fadeImage();
+           fadeImage(); // custom function called
         });
         function fadeToggleImage(){
-            $(".flower").fadeToggle(1000);
+            $(".flower").fadeToggle(1000);  // inbuilt functions
         }
         function fadeImage(){
-            $("#flower1").fadeTo(1000,0.5);
+            $("#flower1").fadeTo(1000,0.5); // inbuilt functions
             $("#flower2").fadeTo(500,0.2);
             $("#flower3").fadeTo(800,0.8);
         }
