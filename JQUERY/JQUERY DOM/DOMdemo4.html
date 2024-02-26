@@ -16,19 +16,15 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        // , setAttribute, append, prepend, styling, eventRegistering, adding more classes
         const h1Node=$('<h1>');
         h1Node.text("main course");
         h1Node.attr("id","maincourseHeading");
         h1Node.addClass("heading");
         h1Node.addClass('heading1');
         $(document.body).prepend(h1Node); // prepend : js, jq
-
         const oList=$('<ol>');
         oList.attr("type","A");
-       /*  oList.start=4; */
         const mainCourse=['veg tawa','paneer kadai','mix veg']
-
         for(let item of mainCourse){
             const liNode=$("<li>");
             liNode.text(item.toUpperCase());
@@ -36,8 +32,6 @@
             oList.append(liNode);  // js, jq
         }
         h1Node.after(oList);
-        /*append, prepend : call on parent node
-        before, after : call on siblings*/
     </script>
 </body>
 </html>
