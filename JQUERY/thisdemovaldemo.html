@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS DEMO, VAL DEMO</title>
+    <style>
+        #flower{
+            height: 300px;
+            width: 400px;
+        }
+        #hideshow{
+            padding: 10px;
+            background: green;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <input type="button" id="hideshow" value="HIDE">  <!-- value / val()--> <br>
+    <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+       /*accessing current selector with this, arrow functions wont work with this, instead use annonymous functions*/
+        $('#hideshow').click(function(){  
+            if($(this).val()=="HIDE")
+                hideImage();
+            else
+                showImage();
+        });
+        function hideImage(){
+            $("#flower").hide(1000, ()=> $('#hideshow').val("SHOW")); // effect function
+           
+        }
+        function showImage(){
+            $("#flower").show(2000, ()=> $('#hideshow').val("HIDE")); // effect function
+        }
+    </script>
+</body>
+</html>
