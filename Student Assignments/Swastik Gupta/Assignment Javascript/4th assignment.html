@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow Assignment</title>
+  <style>
+    .slideshow-container {
+      max-width: 400px;
+      position: relative;
+      margin: auto;
+    }
+    img {
+      width: 500px;
+      height: auto;
+    }
+    .cap1 {
+      text-align: center;
+      padding: 15px;
+      background:white;
+    }
+  </style>
+</head>
+<body>
+
+<figure class="slideshow-container">
+  <img id="slideshow-images" src="" alt="" />
+  <figcaption class="cap1" id="img-cap"></figcaption>
+</figure>
+
+<script>
+class flowerimage {
+  constructor(imgsrc, imgname, imagealternatepath) {
+    this.imgsrc = imgsrc;
+    this.imgname = imgname;
+    this.imagealternatepath = imagealternatepath;
+  }
+}
+
+// Create 5 image objects and access
+let img1 = new flowerimage('./image1.jpg', 'PinkRose', 'PinkRose');
+let img2 = new flowerimage('./image2.avif', 'RedRose', 'RedRose');
+let img3 = new flowerimage('./image3.jpg', 'lotus1', 'otus1');
+let img4 = new flowerimage('./image4.jpg', 'lotus2', 'lotus2');
+let img5 = new flowerimage('./image5.jpg', 'YellowRose', 'YellowRose');
+
+let images = [img1, img2, img3, img4, img5];
+let currentIndex = 0;
+
+function changeImage() {
+  let currentImage = images[currentIndex];
+
+  document.getElementById('slideshow-images').src = currentImage.imgsrc;
+  document.getElementById('slideshow-images').alt = currentImage.imagealternatepath;
+  document.getElementById('img-cap').innerText = currentImage.imgname;
+
+  // Increment index or reset to 0 when it reaches the end
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Start the slideshow with a 3-second interval
+let slideshowInterval = setInterval(changeImage, 3000);
+
+// Stop the slideshow after 16 seconds 
+setTimeout(() => {
+  clearInterval(slideshowInterval);
+}, 16000);
+</script>
+
+</body>
+</html>
