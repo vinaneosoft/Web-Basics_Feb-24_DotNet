@@ -1,0 +1,3 @@
+Make a callback
+once we click on button (FADE OUT)
+  First Image to be faded out, after this 2nd image to be faded out, then 3rd image to be faded out

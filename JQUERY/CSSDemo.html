@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DEMO</title>
+</head>
+<body>
+    <img src="../HTML/Images/flower4.jpg" alt="flower" id="flower1">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#flower1').mouseover(()=>applyStyle());
+
+        function applyStyle(){
+            $("#flower1").css("border","10px double green");
+
+            let styleObject={
+                border: '5px solid green',
+                transform: 'scale(2)',
+                boxShadow: '10px 10px 20px'
+            }
+
+           // $("#flower1").css("border","10px double green");
+            $("#flower1").css(styleObject); // we can not set timer in css function 
+            // solution : animate function  : numeric properties
+        }
+    </script>
+</body>
+</html>
