@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADEOUT FADEIN</title>
+    <style>
+        .flower{
+            height: 300px;
+            width: 400px;
+        }
+        #effectbutton{
+            padding: 10px;
+            background: green;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <small>double click on button</small><br>
+    <button type="button" id="effectbutton">FADE TOGGLE</button> <br>
+    <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower1" class="flower">
+    <img src="../HTML/Images/flower2.jpg" alt="flower" id="flower2"  class="flower">
+    <img src="../HTML/Images/flower1.jpg" alt="flower" id="flower3"  class="flower">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#effectbutton').dblclick(()=>{
+           fadeToggleImage();
+        });
+        function fadeToggleImage(){
+            $(".flower").fadeToggle(1000);
+        }
+    </script>
+</body>
+</html>
