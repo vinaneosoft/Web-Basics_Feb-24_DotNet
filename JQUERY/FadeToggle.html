@@ -9,7 +9,7 @@
             height: 300px;
             width: 400px;
         }
-        #effectbutton{
+        .btn{
             padding: 10px;
             background: green;
             width: 100px;
@@ -18,7 +18,8 @@
 </head>
 <body>
     <small>double click on button</small><br>
-    <button type="button" id="effectbutton">FADE TOGGLE</button> <br>
+    <button type="button" id="effectbutton" class="btn">FADE TOGGLE</button>  
+    <button type="button" id="effectbutton2" class="btn">FADE TO</button><br>
     <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower1" class="flower">
     <img src="../HTML/Images/flower2.jpg" alt="flower" id="flower2"  class="flower">
     <img src="../HTML/Images/flower1.jpg" alt="flower" id="flower3"  class="flower">
@@ -27,8 +28,16 @@
         $('#effectbutton').dblclick(()=>{
            fadeToggleImage();
         });
+        $('#effectbutton2').dblclick(()=>{
+           fadeImage();
+        });
         function fadeToggleImage(){
             $(".flower").fadeToggle(1000);
+        }
+        function fadeImage(){
+            $("#flower1").fadeTo(1000,0.5);
+            $("#flower2").fadeTo(500,0.2);
+            $("#flower3").fadeTo(800,0.8);
         }
     </script>
 </body>
