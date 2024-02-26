@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  <style>
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .caption {
+      text-align: center;
+      padding: 10px;
+      background:white;
+    }
+  </style>
+</head>
+<body>
+
+<figure class="slideshow-container">
+  <img id="slideshow-img" src="" alt="" />
+  <figcaption class="caption" id="img-caption"></figcaption>
+</figure>
+
+<script>
+class flowerimage {
+     constructor(imgsrc, imgname, imagealternatepath) {
+    this.imgsrc = imgsrc;
+    this.imgname = imgname;
+    this.imagealternatepath = imagealternatepath;
+  }
+}
+
+//  image objects
+let img1 = new flowerimage('./images/pexels-artem-saranin-1187079.jpg', 'caption1', 'Alternate text 1');
+let img2 = new flowerimage('./images/pexels-dominika-roseclay-1166869.jpg', 'caption2', 'Alternate text 2');
+let img3 = new flowerimage('./images/pexels-irina-iriser-673857.jpg', 'caption3', 'Alternate text 3');
+let img4 = new flowerimage('./images/pexels-marianna-ole-757889.jpg', 'caption4', 'Alternate text 4');
+let img5 = new flowerimage('./images/pexels-pixabay-128868.jpg', 'caption5', 'Alternate text 5');
+
+let images = [img1, img2, img3, img4, img5];
+let currentIndex = 0;
+
+function changeImage() {
+  let currentImage = images[currentIndex];
+
+  document.getElementById('slideshow-img').src = currentImage.imgsrc;
+  document.getElementById('slideshow-img').alt = currentImage.imagealternatepath;
+  document.getElementById('img-caption').innerText = currentImage.imgname;
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+
+let slideshowInterval = setInterval(changeImage, 3000);
+
+</script>
+
+</body>
+</html>
