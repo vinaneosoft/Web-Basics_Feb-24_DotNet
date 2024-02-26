@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fontStyle{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+        .borderStyle{
+            border: 4px solid red;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fontStyle borderStyle">
+        HELLO
+    </div>
+    <script>
+        // createElement, setAttribute, append, prepend, styling, eventRegistering, adding more classes
+        const h1Node=document.createElement('h1');
+        h1Node.textContent="MAIN COURSE";
+        h1Node.id="maincourseHeading";
+        h1Node.classList.add("heading", "heading1");
+        document.body.prepend(h1Node);
+
+        const oList=document.createElement('ol');
+        oList.type="A";
+       /*  oList.start=4; */
+        const mainCourse=['veg tawa','paneer kadai','mix veg']
+
+        for(let item of mainCourse){
+            const liNode=document.createElement("li");
+            liNode.textContent=item.toUpperCase();
+            liNode.id=item;
+            oList.append(liNode);
+        }
+        h1Node.after(oList);
+        /*append, prepend : call on parent node
+        before, after : call on siblings*/
+    </script>
+</body>
+</html>

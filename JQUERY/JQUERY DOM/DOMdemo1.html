@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Document Object Model : document ka object model  
+    HTML document ====>  Object Model-->
+    <h2 class="india">INDIA</h2>
+    <p id="p1" class="india">
+    <b>INDIA IS MY COUNTRY</b>
+    <small>INDIA</small>
+    </p>
+    <p id="p2">
+        <i>ALL INDIANS ARE MY BROTHERS AND SISTERS</i>
+        <small>INDIA</small>
+    </p>
+    <p id="p3" class="india">
+        <i>I LOVE INDIA</i>
+    </p>
+    <button onclick="paste()">PASTE</button>
+    <p id="p4">
+    </p>
+    <p id="p5">
+    </p>
+    <p id="p6">
+    </p>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        let obj={
+            backgroundColor  : "lightcoral",
+            border :  "4px double blue"
+        }
+        $('body').css(obj);
+        const nodes1=$('p');
+        console.log(nodes1);
+        const nodes2=$('.india');
+        console.log(nodes2);
+        const pnode1=$('#p1');
+        const pnode2=$('#p2');
+        const pnode4=$('#p4');
+        const pnode5=$('#p5');
+        const pnode6=$('#p6');
+        const insideText1=pnode1.text(); // nonstandard
+        console.log(insideText1);
+        const insideText2=pnode1.text(); // standard
+        console.log(insideText2);
+        function paste(){
+            pnode4.html(pnode1.html())
+            pnode5.text(pnode2.text())
+            pnode6.html("<b>"+pnode2.text()+"</b>")
+        }
+        console.log($('body').children());
+        console.log(pnode1.children());
+
+
+
+    </script>
+</body>
+</html>
