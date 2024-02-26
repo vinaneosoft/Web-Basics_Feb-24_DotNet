@@ -14,20 +14,15 @@
             background: green;
             width: 100px;
         }
-
     </style>
 </head>
 <body>
-    <button type="button" id="effectbutton">FADE OUT</button><!-- innerText / text(), innerHTML / html()-->
-  <br> <!--  <input type="button" id="hideshow2" value="HIDE"> --> <!-- value / val()-->
+    <button type="button" id="effectbutton">FADE OUT</button> <br>
     <img src="../HTML/Images/flower3.jpg" alt="flower" id="flower1" class="flower">
     <img src="../HTML/Images/flower2.jpg" alt="flower" id="flower2"  class="flower">
     <img src="../HTML/Images/flower1.jpg" alt="flower" id="flower3"  class="flower">
-
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-       
         $('#effectbutton').click(()=>{
             if($('#effectbutton').text()=="FADE OUT")
                 fadeOutImage();
@@ -36,7 +31,6 @@
         });
         function fadeOutImage(){
             $(".flower").fadeOut(1000, ()=> $('#effectbutton').text("FADE IN")); // effect function
-           
         }
         function fadeInImage(){
             $(".flower").fadeIn(2000, ()=> $('#effectbutton').text("FADE OUT")); // effect function
