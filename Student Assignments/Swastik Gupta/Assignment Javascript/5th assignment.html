@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetSet</title>
+</head>
+<body>
+    <script>
+    class MyClass 
+    {
+        constructor() 
+        {
+          // Private variables
+          let _privateVar1 = 10;
+          let _privateVar2 = '';
+      
+          // Getter for privateVariable1
+          this.getPrivateVar1 = () => {
+            return _privateVar1;
+          };
+      
+          // Setter for privateVariable1
+          this.setPrivateVar1 = (value) => {
+            if (typeof value === 'number') {
+              _privateVar1 = value;
+            } else {
+              console.error('Invalid value type. Please provide a number.');
+            }
+          };
+      
+          // Getter for privateVariable2
+          this.getPrivateVar2 = () => {
+            return _privateVar2;
+          };
+      
+          // Setter for privateVariable2
+          this.setPrivateVar2 = (value) => {
+            if (typeof value === 'string') {
+              _privateVar2 = value;
+            } else {
+              console.error('.');
+            }
+          };
+        }
+      }
+      
+      // Example usage
+      const myObject = new MyClass();
+      
+      console.log(myObject.getPrivateVar1()); // Output: 10
+      myObject.setPrivateVar1(40);
+      console.log(myObject.getPrivateVar1()); // Output: 40
+      
+      console.log(myObject.getPrivateVar2()); // Output: ''
+      myObject.setPrivateVar2('Good ,Morning');
+      console.log(myObject.getPrivateVar2()); // Output: 'Good ,Morning'
+      </script>
+</body>
+</html>
