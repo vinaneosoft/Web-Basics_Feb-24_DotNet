@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade Out Sequence</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    .bikes {
+      display: block;
+    }
+    img{
+        height: 400px;
+        width:400px
+        
+    }
+    button{
+        background-color: red;
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+    <button id="fadeButton">FADE OUT</button>
+  <img class="bikes" src="../HTML/Image/bike1.jpg" alt="Image 1">
+  <img class="bikes" src="../HTML/Image/bike2.jpg" alt="Image 2">
+  <img class="bikes" src="../HTML/Image/bike3.jpg" alt="Image 3">
+ 
+
+  <script>
+    $(document).ready(function() {
+      let images = $('.bikes');
+      let currentIndex = 0;
+
+      $('#fadeButton').on('click', function() {
+        fadeOutImage();
+      });
+
+      function fadeOutImage() {
+        if (currentIndex < images.length) {
+          $(images[currentIndex]).fadeOut('slow', function() {
+            currentIndex++;
+            fadeOutImage();
+          });
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
