@@ -1,0 +1,105 @@
+ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+    /* Inline element like selected only that element space */
+    margin:30px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: rgb(12, 236, 60);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    /* background-color: white; */
+
+    color: rgb(12, 236, 60);
+
+}
+
+
+
+.loc1 {
+    background-color: #333333;
+    width: 100%;
+}
+
+.loc1 .location-header {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    /* equally space betn the element */
+}
+
+
+.location-header h4 {
+    color: orange;
+    padding: 40px 100px;
+}
+
+.loc1 .location-content {
+    display: flex;
+    align-items: center;
+    /* vertical acces */
+    justify-content: space-evenly; 
+    /* horizontal contet */
+    padding: 100px 10px;
+    background-color: #404040;
+}
+
+.loc1 .location-content .Locations1,
+.Locations2,
+.Locations3 {
+    width: 300px;
+}
+
+
+.loc1 .location-content .Locations1 .LocationsImg1 img {
+    border-radius: 10%;
+    height: 200px;
+    width: 300px;
+}
+
+.loc1 .location-content .Locations2 .LocationsImg2 img {
+    border-radius: 10%;
+    height: 200px;
+    width: 300px;
+}
+
+.loc1 .location-content .Locations3 .LocationsImg3 img {
+    border-radius: 10%;
+    height: 200px;
+    width: 300px;
+}
+
+.loc1 .location-content .Mumbai,
+.Delhi,
+.Bangalore {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loc1 .location-content .Mumbai h2,
+.Delhi h2,
+.Bangalore h2 {
+    color: orange;
+}
+
+.loc1 .location-content .Mumbai label,
+.Delhi label,
+.Bangalore label {
+    margin-top: 10px;
+    color: white;
+    height: 10px;
+}
