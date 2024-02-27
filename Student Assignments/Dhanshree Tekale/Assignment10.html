@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student {
+            #name;
+            #age;
+    constructor(name, age) {
+        this.#name = name; 
+        this.#age = age; 
+    }
+
+   
+    getName() {
+        return this.#name;
+    }
+
+   
+    setName(newName) {
+        this.#name = newName;
+    }
+
+    
+    getAge() {
+        return this.#age;
+    }
+
+    setAge(newAge){
+        this.#age=newAge;
+    }
+   
+}
+let student1 = new Student("Shraddha", 20);
+console.log(student1.getName());
+console.log(student1.getAge()); 
+
+student1.setName("Dhanshree");
+student1.setAge(23);
+
+console.log(student1.getName()); 
+console.log(student1.getAge()); 
+
+    </script>
+</body>
+</html>
