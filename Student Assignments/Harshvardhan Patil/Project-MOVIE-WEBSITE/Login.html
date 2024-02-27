@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Style/Login.css">
+    <style>
+        
+        
+    </style>
+     
+</head>
+<body>
+
+    <div class="container">
+        <form class="form" action="index.html"   onsubmit="return validateAll()" >
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" onblur="validate1()">
+            <span class="error" id="error1"></span><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" onblur="validate2()">
+            <span class="error" id="error2"></span><br>
+
+             
+            <p class="Create-account-link">  <a href="Registretion.html">create account</a></p>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+          
+    <script src="Javascript/Login.js"></script>
+    </body>
