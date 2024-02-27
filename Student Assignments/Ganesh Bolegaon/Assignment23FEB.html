@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 23-FEB</title>
+</head>
+<body>
+<!-- Implement class having private instance variables
+
+use get and set properties to access those variables outside of class -->
+
+   
+    
+    <script>
+        class Employee {
+    #name;
+    #id;
+    #salary;
+
+    constructor(name, id, salary) {
+        this.#name = name;
+        this.#id = id;
+        this.#salary = salary;
+    }
+
+    
+    get name() {
+        return this.#name;
+    }
+
+        set name(name) {
+        this.#name = name;
+    }
+
+    
+    get id() {
+        return this.#id;
+    }
+
+    
+    set id(id) {
+        this.#id = id;
+    }
+
+        get salary() {
+        return this.#salary;
+    }
+
+    
+    set salary(salary) {
+        this.#salary = salary;
+    }
+}
+
+const emp = new Employee('Ganesh', 7900, 10000);
+
+
+console.log(emp.name); 
+console.log(emp.id);  
+console.log(emp.salary); 
+
+
+emp.name = 'Ajay ';
+emp.id = 1204;
+emp.salary = 43000;
+
+
+console.log(emp.name); 
+console.log(emp.id); 
+console.log(emp.salary); 
+
+    </script>
+</body>
+</html>

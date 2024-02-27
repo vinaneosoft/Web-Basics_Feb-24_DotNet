@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Out Images</title>
+    <style>
+        .image{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <button id="fadeOutBtn">Fade Out</button><br>
+<img src="../html/images/msd7.jpg" alt="msd " class="image">
+<img src="../html/images/Sachin.jpg" alt="sachin" class="image">
+<img src="../html/images/tendulkar.jpg" alt="sachin " class="image">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    // $('#fadeOutBtn').on('click', function () {
+    //     fadeOutImages();
+    // });
+
+    $('#fadeOutBtn').click(()=> fadeOutImages());
+
+    function fadeOutImages() {
+        $('.image').each(function (index) {
+            $(this).delay(500 * index).fadeOut(500); 
+        });
+    }
+
+</script>
+
+</body>
+</html>
