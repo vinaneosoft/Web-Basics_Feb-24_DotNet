@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(Images/how_20to_20start_20a_20clothing_20brand.webp);
+            background-size: cover;
+        } 
+       /* START OF NAV BAR STYLING */
+        nav{
+            height: 62px;
+            
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            justify-content:space-between   ;
+            margin-right: 20px;
+            background-color: rgba(0, 0,0, 0.1);
+            align-items: center;
+            
+         }
+
+        nav div{
+            color: rgb(9, 10, 10);
+            font-size: 22px;
+            padding-right: 15px;
+            font-family: monospace  ;
+            font-weight: 700;
+        }
+
+         ol li{
+            display: inline-block;
+            
+            margin-top: 10px;
+            margin-left: 25px;
+            padding-right: 10px;
+        
+        }
+        nav ol a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-left: 25px;
+            
+              }
+        
+        a:link  {
+                color: rgb(5, 5, 5);
+        }
+        a:visited{
+            color: rgb(15, 15, 15);
+        }
+        a:hover{
+            color: aquamarine;
+        }
+        a:active{
+            background-color: brown;
+        }
+        /* END OF NAV BAR STYLING */
+        .content{
+            padding: 0.5% ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: flex-start;
+            height: 100vh;
+         }
+         .content h1{
+            font-size: 40px;
+         }
+         .content p{
+            font-size: 20px;
+            margin-top: 20px;
+         }
+         .content button{
+            margin-top: 20px;
+            padding: 15px 25px;
+            border: none ;
+            background: red;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+         .content button:hover{
+           background: blanchedalmond;
+         }
+          .pheding{
+             text-align: center;
+              margin: 50px 0;
+              color: #424122;
+            
+          }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav id="n1">
+            <ol>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="prduct1.html"> Products</a></li>
+                <li><a href="signup.html">Sign-up</a></li>
+                <li><a href="login1.html">Login</a></li>
+            </ol>
+            <div>
+                East-Side
+            </div>  
+        </nav>
+    </div>
+    <!--FOR TEXT-->
+    <section class="content">
+        <h1>New Arrival For Men & women</h1>
+        <p>Get The womenFashion Arrivals</p>
+        <button>Shop Now</button>
+
+    </section>
+    <!--h1-->
+    <h1 class="pheding">Our Latest Product</h1>
+</body>
+</html>

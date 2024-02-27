@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      body{
+            background: url(Images/regback1.jpg);
+            background-size: cover;
+        } 
+          section {
+ 
+ font-family: Arial, sans-serif;
+
+display: flex;
+justify-content:right;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.login-container {
+    width: 23%;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 69px ;
+    border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+ 
+}
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.error{
+    color: rgb(238, 32, 32);
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bolder
+}
+.btn:hover {
+  background-color: #0056b3;
+}   
+    </style>
+</head> 
+<body>
+  <div>
+    <nav id="n1">
+        <ol>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="prduct1.html"> Products</a></li>
+            <li><a href="signup.html">Sign-up</a></li>
+            <li><a href="login1.html">Login</a></li>
+        </ol>
+    </nav>
+</div>
+ <section>
+    
+
+    <div class="login-container">
+        <h2> Sign-up</h2>
+        <div class="form-group">
+          <form action="index.html" onsubmit="return validateall()">
+            <label for="name">Name</label>
+            <input type="text" id="name" type="name1" class="name1" onblur="validate1()"><br>
+            <span id="error1" class="error"></span><br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" class="age1" onblur="validate2()"><br>
+            <span id="error2" class="error"></span><br>
+
+           
+
+            <label for="number">Number</label>
+            <input type=" text" id="number"  class="number" onblur="validate3()"><br>
+            <span id="error3" class="error"></span><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" class="email1" onblur="validate4()"><br>
+            <span id="error4" class="error"></span><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"class="password" onblur="validate5()"><br>
+            <span id="error5" class="error"></span><br>
+
+            <label for="cpassword">Confirm password</label>
+            <input type="password" id="cpassword" class="cpassword" onblur="validate6()"><br>
+            <span id="error6" class="error"></span><br>
+        </div>  
+
+            <input type="submit" name="sub1" id="sub" value="Register" class="btn">
+            <input type="reset" class="btn">
+          </form>
+          <script src="validation.js"></script>
+
+    </div>
+</section>
+</body>
+</html>

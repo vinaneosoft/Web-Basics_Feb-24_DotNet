@@ -1,0 +1,52 @@
+
+nav{
+    height: 62px;
+    
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content:space-between   ;
+    margin-right: 20px;
+    /* background-color: rgba(0, 0,0, 0.1); */
+    align-items: center;
+    
+ }
+
+nav div{
+    color: rgb(9, 10, 10);
+    font-size: 22px;
+    padding-right: 15px;
+    font-family: monospace  ;
+    font-weight: 700;
+}
+
+ ol li{
+    display: inline-block;
+    
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-right: 10px;
+
+}
+nav ol a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 25px;
+    
+      }
+
+a:link  {
+        color: rgb(5, 5, 5);
+}
+a:visited{
+    color: rgb(15, 15, 15);
+}
+a:hover{
+    color: aquamarine;
+}
+a:active{
+    background-color: brown;
+}
