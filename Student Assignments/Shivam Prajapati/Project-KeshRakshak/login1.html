@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <div class="card_title"><h2>Login</h2></div>
+        <form  method="#" onsubmit="return validateLogin()">
+            <div class="form">
+                <input id="log_username" type=" text" placeholder="Username" onblur="validateUser()" >
+                 <span class="error" id="userError"></span>
+                <!--<label for="#username">Username</label> -->            
+                <input id="log_password" type="password" placeholder="Password" onblur="validatePass()" >
+                 <span class="error" id="passError"></span>
+                <!--<label for="#password">Password</label> -->
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login" id="submit">
+            <div class="sign_up_link">Not a member?
+                <a href="./signup.html">Sign up</a>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<script >
+
+    const userErrorNode=document.getElementById("userError");
+    const passErrorNode=document.getElementById("passError");
+    
+    const userNode=document.getElementById('log_username');
+    const passwordNode=document.getElementById('log_password');
+    
+    function validateUser(){
+      userErrorNode.textContent="";
+        if(userNode.value==""){
+            userErrorNode.textContent="Username is required";
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    
+    function validatePass(){
+        passErrorNode.textContent="";
+        if(passwordNode.value==""){
+            passErrorNode.textContent="Password is required";
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    
+    function validateLogin() {
+        const l1=validateUser();
+        const l2=validatePass();
+      return (l1 && l2) ;
+    }
+</script>
+</body>
+</html>
