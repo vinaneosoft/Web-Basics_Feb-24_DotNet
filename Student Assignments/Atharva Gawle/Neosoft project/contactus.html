@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Collage Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/26ebafb8f9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="contactform.js"></script>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Aboutus.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.144090879672!2d72.84959157497578!3d19.013371282178287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cee017330d97%3A0x9cb4a396efc6629!2sSahakar%20Nagar%20Block%20B%2C%20Rd%20Number%2026%2C%20Sahakar%20Nagar%2C%20Wadala%2C%20Mumbai%2C%20Maharashtra%20400031!5e0!3m2!1sen!2sin!4v1708178689490!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Sahakar Nagar, Naigaon, Wadala</h5>
+                        <p>Dadar, Mumbai, INDIA</p>
+                    </span>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+91 8452821101</h5>
+                        <p>Monday to Friday, 10Am to 6Pm</p>
+                    </span>
+
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>atharva21101@gmail.com</h5>
+                        <p>Email us your query </p>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="" onsubmit="return validateForm()">
+                    <table border="0px">
+                        <tr>
+                            <td><input type="text" placeholder="Enter your Name" name="myname" id="name" class="form" onblur="validate1()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="error1" class="error"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Enter your Email" name="emailid" id="emailid" class="form"
+                                    onblur="validate4()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="error3" class="error"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Enter your Mobile Number" name="mobile" id="mobile" class="form"
+                                    onblur="validate3()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="error4" class="error"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><textarea rows="8" placeholder="Message" class="form" required></textarea>
+                                <button type="submit" class="hero-btn red-btn" id="rform">Send Message</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Praesentium, aspernatur rerum? Vero dolor
+            ducimus ullam porro voluptatum, sed ratione est perferendis corrupti quidem!</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
