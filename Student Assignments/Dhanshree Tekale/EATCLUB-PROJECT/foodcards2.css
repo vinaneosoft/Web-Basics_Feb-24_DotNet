@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/backgroundddd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#cont{
+    width: 80%;
+   
+    display: flex;
+    justify-content: space-between;
+}
+#cont div{
+    width: 25%;
+    background-color: rgb(192, 210, 216);
+    color:black;
+    border-radius: 5px;
+    /* font-weight: 500px; */
+    
+}
+#cont div img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+#cont div h1{
+    text-align: center;
+   
+}
+#cont div h1:hover{
+    text-align: center;
+    background-color: white;
+}
+#cont div p{
+    text-align: center;
+    padding: 20px;
+    
+}
+#cont div img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+#cont div :hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 3s;
+    /* font-size: larger; */
+}
