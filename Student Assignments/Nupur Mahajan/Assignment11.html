@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <button id="fadeOut">Fade Out</button>
+    <div>
+        <img src="../Javascript/Images/bird.jpg" alt="Bird" class="flyingBird" id="bird">
+        <img src="../Javascript/Images/ColourfulBird.jpg" alt="ColourfulBird" class="flyingBird" id="bird2">
+        <img src="../Javascript/Images/CutBird.jpg" alt="CutBird" class="flyingBird" id="bird3">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("#fadeOut").click(function() {
+            fadeOutImages();
+        });
+
+        function fadeOutImages() {
+            var images = $(".flyingBird");
+            fadeOutNext(images, 0);
+        }
+
+        function fadeOutNext(images, index) {
+        if (index >= images.length) {
+            return;
+        }
+
+        $(images[index]).fadeOut(1000, function() {
+            fadeOutNext(images, index + 1);
+        });
+        }
+        
+        });
+
+    </script>
+</body>
+</html>
