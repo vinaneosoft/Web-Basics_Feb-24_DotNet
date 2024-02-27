@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/login.css">
+</head>
+<body>
+    
+    <div class="boxLogin">
+    <div>
+    <h2>LOG IN PAGE</h2>
+    <form action="./Menu.html" onsubmit="return validateForm()"  >
+        <table>
+            <tr>
+                <td><label for="name1">EMAIL ID</label></td>
+                <td><input type="email" name="name1" id="name" placeholder="Enter Your EMAILID" required></td>
+            </tr>
+          
+            <tr>
+           
+                <td><label for="pass1">PASSWORD</label></td>
+                <td><input type="password" name="pass1" id="password" placeholder="Enter Your Password" required></td>
+            </tr>
+           
+            <tr>
+                <td></td>
+                <td><input type="submit" value="LOGIN"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><span>Don't Have Account </span><button><a href="./SignUp.html">SIGN UP</a></button></td>
+            </tr>
+           
+        </table>
+    </form>
+    </div>
+    </div>
+    <script src="JS/Login.js"></script>
+
+</body>
+</html> 

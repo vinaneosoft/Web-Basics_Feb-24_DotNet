@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Out Images</title>
+    <style>
+        .image{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <button id="fadeOut">FadeOut</button><br>
+<img src="./Images/chennai-shardul.webp" alt="player" class="img">
+<img src="./Images/chennai-shardul.webp" alt="playe" class="img">
+<img src="./Images/chennai-shardul.webp" alt="player" class="img">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $('#fadeOut').click(()=> fadeOutImages());
+
+    function fadeOutImages() {
+        $('.img').each(function (index) {
+            $(this).delay(500 * index).fadeOut(500); 
+        });
+    }
+
+</script>
+
+</body>
+</html>

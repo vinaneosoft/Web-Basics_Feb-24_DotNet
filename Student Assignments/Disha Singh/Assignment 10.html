@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       class Person{
+        #firstName;
+        #lastName;
+        id
+        constructor(firstName,lastName,id){
+            this.#firstName=firstName;
+            this.#lastName = lastName;
+            this.id = id
+        }
+        getName(){
+            return this.#firstName+" "+this.#lastName ;
+        }
+        setName(newfirst,newlast){
+            this.#firstName= newfirst;
+            this.#lastName = newlast;
+        }
+       }
+       let p1 = new Person('DISHA','SINGH',122);
+       console.log(p1.getName());
+       console.log(p1.id);
+
+       p1.setName("SAIFA","ANSARI");
+       console.log(p1.getName());
+
+    </script>
+</body>
+</html>

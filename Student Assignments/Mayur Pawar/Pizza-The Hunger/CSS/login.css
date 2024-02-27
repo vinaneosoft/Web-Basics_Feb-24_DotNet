@@ -1,0 +1,25 @@
+body{
+    background: url(../Images/BackgroundImage.avif);
+    
+   
+}
+.boxLogin {
+display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+margin-top: 20%;
+   
+
+}
+
+.boxLogin div {
+
+border: 2px solid rgb(252, 197, 115);
+background-color: rgb(221, 139, 32);
+box-shadow: 1px 1px 5px #fff;
+
+}
+div h2{
+    margin-left: 24%;
+}

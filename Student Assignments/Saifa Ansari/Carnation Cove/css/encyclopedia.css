@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+  padding-top: 100px;
+}
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/logo.jpg');
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size:13px ;
+    letter-spacing: 2px;
+    font-family: 'Raleway',sans-serif;
+    
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #07123d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.logo{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-family: 'Great Vibes',cursive;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .logo span{
+    font-size: 38px;
+    color: #07123d;
+  }
+
+  /* /* CSS for the encyclopedia */ 
+
+main {
+    padding: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+
+.encyclopedia-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.encyclopedia-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.encyclopedia-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.images {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .images img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .variety,.symbol{
+    margin-bottom: 30px;
+    font-family: 'Raleway',sans-serif;
+  }
+  
+  /* .variety h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  } */
+
+  .variety h2{
+    font-size: 29px;
+    margin-bottom: 21px;
+    /* text-decoration: underline; */
+    text-align: center;
+  }
+  
+  .variety h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .variety p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+/*   
+  .symbol {
+    margin-bottom: 30px; */
+    /* background-color: #fff;
+    padding: 50px 0; */
+    /* font-family: 'Raleway',sans-serif;
+  } */
+  
+  .symbol h2 {
+    font-size: 29px;
+    /* font-weight: bold;
+    margin-bottom: 20px; */
+    margin-bottom: 21px;
+    /* text-decoration: underline; */
+    text-align: center;
+  }
+  
+  .symbol p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .symbol div {
+    margin-bottom: 20px;
+  }
+  
+  .symbol div span {
+    font-weight: bold;
+    /* color: #333; */
+  }
+  .symbol_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px; 
+  }
+  
+  .symbol_images img {
+    max-height: 100%;
+    height: auto;
+    width: 49%;
+  }
+  
+  
+  
+
+footer {
+    background-color: #07123d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Raleway',sans-serif;
+}

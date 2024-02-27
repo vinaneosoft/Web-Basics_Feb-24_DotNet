@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchAura</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/signup.css">
+</head>
+<body>
+    <section id="nav" style="position: sticky;">
+        <div id="left">
+            <img src="./images/logo.png" style="height: 100px;width: 100px" alt="">
+            <h1>WatchAura Collection</h1>
+        </div>
+        <div id="mid">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./Men.html">Men's</a>
+            <a href="./Women.html">Women's</a>
+            <a href="./Review.html">Review</a>
+            <a href="./OurStory.html">Our Story</a>
+        </div>
+        <div id="right">
+            <button><a href="./login.html">Login </button></a>
+            <button><a href="./Signup.html">Sign Up</button></a>
+        </div>
+    </section>
+    <section>
+    <div style="margin-left: 700px;">
+        
+    </div>
+    <div id="fb">
+        <form action="./login.html" onsubmit="return validateAll()">
+            <table>
+                <h1 style="color: white;margin-left: 90px;">Sign Up</h1>
+                <tr>
+                    <td><input type="text" placeholder="Enter Your name" id="name" onblur="validate1()"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="error1"></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Enter the Email" id="email"  onblur="validate2()"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="error2"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" placeholder="Enter the phone no" id="mobile"  onblur="validate3()"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="error3"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Enter the password" id="password"  onblur="validate4()"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="error4"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Enter the password" id="confirmPassword"  onblur="validate5()"></td>
+                </tr>
+                <tr>
+                    <td class="error" id="error5"></td>
+                </tr>
+                <tr>
+                    <td><label for="">I have read & understood terms & condition.</label></td>
+                    <td><input type="checkbox"  style="height: 0px;"  id="checkbox" ></td>
+                </tr>
+                <tr>
+                    <td class="error" id="error6"></td>
+                </tr>
+                <tr>
+                    <td><input id="b1" type="submit" value="Submit" style="width: 100px;margin-left: 100px;"></td>
+                </tr>
+            </table> 
+        </form>
+   </div>
+</section>
+<script src="./Scripts/signup.js"></script>
+</body>
+</html>

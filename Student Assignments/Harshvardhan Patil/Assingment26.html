@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment26</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button id="fadeOut"> FADE OUT</button>
+    <div>
+        <img src="041423f070.jpg" alt="Movie" class="fead" id="movie">
+        <img src="Avatarimg1.jpg" alt="Avatarimg1" class="fead" id="Avatarimg1">
+        <img src="Black adam.jpg" alt="Black adam" class="fead" id="Black adam">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("#fadeOut").click(function() {
+            fadeOutImages();
+        });
+
+        function fadeOutImages() {
+            var images = $(".fead");
+            fadeOutNext(images, 0);
+        }
+
+        function fadeOutNext(images, index) {
+        if (index >= images.length) {
+            return;
+        }
+
+        $(images[index]).fadeOut(1000, function() {
+            fadeOutNext(images, index + 1);
+        });
+        }
+        
+        });
+
+    </script>
+</body>
+</html>

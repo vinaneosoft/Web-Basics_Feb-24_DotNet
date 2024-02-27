@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade Out Sequence</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+
+    .fade-out {
+      display: block;
+    }
+    #img{
+      display: flex;
+        height: 400px;
+        width:400px
+    }
+  </style>
+</head>
+<body>
+  <div id="img">
+      
+  <img class="fade-out" src="./images/pexels-artem-saranin-1187079.jpg" alt="Image 1">
+  <img class="fade-out" src="./images/pexels-dominika-roseclay-1166869.jpg" alt="Image 2">
+  <img class="fade-out" src="./images/pexels-marianna-ole-757889.jpg" alt="Image 3">
+  <img class="fade-out" src="./images/pexels-unchalee-srirugsar-85773.jpg" alt="Image 4">
+  <img class="fade-out" src="./images/pexels-pixabay-128868.jpg" alt="Image 5">
+  <br>
+  </div>
+  <button id="fadeButton">FADE OUT</button>
+
+  <script>
+    $(document).ready(function() {
+      let images = $('.fade-out');
+      let currentIndex = 0;
+
+      $('#fadeButton').on('click', function() {
+        fadeOutImage();
+      });
+
+      function fadeOutImage() {
+        if (currentIndex < images.length) {
+          $(images[currentIndex]).fadeOut('slow', function() {
+            currentIndex++;
+            fadeOutImage();
+          });
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

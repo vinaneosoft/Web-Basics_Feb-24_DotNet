@@ -1,0 +1,50 @@
+
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Out Sequence</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+      .fade-out {
+        display: inline-block;
+      }
+      img{
+          height: 400px;
+          width:400px
+          
+      }
+    </style>
+  </head>
+  <body>
+      <button id="fadeButton">FADE OUT</button>
+    <img class="fade-out" src="../../Disha_Portfolio/image/back.jpg" alt="Image 1">
+    <img class="fade-out" src="../../HTML/images/border.png" alt="Image 2">
+    <img class="fade-out" src="../../Disha_Portfolio/image/banner.jpg" alt="Image 3">
+   
+  
+    <script>
+      
+        let images = $('.fade-out');
+        let currentIndex = 0;
+  
+        $('#fadeButton').on('click', function() {
+          fadeOutImage();
+        });
+  
+        function fadeOutImage() {
+          if (currentIndex < images.length) {
+            $(images[currentIndex]).fadeOut('3000', function() {
+              currentIndex++;
+              fadeOutImage();
+            });
+          }
+        }
+      
+    </script>
+  
+  </body>
+  </html>
+  

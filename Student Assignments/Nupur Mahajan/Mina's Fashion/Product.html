@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+           
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product-item {
+            width: 300px;
+            margin: 5px;
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 5px;
+        }
+
+        form {
+            margin-top: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+           <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="Product.html"><b>PRODUCT</b></a></li> 
+            <li><a href="Signuppage.html"><b>SIGN UP</b></a></li>
+            <li><a href="Loginpage.html"><b>LOGIN</b></a></li>
+            <li><a href="aboutus.html"><b>ABOUT US</b></a></li>
+            <li><a href="contact us.html"><b>CONTACT US</b></a></li>
+            
+        </ul>
+    </nav>
+    
+    
+    <section>
+       
+        <div class="product-item">
+            <img src="Images/shirt01.jpg" alt="Shirt 1">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.500</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Elevate your style with this chic and trendy shirt. The classic design and versatile color make it suitable for various occasions.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> White, Blue, Black</p>
+                        <p><strong>Material:</strong> 100% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt02.webp" alt="Shirt 2">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.550</b></p>
+                <form action="#" method="post"> 
+                    <p class="description"> This shirt effortlessly combines style and sophistication for the woman who values both tradition and trend. </p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong>  Blue,White, Black</p>
+                        <p><strong>Material:</strong> 80% Silk</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt03.webp" alt="Shirt 3">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.400</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">The impeccable craftsmanship and attention to detail make it a wardrobe staple for any occasion.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong>  Blue, Red, Black</p>
+                        <p><strong>Material:</strong> 70% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/Shirt04.webp" alt="Shirt 4">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.450</b></p>
+                <form action="#" method="post"> 
+                    <p class="description"> The subtle details and refined finish elevate your look, offering a polished appearance without compromising on comfort.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Red, Yellow, Black</p>
+                        <p><strong>Material:</strong> 80% Satin</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt05.jpeg" alt="Shirt 5">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.400</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Crafted from high-quality cotton, it offers a perfect blend of comfort and sophistication.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong>Black, White, Blue</p>
+                        <p><strong>Material:</strong> 100% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt06.jpeg" alt="Shirt 6">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.350</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Elevate your look, offering a polished appearance without compromising on comfort.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Grey, White, Black</p>
+                        <p><strong>Material:</strong> 80% Linen</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt07.jpg" alt="Shirt 7">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.450</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Embrace modern confidence in our contemporary formal shirt for women.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Pink, Blue, Black</p>
+                        <p><strong>Material:</strong> 100% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt08.jpg" alt="Shirt 8">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.500</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">This shirt is a versatile choice for the modern, empowered woman.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Violet, Blue, Black</p>
+                        <p><strong>Material:</strong> 80% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt09.jpg" alt="Shirt 9">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.600</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">The impeccable craftsmanship and attention to detail make it a wardrobe staple for any occasion.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Purple, Green, White</p>
+                        <p><strong>Material:</strong> 100% Silk</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt10.jpg" alt="Shirt 10">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.550</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Elevate your style with this chic and trendy shirt. The classic design and versatile color make it suitable for various occasions.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Cream, Blue, Black</p>
+                        <p><strong>Material:</strong> 100% Satin</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt11.jpg" alt="Shirt 11">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.500</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">The subtle details and refined finish elevate your look, offering a polished appearance without compromising on comfort.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Violet, Blue, Yellow</p>
+                        <p><strong>Material:</strong> 70% Silk</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt12.jpg" alt="Shirt 12">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.600</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">This shirt effortlessly combines style and sophistication for the woman who values both tradition and trend.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> White, Blue, Black</p>
+                        <p><strong>Material:</strong> Mix Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt13.jpg" alt="Shirt 13">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.500</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Crafted from high-quality cotton, it offers a perfect blend of comfort and sophistication.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> White, Blue, Black</p>
+                        <p><strong>Material:</strong> 100% Silk</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt14.jpg" alt="Shirt 14">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.450</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">Embrace modern confidence in our contemporary formal shirt for women.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> White, Blue, Black</p>
+                        <p><strong>Material:</strong> 50% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>  
+
+        <div class="product-item">
+            <img src="Images/shirt15.jpg" alt="Shirt 15">
+            <div class="caption">
+                <h3>Stylish Shirt</h3>
+                <p><b>Price: Rs.400</b></p>
+                <form action="#" method="post"> 
+                    <p class="description">This shirt is a versatile choice for the modern, empowered woman.</p>
+                    <div class="details">
+                        <p><strong>Color Options:</strong> Pink, Blue, Black</p>
+                        <p><strong>Material:</strong> 60% Cotton</p>
+                    </div>
+                    <label for="size"><b>Select Size:</b></label>         
+                    <select id="size" name="size" required>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <form action="#" method="post">
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <button type="submit">Buy Now</button>
+                </form>      
+            </div>
+        </div>         
+
+    </section>
+</body>
+<footer>
+    
+    <div class="footer-section">
+        <h3>Contact Information:</h3>
+        <spam><b>Email:</b> girlscollection@gmail.com</spam>
+        <spam><b>Phone:</b> [+91 9876543210]</spam>
+    </div>
+</div>
+
+</html>
+

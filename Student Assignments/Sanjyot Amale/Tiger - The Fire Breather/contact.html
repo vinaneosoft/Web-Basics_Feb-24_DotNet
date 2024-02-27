@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="CSS/Contact.css">
+
+</head>
+
+<body>
+
+  <nav>
+    <div id="nav-sub1"> <img src="Assets/logo.jpg" alt="">
+      <p> <span id="navp">Tiger</span>: The Fire-Breather</p>
+    </div>
+    <div id="nav-sub2"> <a href="index.html">Home</a>
+      <a href="more.html">More</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" novalidate onsubmit="return validateAll()">
+      <input type="text" name="firstname" id="fName" placeholder="First Name" onblur="validate1()"><br>
+      <span  id="firstNameError" class="error-message"></span><br>
+
+      <input type="text" name="lastname" id="lName" placeholder="Last Name" onblur="validate2()"><br>
+      <span  id="lastNameError" class="error-message"></span><br>
+
+      <input type="email" name="email" id="email" placeholder="Email Address" onblur="validate3()"><br>
+      <span  id="emailError" class="error-message"></span><br>
+
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section class="contact-info">
+    <h2>Our Contact Information</h2>
+    <div class="contact-info-sub">
+      <br>
+      <p> Address :Kalyan,Maharshtra,421301 </p><br>
+      <p> Phone : +91 8828453934</p>
+      <br>
+      <p> Visiting Hours : 10 AM : 07 PM</p>
+    </div>
+
+  </section>
+
+<img src="" alt="">
+
+  <footer class="footer">
+    <div>
+      &copy; 2024 Tiger: The Fire Breather
+    </div>
+    <div>
+      Location: Kalyan,Maharshtra,421301<br>
+      Phone: +91 8828453934
+    </div>
+  </footer>
+
+  <script src="JS/validation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(../Images/cartBackground.avif)  no-repeat;
+    background-size: cover;
+
+}
+button {
+	border: none;
+	
+	font-size: 1rem;
+	color: white;
+	background-color: #eea810;
+	text-align: center;
+	cursor: pointer;
+    
+	
+	border-radius: 4px;
+}
+
+
+
+
+.cart {
+    background-color: #cebc6e;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-price {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: white;
+	
+}
+
+#checkout-btn {
+    background-color: #ecab4a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+img{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+h2{
+    
+    text-align: center;
+    background-color: #ecab4a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body a{
+    background-color:transparent;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ecab4a;
+    border-radius: 6px;
+    padding: 6px;
+
+
+}

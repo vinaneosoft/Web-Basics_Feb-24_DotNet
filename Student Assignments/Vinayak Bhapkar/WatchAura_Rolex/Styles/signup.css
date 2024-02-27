@@ -1,0 +1,214 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/l4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    
+}
+#image img{
+    width: 200px;
+    height: 150px;
+}
+#fb{
+    display: flex;
+    justify-content: center;
+}
+input,button{
+    display: block;
+    background: transparent;
+    color: whitesmoke;
+}
+input::placeholder{
+    color: white;
+}
+#fb form{
+    background-color: transparent;
+    color: whitesmoke;
+    width: 350px;
+    height: 800px;
+    padding: 10px 30px 30px 20px;
+    border-radius: 5px;
+}
+#fb form h3{
+    text-align: center;
+    font-size: 20px;
+}
+#fb form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #ececed;
+    padding-left: 10px;
+    font-weight: 400;
+    
+}
+#fb form button{
+    width: 104%;
+    height: 40px;
+    background-color: #1877f2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#b1{
+    background-color:#1877f2;
+    color: white;
+    font-size: larger;
+}
+#b1:hover{
+    background-color: crimson;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+a:hover{
+    text-decoration: underline;
+}
+#anchor{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* //////////////////////////////////////////// */
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+#nav #left{
+    display: flex;
+}
+#nav #left img{
+    margin-top: -19px;
+}
+#nav #left h1{
+    font-size: 30px;
+}
+
+#nav #mid{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#nav #mid a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+#nav #right button{
+    display: inline;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid lightgray;
+}
+#nav #right a{
+    text-decoration: none;
+    color: white;
+}
+#nav #mid a:hover{
+    color: crimson;
+    
+}
+#nav #left h1:hover{
+    color: crimson;
+}
+#nav #right button:hover{
+    width: 90px;
+    height: 40px;
+    border: 1px solid red;
+    background-color: crimson;
+}
+
+/* //////////////////////////////////////////////////////////// */
+@media(max-width:600px)
+{
+    #nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 6px;
+        padding-right: 20px;
+        color: white;
+        /* font-size:15%; */
+    }
+    #button1{
+        background-color: orangered;
+        color: whitesmoke;
+        border: none;
+        border-radius: 5%;
+        margin-top: 233px;
+        height: 40px;
+        width: 130px;
+        /* font-size:5%; */
+        margin-left: 1354px;
+    }
+    #button1 a{
+        text-decoration: none;
+        color: white;
+    }
+    #button1:hover{
+        background-color: #626562;
+    }
+    #nav #left h1{
+        font-size: 58%;
+    }
+    #nav #left h1:hover{
+        color: crimson;
+    }
+    #nav #mid {
+        display:inline-flex;
+        gap: 20px; 
+        list-style: none;
+    }
+    #p{
+        display: none;
+    }
+    #nav #mid a{
+        text-decoration: none;
+        color: white;
+        font-size: 20%;
+    }
+    #nav #mid a:hover{
+        color: crimson;
+        
+    }
+    #nav #right button{
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 38px;
+        height: 12px;
+        font-size: 5%;
+        border-radius: 5px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid lightgray;
+    }
+    #nav #right a{
+        text-decoration: none;
+        color: white;
+    }
+    #nav #right button:hover{
+        width: 90px;
+        height: 40px;
+        border: 1px solid red;
+        background-color: crimson;
+    }
+}

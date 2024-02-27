@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body style="
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">
+  
+  <nav id="navbar">
+    <img src="./Images/logo.avif" alt="website Logo">
+
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="MostPopular.html">Most Popular</a></li>
+        <li><textarea name="Searchbar" id="searchbar" cols="16" rows="1"></textarea></li>
+        <li id="navLogin"><a href="Login.html">Login/Signup</a></li>
+        
+          
+    </ul>
+</nav>
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form" action="#" onsubmit="validatealll()">
+        <input type="text" placeholder="Email" id="logemail" onblur="validate11()"/>
+        <span id="error11" class="errorr"></span>
+        <input type="password" placeholder="Password" id="logpass" onblur="validate22()"/>
+        <span id="error22" class="errorr"></span>
+        <button>login</button>
+        <p class="message">Not registered? <a href="Registration.html">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="Validation.js"></script>
+</body>
+</html>

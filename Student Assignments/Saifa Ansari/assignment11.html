@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flower{
+            height: 300px;
+            width: 400px;
+        }
+        #fade{
+            padding: 5px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <button id="fade">Fade Out</button>
+    <img src="images/hawaiian.jpg" alt="hawaiian" id="hawaiian" class="flower">
+    <img src="images/hyacinth.jpg" alt="hyacinth" id="hyacinth" class="flower">
+    <img src="images/orchid.jpg" alt="orchid" id="orchid" class="flower">
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+      let images = $('.flower');
+      let i = 0;
+
+      $('#fade').on('click', function() {
+        fadeOutImage();
+      });
+
+      function fadeOutImage() {
+        if (i < images.length) {
+          $(images[i]).fadeOut(2000, function() {
+            i++;
+            fadeOutImage();
+          });
+        }
+      }
+    </script>
+
+
+
+
+
+</body>
+</html>

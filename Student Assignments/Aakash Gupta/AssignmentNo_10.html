@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Test 
+    {
+           #variable3 = 100;
+        constructor() 
+        {
+            let _Variable1 = 0;
+            let _Variable2 = 10;
+          
+          this.getValue = () => {
+            return _Variable1;
+          };
+      
+          this.setValue = (value) => {
+              _Variable1 = value;
+            } 
+         
+      
+          // Getter for Variable2
+          this.getvalue2 = () => {
+            return _Variable2;
+          };
+
+        }
+      }
+      
+      // Example usage
+      const obj = new Test();
+      
+      console.log(obj.getValue()); // Output: 0
+      obj.setValue(42);
+      console.log(obj.getValue()); // Output: 42
+      
+      console.log(obj.getvalue2()); // Output: 10
+      obj.setValue('aakash')
+      console.log(obj.getValue()); // Output: 'aakash'
+      </script>
+</body>
+</html>
