@@ -1,0 +1,370 @@
+/* All related to main index page is written here */
+
+*{
+    text-decoration: none;
+    margin: 0px;
+}
+.common{
+    padding: 40px;
+}
+
+body{
+    background-color: rgb(227, 242, 245);
+    color:rgb(18, 31, 80);
+
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0.20;
+    background-image: url(https://foyr.com/learn/wp-content/uploads/2022/06/types-of-house-styles-and-homes.jpg);
+    background-size: cover;    
+    /* background: repeat-x; */
+    z-index: -1;
+}
+
+.navbar{
+    /* background-color: blueviolet; */
+    padding-left: 15px;
+    padding-right: 15px;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(to left,rgb(242, 140, 184),rgb(164, 239, 193));
+}
+
+.navbar>div:last-child li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    margin-right: 30px;
+    transition: 1s;
+    font-size: 20px;
+    border: 2px;
+    border-radius: 20px;
+}
+
+.navbar>div:last-child li:hover{
+    border: 1px solid rgb(186, 62, 62);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(65, 2, 65);
+}
+
+.navbar>div:first-child a{
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 60px;
+}
+
+.navbar>div:last-child li a{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#first{
+    border: 2px solid;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#second{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;    
+    align-items: flex-start;  
+    background-color: rgb(216, 207, 195);
+}
+
+#second h2{
+    align-self: flex-start;
+}
+#second li{
+    align-self: flex-end;
+    display: inline-block;
+    list-style: none;
+    border: 14px solid rgb(2, 2, 2);
+}
+
+#second li img{
+    height: 300px;
+    width: 400px;
+    transition: 1s;
+}
+
+#second li img:hover{
+    height: 400px;
+    width: 500px
+}
+
+
+figcaption{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#third{
+    /* border: 2px solid green; */
+    height: 300px;
+}
+
+#third article{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#third article p{
+    width: 40%;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid rgb(163, 21, 75);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+
+#third article p:hover{
+    background-color: antiquewhite;
+    border: 5px solid rgb(163, 21, 75);
+    box-shadow: 1px 1px 10px;
+
+}
+
+#fourth h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px rgb(113, 157, 177);
+}
+
+#fourth span{
+    font-size: 50px;
+    font-style: italic;
+}
+
+#fourth div img{
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin: 50px;
+    box-shadow: 1px 1px 15px 5px;
+}
+
+#fourth div li{
+    list-style: none;
+    transition: 1s;
+}
+
+#fourth div li:hover{
+    box-shadow: 1px 1px 5px;
+}
+
+#fourth div p{
+    padding: 140px;
+    font-size: 30px;
+}
+
+/* All relating to Login Page is here */
+#login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-left:150px ;
+    padding-right: 150px;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 50px;
+    border: 2px solid gray;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0px 5px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px ;
+    background-color: rgb(216, 207, 195);
+}
+
+#login-form input{
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#login-form input[type=submit]{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+#login-form a{
+    text-align: right;
+}
+
+/* About us page */
+
+#img-aboutUs{    
+    /* border: 2px solid; */
+    float: left;
+}
+
+#img-aboutUs img{    
+    margin: 50px;
+    height: 500px;
+    width: 800px;
+    border: 25px solid;
+    transition: 1s;
+    
+}
+
+#img-aboutUs img:hover{    
+    height: 600px;
+    width: 900px;
+}
+
+#aboutUs-message{
+    /* margin-left: 400px; */
+    margin: 200px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+#aboutUs-message2{
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUs-message2 table td{
+    padding-left: 230px;    
+    padding-right: 230px;    
+    padding-bottom: 100px;
+    font-size: 40px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+body h4{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold ;
+
+}
+
+#aboutUs-message2 table img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid;
+    border-radius: 100px;
+    display: inline-block;
+}
+/* All about properties webpage */
+
+/* #about-us-slider{
+    padding: 2rem;
+}
+
+#slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+#slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border: 15px solid;
+    border-radius: 10px;
+}
+
+#slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+#slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: aquamarine;
+    transition: opacity ease 250ms;
+}
+
+#slider img{
+    height: 600px;
+    width: 1200px;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+} */
+
+#properties-first h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#properties-first div img{
+    height: 350px;
+    width: 450px;
+    margin: 30px;
+    transition: 1s;
+    border: 15px solid black ;
+}
+
+#properties-first div img:hover{
+    height: 430px;
+    width: 530px;
+}
+
+#properties-first div ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#properties-first div ul li{
+    list-style: none;
+}
+
+#know-more{
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    background-color: rgb(198, 11, 74);
+    color: rgb(183, 248, 199);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#know-more a{
+    color: rgb(181, 187, 240);
+}
+
+/* thank you page */
+#thank-you{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(56, 79, 3);
+}
