@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Rolex-Contact Us</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="./Styles/Contact.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <form action="Thank.html" onsubmit="return validateAll()">
+                        <input type="text" name="name" placeholder="Enter Your Name" id="name" onblur="validate1()">
+                        <span id="span1" class="spans"></span>
+                        <input type="email" name="name" placeholder="Enter Your Email" id="email" onblur="validate2()">
+                        <span id="span2" class="spans"></span>
+                        <textarea name="message" placeholder="Your Message" id="textc" onblur="validate3()"></textarea>    
+                        <span id="span3" class="spans"></span>               
+                        <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button><br><br>
+                        <button type="submit" class="btn"><a href="./index.html" id="a1" style="color: whitesmoke;text-decoration: none;">Back To Home</a> <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="images/bg1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="./Scripts/contact.js"></script>
+</body>
+</html>

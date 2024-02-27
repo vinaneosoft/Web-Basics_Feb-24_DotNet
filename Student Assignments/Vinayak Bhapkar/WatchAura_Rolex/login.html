@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchAura</title>
+    <link rel="stylesheet" href="./Styles/login.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <section id="nav" style="position: sticky;">
+        <div id="left">
+            <img src="./images/logo.png" style="height: 100px;width: 100px" alt="">
+            <h1>WatchAura Collection</h1>
+        </div>
+        <div id="mid">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./Men.html">Men's</a>
+            <a href="./Women.html">Women's</a>
+            <a href="./Review.html">Review</a>
+            <a href="./OurStory.html">Our Story</a>
+        </div>
+        <div id="right">
+            <button><a href="./login.html">Login </button></a>
+            <button><a href="./Signup.html">Sign Up</button></a>
+        </div>
+    </section>
+    <section>
+        <div id="image">
+            <img src="./images/logo.png" style="height: 150px;width: 150px" alt="">
+            </div>
+            
+            <div id="fb">
+                <form action="./payment.html" onsubmit="return validateAll()" class="form1">
+                    <!-- <h3>Log in to Rolex</h3> -->
+                    <table style="margin-left: 60px;">
+                        
+                        <tr>
+                            <td><input type="text" placeholder="Email address or phone no." id="email" onblur="validate1()" ></td>
+                        </tr>
+                        <tr><td class="error" id="error1"></td></tr>
+                        <tr>
+                            <td><input type="text" placeholder="password" id="password" onblur="validate2()"></td>
+                        </tr>
+                        <tr><td class="error" id="error2"></td></tr>
+                        <tr>
+                            <td><input id="button1" type="submit" value="Submit" style="width: 100px;margin-left: 80px;"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="anchor">
+                                    <a href="./Signup.html">forgotten account?</a>
+                                    <a href="./Signup.html">Sign up for Watches</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+    </section>
+    <script src="./Scripts/login.js"></script>
+</body>
+</html>
