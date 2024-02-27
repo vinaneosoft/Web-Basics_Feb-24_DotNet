@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image1" src="Image/beach1.jpg" alt="ig1">
+    <img id="image2" src="Image/beach3.png" alt="ig2">
+    <img id="image3" src="Image/beach4.jpg" alt="ig3">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      
+        $('#image1').click(()=>{callback()})
+        
+        function callback(){
+            $('#image1').fadeOut(1000,function(){
+                $('#image2').fadeOut(1000,function(){
+                    $('#image3').fadeOut(1000)
+                })
+            })
+        }
+
+        
+    </script>
+
+</body>
+</html>
