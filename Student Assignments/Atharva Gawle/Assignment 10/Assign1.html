@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class SimpleClass {
+  #privateVar1;
+  #privateVar2;
+
+  constructor(initialValue1, initialValue2) {
+    this.#privateVar1 = initialValue1;
+    this.#privateVar2 = initialValue2;
+  }
+
+  getPrivateVar1() {
+    return this.#privateVar1;
+  }
+
+  setPrivateVar1(newValue) {
+    if (Number.isInteger(newValue)) {
+      this.#privateVar1 = newValue;
+    } else {
+      console.error('Invalid value. Please provide an integer.');
+    }
+  }
+
+  getPrivateVar2() {
+    return this.#privateVar2;
+  }
+
+  setPrivateVar2(newValue) {
+    if (Number.isInteger(newValue)) {
+      this.#privateVar2 = newValue;
+    } else {
+      console.error('Invalid value. Please provide an integer.');
+    }
+  }
+}
+
+
+const mySimpleObject = new SimpleClass(5, 10);
+
+console.log(mySimpleObject.getPrivateVar1()); // Output: 5
+console.log(mySimpleObject.getPrivateVar2()); // Output: 10
+
+mySimpleObject.setPrivateVar1(15);
+mySimpleObject.setPrivateVar2(20);
+
+console.log(mySimpleObject.getPrivateVar1()); // Output: 15
+console.log(mySimpleObject.getPrivateVar2()); // Output: 20
+
+
+mySimpleObject.setPrivateVar1('InvalidValue'); 
+
+
+    </script>
+      
+</body>
+</html>
