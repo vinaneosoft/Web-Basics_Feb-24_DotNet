@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body style="
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">
+  
+  <nav id="navbar">
+    <img src="./Images/logo.avif" alt="website Logo">
+
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="MostPopular.html">Most Popular</a></li>
+        <li><textarea name="Searchbar" id="searchbar" cols="16" rows="1"></textarea></li>
+        <li id="navLogin"><a href="Login.html">Login/Signup</a></li>
+        
+          
+    </ul>
+</nav>
+    <form action="#" onsubmit="validateall()">
+        <h1 id="Regform">Registration Form</h1>
+        <table id="tbl">
+            <tr>
+                <td><label for="fname">NAME</label></td>
+                <td><input type="text" id="fname" name="fname" placeholder="Enter Your Name" onblur="validate1()"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td id="error1" class="error"></td>
+            </tr>
+            <br><br>
+            
+            <!-- <tr>
+                <td><label for="age">AGE</label></td>
+                <td><input type="number" id="age" name="age" placeholder="Enter Your Age" onblur="validate2()"></td>
+            </tr> -->
+            
+            <!-- <tr>
+                <td></td>
+                <td id="error2" class="error"></td>
+            </tr> -->
+            <br><br>
+            <tr>
+                <td><label for="mobno">MOBILE NO</label></td>
+                <td><input type="text" id="mobno" name="mobno" placeholder="Enter Your Mobile Number" onblur="validate3()"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td id="error3" class="error"></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><label for="Email">EMAIL</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter Your Email" onblur="validate4()"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td id="error4" class="error"></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><label for="password">PASSWORD</label></td>
+                <td><input type="password" id="pass" name="password" placeholder="Enter Your Password" onblur="validate5()"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td id="error5" class="error"></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><label for="Conpassword">CONFIRM PASSWORD</label></td>
+                <td><input type="password" id="cpass" name="conpassword" placeholder="Confirm Your Password" onblur="validate6()"></td>
+            </tr>
+           
+            <tr>
+                <td></td>
+                <td id="error6" class="error"></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><input type="submit" value="REGISTER" ></td>
+                <td> <input type="reset"></td>
+            </tr>
+            <br><br>
+            <tr > 
+                <td id="logintext"><p>Already Registered?<a href="Login.html">Login Here</a></p></td>
+            </tr>
+        </table>
+    </form>
+    <script src="Validation.js"></script>
+</body>
+</html>
