@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <script>
-    class SimpleClass {
-  #privateVar1;
-  #privateVar2;
 
-  constructor(initialValue1, initialValue2) {
-    this.#privateVar1 = initialValue1;
-    this.#privateVar2 = initialValue2;
-  }
+  <script>
+    class Person {
+      #firstName;
+      #department;
+      age
 
-  getPrivateVar1() {
-    return this.#privateVar1;
-  }
-
-  setPrivateVar1(newValue) {
-    if (Number.isInteger(newValue)) {
-      this.#privateVar1 = newValue;
-    } else {
-      console.error('Invalid value. Please provide an integer.');
+      constructor(firstName, department, age) {
+        this.#firstName = firstName;
+        this.#department = department;
+        this.age = age
+      }
+      getName() {
+        return this.#firstName + " from " + this.#department;
+      }
+      setName(newfirst, newdept) {
+        this.#firstName = newfirst;
+        this.#department = newdept;
+      }
     }
-  }
+    let p1 = new Person('Atharva', 'Dotnet', 23);
+    console.log(p1.getName());
+    console.log(p1.age);
 
-  getPrivateVar2() {
-    return this.#privateVar2;
-  }
+    p1.setName("Rohan", "Devops");
+    console.log(p1.getName());
 
-  setPrivateVar2(newValue) {
-    if (Number.isInteger(newValue)) {
-      this.#privateVar2 = newValue;
-    } else {
-      console.error('Invalid value. Please provide an integer.');
-    }
-  }
-}
-
-
-const mySimpleObject = new SimpleClass(5, 10);
-
-console.log(mySimpleObject.getPrivateVar1()); // Output: 5
-console.log(mySimpleObject.getPrivateVar2()); // Output: 10
-
-mySimpleObject.setPrivateVar1(15);
-mySimpleObject.setPrivateVar2(20);
-
-console.log(mySimpleObject.getPrivateVar1()); // Output: 15
-console.log(mySimpleObject.getPrivateVar2()); // Output: 20
-
-
-mySimpleObject.setPrivateVar1('InvalidValue'); 
-
-
-    </script>
-      
+  </script>
 </body>
+
 </html>
