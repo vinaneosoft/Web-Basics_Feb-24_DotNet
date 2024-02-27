@@ -1,0 +1,45 @@
+.registration{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-image: url(./Images/bg\ black.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    
+}
+span{
+    color:red;
+    /* margin-top: 10px; */
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    /* margin-left: 27rem; */
+    /* padding: 0px 0px 0px 0px ;
+    margin: 0px 0px 0px 0px; */
+}
+input{
+    border-radius: 0.5rem;
+    padding: 5px;
+    /* margin-top: 6px; */
+}
+.button{
+    display: flex;
+}
+.btn{
+    padding: 5px;
+    background-color: aqua;
+    color: black;
+    border-radius: 0.5rem;
+    width: 38%;
+    /* height: 10px; */
+}
+label{
+    color: aquamarine;
+}
+
+/* footer  */
