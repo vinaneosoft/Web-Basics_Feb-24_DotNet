@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactME</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/css2.css">
+</head>
+<body>
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Thank you for visiting my website. If you have any questions, comments, or would like to discuss a potential project, please don't hesitate to get in touch with me. 
+                        You can reach me via email, phone, or by filling out the contact form on my website. I am always happy to hear from potential clients or anyone interested in discussing software engineering topics. I will get back to you as soon as possible and I look forward to hearing from you.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Disha Singh</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Mumbai , Maharashtra</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">dishasingh18012002@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+
+                    <form action="index.html" novalidate onsubmit="return validateAll()">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" id="name" onblur="validate1()">
+                                <br>
+                                <span class="error" id="error1"></span>
+                            </div>
+                            
+                            <div class="field email">
+                                <input type="email" placeholder="Email" id="email" onblur="validate2()">
+                                <br>
+                                <span class="error" id="error2"></span>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" id="subject" onblur="validate3()">
+                            <br>
+                            <span class="error" id="error3"></span>
+                        </div>
+                        
+                        <br>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." id="message" onblur="validate4()"></textarea>
+                            <span class="error" id="error4"></span>
+                        </div>
+                        
+                        <br>
+                        <div class="button-area">
+                            
+                            <button type="submit" onclick="validateAll()">Send message</button>
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="javascript/validation.js"></script>
+</body>
+</html>
