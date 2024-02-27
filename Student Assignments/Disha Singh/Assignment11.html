@@ -36,7 +36,7 @@
   
         function fadeOutImage() {
           if (currentIndex < images.length) {
-            $(images[currentIndex]).fadeOut('slow', function() {
+            $(images[currentIndex]).fadeOut('3000', function() {
               currentIndex++;
               fadeOutImage();
             });
